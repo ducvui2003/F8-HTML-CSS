@@ -2,6 +2,8 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color:#ccc;
+    --primary-color: #ee4b2b;
+    --primary-color-rgba: rgb(238, 75, 43)
 }
 
 *{
