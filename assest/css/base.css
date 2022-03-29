@@ -6,8 +6,8 @@
   --primary-color-rgba: rgb(238, 75, 43);
   --border-color: #dbdbdb;
 
-  --header-height:120px
-  --navbar-height:43px;
+  --header-height:120px;
+  --navbar-height:34px;
   --header-with-search-height:calc(var(--header-height) - var(--navbar-height));
 }
 
