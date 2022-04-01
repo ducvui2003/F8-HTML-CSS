@@ -141,7 +141,22 @@
             </svg>
           </div>
           <div class="header__search">
-            <input type="text" class="header__search-input" placeholder="Search">
+            <div class="header__search-input-wrap">
+              <input type="text" class="header__search-input" placeholder="Search">
+
+              <!-- Search history -->
+              <div class="header__search-history">
+                <div class="header__search-history-heading">Current</div>
+                <ul class="header__search-history-list">
+                  <li class="header__search-history-item">
+                    <a href="">Mechanical Keyboard</a>
+                  </li>
+                  <li class="header__search-history-item">
+                    <a href="">Mechanical Keyboard</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <div class="header__search-select">
               <span class="header__search-select-label">Inside Shop</span>
               <i class="header__search-select-icon fa-solid fa-angle-down"></i>
@@ -154,15 +169,23 @@
                   <span>Outside Shop</span>
                   <i class="fa-solid fa-check"></i>
                 </li>
-                
+
               </ul>
             </div>
             <div class="header__search-btn">
               <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
             </div>
           </div>
+          <!-- Cart Layout -->
           <div class="header__cart">
-            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+            <div class="header__cart-wrap">
+
+              <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+              <!-- Has cart: header__cart-list--no-cart -->
+              <div class="header__cart-list ">
+                <img src="./img/noCart.png" alt="" class="header__cart--no-cart-img">
+              </div>
+            </div>
           </div>
         </div>
       </div>
