@@ -484,7 +484,7 @@
     width: 42px;
     height: 42px;
     margin: 12px;
-    border: 1px solid #e8e8e8;
+    border: 1px solid var(--border-color);
 }
 
 .header__cart-item-info {

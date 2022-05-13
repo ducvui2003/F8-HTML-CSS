@@ -449,7 +449,7 @@
     position: absolute;
     top: calc(100% + 6px);
     right: -3px;
-    background-color: var(--white-color);
+    background-color: var(#fdfdfd);
     width: 400px;
     border-radius: 2px;
     box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
@@ -482,9 +482,7 @@
 
 .header__cart-img {
     width: 42px;
-    height: 42px;
     margin: 12px;
-    border: 1px solid #e8e8e8;
 }
 
 .header__cart-item-info {

@@ -482,9 +482,7 @@
 
 .header__cart-img {
     width: 42px;
-    height: 42px;
     margin: 12px;
-    border: 1px solid #e8e8e8;
 }
 
 .header__cart-item-info {
@@ -541,15 +539,6 @@
 .header__cart-item-remove:hover {
     color: var(--primary-color);
     cursor: pointer;
-}
-
-.header__cart-view-cart {
-    float: right;
-    margin: 0 12px 12px 0;
-}
-
-.header__cart-view-cart:hover {
-    background-color: #f05d41;
 }
 
 .header__cart-list::after {

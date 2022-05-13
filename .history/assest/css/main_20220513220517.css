@@ -453,103 +453,9 @@
     width: 400px;
     border-radius: 2px;
     box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
-    display: none;
+    /* display: none; */
     animation: fadeIn ease-in 0.2s;
     cursor: default;
-}
-
-.header__cart-heading {
-    text-align: left;
-    margin: 8px 0 8px 12px;
-    font-size: 1.4rem;
-    color: #999;
-    font-weight: 400;
-}
-
-.header__cart-list-item {
-    padding-left: 0;
-    list-style: none;
-}
-
-.header__cart-item {
-    display: flex;
-    align-items: center;
-}
-
-.header__cart-item:hover {
-    background-color: #f8f8f8;
-}
-
-.header__cart-img {
-    width: 42px;
-    height: 42px;
-    margin: 12px;
-    border: 1px solid #e8e8e8;
-}
-
-.header__cart-item-info {
-    width: 100%;
-    margin-right: 12px;
-}
-
-.header__cart-item-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header__cart-item-name {
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: var(--text-color);
-    margin: 0;
-}
-
-.header__cart-list-price {
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: var(--primary-color);
-}
-
-.header__cart-item-multiply {
-    font-size: 0.9rem;
-    color: #757575;
-    margin: 0 4px;
-}
-
-.header__cart-item-quantity {
-    color: #757575;
-    font-size: 1.2rem;
-}
-
-.header__cart-item-body {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header__cart-item-description {
-    color: #757575;
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-
-.header__cart-item-remove {
-    color: var(--text-color);
-    font-size: 1.4rem;
-}
-
-.header__cart-item-remove:hover {
-    color: var(--primary-color);
-    cursor: pointer;
-}
-
-.header__cart-view-cart {
-    float: right;
-    margin: 0 12px 12px 0;
-}
-
-.header__cart-view-cart:hover {
-    background-color: #f05d41;
 }
 
 .header__cart-list::after {
@@ -572,8 +478,12 @@
     margin-inline: auto;
 }
 
-.header__cart--no-cart-img {
+.header__cart-list--no-cart {
     width: 54%;
+    display: none;
+}
+
+.header__cart--no-cart-msg {
     display: none;
 }
 
