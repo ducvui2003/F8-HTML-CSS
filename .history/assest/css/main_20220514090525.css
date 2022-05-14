@@ -7,15 +7,12 @@
     height: var(--navbar-height);
     display: flex;
     justify-content: space-between;
-    line-height: var(--navbar-height);
 }
 
 .header__navbar-list {
     list-style: none;
     padding-left: 0;
     margin: 4px 0 0 0;
-    display: flex;
-    align-items: center;
 }
 
 .header__navbar-item {
@@ -248,91 +245,6 @@
     text-align: center;
     font-size: 1.4rem;
     font-weight: 400;
-}
-
-
-/* User info */
-
-.header__navbar-user {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    position: relative;
-}
-
-.header__navbar-user:hover .header__navbar-user-menu {
-    display: block;
-}
-
-.header__navbar-user-img {
-    width: 22px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.header__navbar-user-name {
-    margin-left: 8px;
-    font-size: 1.4rem;
-    font-weight: 400;
-}
-
-.header__navbar-user-menu {
-    width: 160px;
-    z-index: 1;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: var(--white-color);
-    border-radius: 2px;
-    padding-left: 0;
-    list-style: none;
-    box-shadow: 0 0 3px #ccc;
-    display: none;
-}
-
-.header__navbar-user-menu::before {
-    content: "";
-    position: absolute;
-    right: 3px;
-    top: -26px;
-    border-width: 16px 20px;
-    border-style: solid;
-    border-color: transparent transparent var(--white-color) transparent;
-    cursor: pointer;
-}
-
-.header__navbar-user-menu::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -8px;
-    right: 0;
-    width: 56%;
-    height: 8px;
-}
-
-.header__navbar-user-item {}
-
-.header__navbar-user-item a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 1.4rem;
-    display: block;
-    padding: 4px 16px;
-}
-
-.header__navbar-user-item a:first-child {
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-}
-
-.header__navbar-user-item a:last-child {
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-}
-
-.header__navbar-user-item a:hover {
-    background-color: #fafafa;
 }
 
 

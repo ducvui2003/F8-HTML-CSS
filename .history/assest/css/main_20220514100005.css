@@ -301,16 +301,6 @@
     cursor: pointer;
 }
 
-.header__navbar-user-menu::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -8px;
-    right: 0;
-    width: 56%;
-    height: 8px;
-}
-
 .header__navbar-user-item {}
 
 .header__navbar-user-item a {

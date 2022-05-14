@@ -260,10 +260,6 @@
     position: relative;
 }
 
-.header__navbar-user:hover .header__navbar-user-menu {
-    display: block;
-}
-
 .header__navbar-user-img {
     width: 22px;
     border-radius: 50%;
@@ -287,7 +283,6 @@
     padding-left: 0;
     list-style: none;
     box-shadow: 0 0 3px #ccc;
-    display: none;
 }
 
 .header__navbar-user-menu::before {
@@ -299,16 +294,6 @@
     border-style: solid;
     border-color: transparent transparent var(--white-color) transparent;
     cursor: pointer;
-}
-
-.header__navbar-user-menu::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -8px;
-    right: 0;
-    width: 56%;
-    height: 8px;
 }
 
 .header__navbar-user-item {}

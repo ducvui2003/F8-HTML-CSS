@@ -287,7 +287,7 @@
     padding-left: 0;
     list-style: none;
     box-shadow: 0 0 3px #ccc;
-    display: none;
+    /* display: none; */
 }
 
 .header__navbar-user-menu::before {
