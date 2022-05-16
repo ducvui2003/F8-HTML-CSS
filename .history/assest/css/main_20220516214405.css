@@ -759,7 +759,7 @@
 .header__search-option {
     position: absolute;
     right: 0;
-    top: calc(100% + 3.5px);
+    top: calc(100% + 3px);
     width: 140px;
     list-style: none;
     box-shadow: 0 0 3px #ccc;

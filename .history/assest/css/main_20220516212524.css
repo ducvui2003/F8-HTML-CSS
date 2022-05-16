@@ -135,10 +135,8 @@
     width: 404px;
     border: 1px solid #d3d3d3;
     background-color: var(--white-color);
-    border-radius: 2px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: default;
-    transform-origin: calc(100% - 32px) top;
+    transform-origin: calc(100%-20px) top;
     animation: headerNotifyGrown ease-in 0.2s;
     will-change: opacity, transform;
     display: none;
@@ -277,7 +275,7 @@
 }
 
 .header__navbar-user-name {
-    margin-left: 4px;
+    margin-left: 8px;
     font-size: 1.4rem;
     font-weight: 400;
 }
@@ -325,10 +323,6 @@
     font-size: 1.4rem;
     display: block;
     padding: 4px 16px;
-}
-
-.header__navbar-user-item-separate {
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .header__navbar-user-item a:first-child {
@@ -506,11 +500,6 @@
 
 .header__logo a {
     display: inline-block;
-}
-
-.header__logo-link {
-    text-decoration: none;
-    color: transparent;
 }
 
 .header__logo-img {
@@ -759,7 +748,7 @@
 .header__search-option {
     position: absolute;
     right: 0;
-    top: calc(100% + 3.5px);
+    top: calc(100% + 3px);
     width: 140px;
     list-style: none;
     box-shadow: 0 0 3px #ccc;
