@@ -1,0 +1,10 @@
+:root {
+  --primary-color: #ffb900;
+  --secondary-color: #171100;
+}
+html {
+}
+.content {
+  width: 1170px;
+  margin-inline: auto;
+}

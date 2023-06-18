@@ -1,0 +1,79 @@
+:root {
+  --primary-color: #ffb900;
+  --secondary-color: #171100;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-family: "Poppins";
+  font-size: 62.5%;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-inline: auto;
+}
+/* Header */
+.header {
+  margin-top: 36px;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+}
+.header .body .logo {
+  margin-right: auto;
+  width: 85px;
+  object-fit: contain;
+}
+.nav {
+  margin-right: 70px;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav ul a {
+  position: relative;
+  display: inline-block;
+}
+.nav ul a {
+  padding: 8px 21px;
+}
+.nav ul a,
+.action .btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #5f5b53;
+}
+.nav .active a:hover {
+  color: #171100;
+  text-shadow: 1px 0 0 currentColor;
+}
+.nav .active a:hover::before {
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #171100;
+}
+.btn {
+  color: #ffffff;
+  background-color: #171100;
+  padding: 11px 41px;
+  border-radius: 24.5px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
