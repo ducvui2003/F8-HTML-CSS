@@ -338,15 +338,15 @@ html {
   border: 2px solid currentColor;
   background-color: white;
 }
-.control-course .control-course-cta .icon {
+.control-course-cta .icon {
   color: inherit;
 }
-.control-course .control-course-cta:hover {
+.control-course-cta:hover {
   cursor: pointer;
   opacity: 0.9;
   background-color: currentColor;
 }
-.control-course .control-course-cta:hover .icon {
+.control-course-cta:hover .icon {
   color: white;
 }
 .block-courses {

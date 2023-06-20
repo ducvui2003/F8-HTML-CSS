@@ -321,12 +321,13 @@ html {
 
   margin-top: 16px;
 }
+
 .control-course {
   display: flex;
   align-items: center;
   gap: 18px;
 }
-.control-course .control-course-cta {
+.control-course button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -338,15 +339,16 @@ html {
   border: 2px solid currentColor;
   background-color: white;
 }
-.control-course .control-course-cta .icon {
+
+.control-course .icon {
   color: inherit;
 }
-.control-course .control-course-cta:hover {
+.control-course button:hover {
   cursor: pointer;
   opacity: 0.9;
   background-color: currentColor;
 }
-.control-course .control-course-cta:hover .icon {
+.control-course button:hover .icon {
   color: white;
 }
 .block-courses {
@@ -446,26 +448,20 @@ html {
 }
 .feedback-list {
   padding-block: 96px;
-  display: flex;
-  overflow: hidden;
 }
 .feedback-item {
   display: flex;
-  justify-content: space-between;
-  flex-shrink: 0;
-  width: 100%;
 }
 .feedback-item .info {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-width: 200px;
 }
 .feedback-item .avatar {
   width: 72px;
   height: 72px;
   object-fit: cover;
-  border-radius: 50%;
+  object-position: center;
   margin-bottom: 18px;
 }
 .feedback-item .name {
@@ -488,40 +484,37 @@ html {
   color: #bfbcb3;
   margin-bottom: 28px;
 }
-.feedback-item .dots {
+.feedback-item .control {
   display: flex;
   align-items: center;
   gap: 6px;
 }
-.feedback-item .dots .dot {
+.feedback-item .control .circle-icon {
   display: inline-block;
   width: 6px;
   height: 6px;
   background-color: #634700;
   border-radius: 50%;
-  cursor: pointer;
 }
-.feedback-item .dots .dot.cta-feedback {
+.feedback-item .control .circle-icon.cta-feedback {
   background-color: #ffb900;
-  cursor: default;
 }
-
 .feedback-item .quotes {
-  width: 66%;
+  display: flex;
+  flex-direction: column;
 }
 .feedback-item .quotes .icon {
   width: 30px;
   height: 28px;
 }
 .feedback-item .quotes .quotes-content {
-  padding-left: 30px;
+  max-width: 770px;
 
   font-style: italic;
   font-weight: 400;
   font-size: 2.6rem;
   line-height: 1.54;
+  /* or 154% */
 
   color: #ffffff;
-
-  word-break: break-word;
 }
