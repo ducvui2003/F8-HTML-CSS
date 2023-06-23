@@ -1,0 +1,15 @@
+:root {
+  --font-primary: "Poppins";
+  --primary-color: #1ebfc1;
+}
+html {
+  font-family: "Poppins";
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+}
+.main-content {
+  margin: 0 auto;
+  min-width: 1170px;
+}

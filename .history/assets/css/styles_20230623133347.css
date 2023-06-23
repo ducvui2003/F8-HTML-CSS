@@ -1,0 +1,11 @@
+/* Header */
+.header .body {
+  display: flex;
+  align-items: center;
+}
+.nav__list {
+  justify-self: center;
+}
+.header__cta {
+  justify-self: flex-end;
+}

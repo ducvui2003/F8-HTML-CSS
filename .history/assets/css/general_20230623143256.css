@@ -1,0 +1,28 @@
+:root {
+  --font-primary: "Poppins";
+  --primary-color: #1ebfc1;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-family: var(--font-primary);
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+}
+.main-content {
+  margin: 0 auto;
+  width: 1170px;
+}
+.heading {
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  line-height: 1.16;
+}
