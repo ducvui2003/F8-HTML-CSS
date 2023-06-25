@@ -52,8 +52,6 @@
 /* Hero */
 .hero {
   margin-block: 142px 79px;
-}
-.hero .body {
   display: flex;
   justify-content: space-between;
   align-items: center;
