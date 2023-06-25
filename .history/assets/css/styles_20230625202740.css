@@ -364,7 +364,7 @@
 .popular-list__item {
   --border-radius: 8px;
   position: relative;
-  margin-bottom: 124px;
+  /* margin-bottom: 124px; */
 }
 .popular-item__image {
   width: 100%;

@@ -355,7 +355,6 @@
 }
 /* Popular list */
 .popular__list {
-  height: 393px;
   display: flex;
   justify-content: space-between;
   gap: 47px;
@@ -390,8 +389,6 @@
 }
 .popular-item-content__desc:nth-child(2) {
   margin-block: 16px 6px;
-  color: #767e7e;
-  font-size: 1.6rem;
 }
 .popular-item-content-desc__price {
   color: #0d1111;

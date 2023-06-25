@@ -355,7 +355,6 @@
 }
 /* Popular list */
 .popular__list {
-  height: 393px;
   display: flex;
   justify-content: space-between;
   gap: 47px;
