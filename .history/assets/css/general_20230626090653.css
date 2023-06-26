@@ -57,6 +57,6 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.line--2 {
+.line--clamp {
   line-clamp: 2;
 }

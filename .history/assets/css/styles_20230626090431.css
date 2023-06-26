@@ -393,6 +393,8 @@
   margin-block: 16px 6px;
   color: #767e7e;
   font-size: 1.6rem;
+  display: flex;
+  align-items: center;
 }
 
 .popular-item-content__desc:nth-child(3) {

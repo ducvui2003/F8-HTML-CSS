@@ -364,6 +364,7 @@
 .popular-list__item {
   --border-radius: 8px;
   position: relative;
+  margin-bottom: 124px;
   height: 393px;
 }
 .popular-item__image {
@@ -373,11 +374,10 @@
   border-radius: var(--border-radius);
 }
 .popular-item__content {
-  --bottom-position: -71px;
   position: absolute;
   left: 17px;
   right: 17px;
-  bottom: var(--bottom-position);
+  bottom: -71px;
   padding: 18px 0px 29px 25px;
   border-radius: var(--border-radius);
   background-color: #fff;
