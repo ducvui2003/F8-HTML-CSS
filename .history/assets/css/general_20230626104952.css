@@ -58,8 +58,5 @@ body {
   overflow: hidden;
 }
 .line--clamp.line--2 {
-  --line-clamp: 2;
-}
-.line--clamp.line--4 {
-  --line-clamp: 4;
+  line-clamp: 2;
 }

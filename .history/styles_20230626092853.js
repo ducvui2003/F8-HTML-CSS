@@ -20,13 +20,13 @@ console.log(width);
 console.log(bottom);
 
 
-var marginBottom = parseFloat(width) + parseFloat(bottom);
-console.log(marginBottom);
+var margin = parseFloat(width) + parseFloat(bottom);
+console.log(margin);
 
 var elements = document.querySelectorAll(".popular-list__item");
 console.log(elements)
 
 for (var i = 0; i < elements.length; i++) {
     var element = elements[i];
-    element.style.marginBottom = marginBottom + "px";
+    element.style.marginBottom = margin + "px";
 }

@@ -23,7 +23,7 @@ console.log(bottom);
 var marginBottom = parseFloat(width) + parseFloat(bottom);
 console.log(marginBottom);
 
-var elements = document.querySelectorAll(".popular-list__item");
+var elements = document.querySelectorAll(".popular-item__image");
 console.log(elements)
 
 for (var i = 0; i < elements.length; i++) {
