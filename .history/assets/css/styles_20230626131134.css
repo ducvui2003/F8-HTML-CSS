@@ -559,16 +559,5 @@
 /* Started */
 .started {
   margin-top: 130px;
-  background-color: #def6f5;
-  padding-block: 76px 88px;
-}
-.started .body {
-  display: flex;
-  align-items: center;
-}
-.started__content {
-  margin-right: 410px;
-}
-.tarted-content__desc {
-  margin-top: 18px;
+  background-color: #2ac9bf;
 }

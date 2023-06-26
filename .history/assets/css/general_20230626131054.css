@@ -66,6 +66,7 @@ body {
 .btn {
   min-width: 186px;
   padding: 20px 41px;
+  margin-right: 50px;
 
   background-color: var(--primary-color);
   color: #fff;

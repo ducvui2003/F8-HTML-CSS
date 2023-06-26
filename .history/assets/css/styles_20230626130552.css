@@ -76,7 +76,19 @@
   margin-top: 52px;
 }
 .hero__cta__link {
+  min-width: 186px;
+  padding: 20px 41px;
   margin-right: 50px;
+
+  background-color: var(--primary-color);
+  color: #fff;
+
+  font-size: 1.8rem;
+  font-family: var(--font-primary);
+  font-weight: 600;
+
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 14px;
 }
 .hero__cta__button {
   border-radius: 50%;
@@ -559,16 +571,4 @@
 /* Started */
 .started {
   margin-top: 130px;
-  background-color: #def6f5;
-  padding-block: 76px 88px;
-}
-.started .body {
-  display: flex;
-  align-items: center;
-}
-.started__content {
-  margin-right: 410px;
-}
-.tarted-content__desc {
-  margin-top: 18px;
 }
