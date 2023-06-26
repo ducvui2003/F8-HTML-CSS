@@ -523,7 +523,7 @@
   --size: 235px;
   top: 22.25%;
   right: 25.18%;
-  background-color: #ff8282;
+  background-color: #ff8282 lightgrey 50%;
 }
 .testimonial__image:nth-child(2) {
   --size: 92px;

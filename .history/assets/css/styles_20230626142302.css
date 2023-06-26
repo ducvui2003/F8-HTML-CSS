@@ -591,32 +591,17 @@
 }
 
 .footer-item__link {
+  display: inline-block;
+  margin-top: 18px;
   color: #535353;
   font-size: 1.6rem;
   font-family: Poppins;
 }
-.footer-detail__item ~ .footer-detail__item {
-  margin-top: 18px;
-}
 .footer__social {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 .footer-social__link {
   display: flex;
   align-items: center;
-  margin-top: 18px;
-  padding: 2px 0;
-}
-.social-social__icon {
-  margin-right: 9px;
-  width: 20px;
-  height: 20px;
-}
-.footer__copyright {
-  padding: 80px 0 50px 0;
-  color: #b0b5b4;
-  font-size: 1.8rem;
-  text-align: center;
 }

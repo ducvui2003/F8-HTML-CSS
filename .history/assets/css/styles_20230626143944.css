@@ -615,8 +615,7 @@
   height: 20px;
 }
 .footer__copyright {
-  padding: 80px 0 50px 0;
+  margin-top: 80px;
   color: #b0b5b4;
   font-size: 1.8rem;
-  text-align: center;
 }
