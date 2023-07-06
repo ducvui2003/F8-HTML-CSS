@@ -1,0 +1,16 @@
+:root {
+  --primary-color: #ff5b2e;
+  --heading-color: #000958;
+  --desc-color: #656689;
+  --heading-font: "Sora", "san serif";
+  --desc-font: "Poppins", "san serif";
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+}
