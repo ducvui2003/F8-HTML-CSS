@@ -241,7 +241,7 @@ body {
 .about__content {
   width: 40.77%;
 }
-.about__heading {
+.about__title {
   margin-top: 15px;
 }
 .about__desc {
@@ -349,6 +349,7 @@ body {
 .about__bottom {
   margin-top: 77px;
   margin-inline: 14px;
+  padding-block: 16px 55px;
 }
 
 .about__bottom .about__thumb {
@@ -469,12 +470,16 @@ body {
 .about__bottom .about__content {
   width: 48.8%;
 }
+.about__bottom .about__desc {
+  max-width: 511px;
+}
 .about__tip {
   margin-top: 46px;
+  max-width: 391px;
 }
 .about-bottom__link {
   display: inline-block;
-  margin-top: 52px;
+  margin-top: 32px;
   color: var(--primary-color);
   padding-bottom: 5px;
   border-bottom: 1.5px solid currentColor;
