@@ -609,11 +609,9 @@ body {
 }
 /* Staff */
 .staff {
+  margin-top: 130px;
 }
 .staff .body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .staff .title {
   text-align: center;
@@ -695,9 +693,15 @@ body {
   font-size: 2.2rem;
   font-weight: 600;
 }
-.lv3 {
+.staff__cta {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
 }
-.staff__btn {
-}
-.btn {
+.staff-cta_btn {
+  padding-inline: 20px;
+  --border-radius: 31px;
+  --height: 56px;
+  color: var(--primary-color);
+  --color-border: var(--primary-color);
 }
