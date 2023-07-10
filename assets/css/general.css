@@ -84,28 +84,27 @@ body {
   opacity: 0.8;
   cursor: pointer;
 }
-.btn.btn--border {
+.btn--border {
   --color-border: var(--heading-color);
   border: 1px solid var(--color-border);
 }
 .link--small {
-  font-family: var(--heading-color);
+  font-family: var(--heading-font);
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1;
 }
-/* Line */
-.line {
-  display: block;
-  height: 4px;
-  border-radius: 10px;
-  opacity: 0.07999999821186066;
-  background: #000958;
+/* Line clamp */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, line default);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
-.line.line--full {
-  width: 118px;
+.line-clamp.line--2 {
+  --line-clamp: 2;
 }
-.line.line--third {
-  width: 39px;
+.line-clamp.line--3 {
+  --line-clamp: 3;
 }
