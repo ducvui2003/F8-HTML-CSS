@@ -699,9 +699,167 @@ body {
   justify-content: center;
 }
 .staff-cta_btn {
-  padding-inline: 20px;
+  padding-inline: 40px;
   --border-radius: 31px;
   --height: 56px;
   color: var(--primary-color);
   --color-border: var(--primary-color);
+}
+/* Pricing */
+.pricing {
+  margin-top: 130px;
+  background-color: #fff6ed;
+}
+.pricing .body {
+  padding: 86px 38px;
+}
+.pricing__heading {
+  text-align: center;
+}
+.pricing__desc {
+  margin-inline: auto;
+  text-align: center;
+  margin-top: 24px;
+  max-width: 709px;
+}
+.pricing__switch-outer {
+  width: fit-content;
+  margin-top: 38px;
+  margin-inline: auto;
+
+  position: relative;
+}
+
+.pricing__sale {
+  position: absolute;
+  top: -26px;
+  left: calc(100% + 16px);
+}
+.pricing__switch-inner {
+  position: relative;
+  border-radius: 31px;
+  border: 1px solid #ff5b2e99;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  min-width: 276px;
+}
+.pricing-switch__value {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 20px;
+  z-index: 1;
+}
+.pricing__switch-inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: var(--primary-color);
+  border-radius: inherit;
+}
+.pricing__switch
+  .pricing-switch__radio:nth-child(1):checked
+  ~ .pricing__switch-inner::after {
+  width: 145px;
+  left: 0;
+  right: unset;
+}
+.pricing__switch
+  .pricing-switch__radio:nth-child(1):checked
+  ~ .pricing__switch-inner
+  .pricing-switch__value:nth-child(1) {
+  color: #fff;
+}
+.pricing__switch
+  .pricing-switch__radio:nth-child(2):checked
+  ~ .pricing__switch-inner::after {
+  width: 131px;
+  right: 0;
+  left: unset;
+}
+.pricing__switch
+  .pricing-switch__radio:nth-child(2):checked
+  ~ .pricing__switch-inner
+  .pricing-switch__value:nth-child(2) {
+  color: #fff;
+}
+/* Pricing card */
+.pricing__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 44px;
+  margin-top: 56px;
+}
+.pricing__card {
+  padding: 30px 28px 43px;
+  border-radius: 20px;
+  background: #fff;
+}
+.pricing__card:hover {
+  box-shadow: 0px 20px 44px 0px rgba(195, 108, 22, 0.06);
+}
+.pricing-card__category {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.pricing-card__lv {
+  margin-top: 8px;
+  color: #3f4065;
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.pricing-card__price {
+  margin-top: 24px;
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 1.03;
+}
+
+.pricing-card__btn {
+  --height: 44px;
+  --border-radius: 20px;
+  --color-border: var(--primary-color);
+  padding-inline: 66px 65px;
+  margin-top: 22px;
+  background-color: #fff;
+
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.pricing-card__btn:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  opacity: 1;
+}
+.pricing-card__benefits {
+  margin-top: 24px;
+}
+.pricing-card__benefit {
+  display: flex;
+  align-items: center;
+  color: #656689;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.pricing-benefit__icon {
+  margin-right: 12px;
+}
+.pricing-benefit__icon--opacity {
+  opacity: 0.4;
+}
+.pricing-card__benefit ~ .pricing-card__benefit {
+  margin-top: 18px;
 }
