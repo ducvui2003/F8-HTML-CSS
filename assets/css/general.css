@@ -108,3 +108,6 @@ body {
 .line-clamp.line--3 {
   --line-clamp: 3;
 }
+.line-clamp.line--5 {
+  --line-clamp: 5;
+}
