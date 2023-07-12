@@ -51,10 +51,22 @@ body {
   font-weight: 600;
 }
 .header__cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 117px;
+  height: 50px;
+  border: 1px solid var(--heading-color);
+  border-radius: 25px;
+
   color: var(--heading-color);
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 600;
+}
+.header__cta:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 /* Hero */
 .hero {
@@ -560,7 +572,6 @@ body {
 .services-media__btn {
   --height: 56px;
   --border-radius: 31px;
-  color: var(--primary-color);
   --color-border: currentColor;
   padding-inline: 40px;
   margin-top: 45px;
@@ -838,11 +849,6 @@ body {
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 500;
-}
-.pricing-card__btn:hover {
-  color: #fff;
-  background-color: var(--primary-color);
-  opacity: 1;
 }
 .pricing-card__benefits {
   margin-top: 24px;

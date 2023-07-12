@@ -78,8 +78,14 @@ body {
   line-height: var(--height);
   border: none;
   padding: 0;
+  color: var(--primary-color);
+  background-color: #fff;
 }
-.btn:hover,
+.btn:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
 .link:hover {
   opacity: 0.8;
   cursor: pointer;
