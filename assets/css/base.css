@@ -22,18 +22,32 @@ a {
   outline: none;
   border: none;
   border-radius: var(--border-radius);
+
+  color: #fff;
+  background-color: var(--text-primary-color);
+  border-radius: 8px;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75;
 }
 .btn:hover {
   cursor: pointer;
 }
 .heading {
   font-style: normal;
+  color: var(--text-primary-color);
 }
 .heading.lv1 {
-  color: var(--text-primary-color);
   font-size: 6rem;
   font-weight: 700;
   line-height: 1.16667;
+}
+.heading.lv2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.25;
 }
 .desc {
   color: var(--text-secondary-color);
@@ -56,5 +70,28 @@ a {
   width: 18px;
   height: 2px;
   background-color: currentColor;
+  margin-right: 12px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.item {
+  display: flex;
+  align-items: center;
+
+  color: var(--text-primary-color);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.66667;
+}
+.item::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
   margin-right: 12px;
 }

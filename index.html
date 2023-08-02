@@ -5,6 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+    <!-- Font gg -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+          rel="stylesheet">
     <!-- Favicon -->
     <link rel="apple-touch-icon"
           sizes="180x180"
@@ -65,71 +79,142 @@
                             </li>
                         </ul>
                         <div class="nav__cta">
-                            <button class="btn nav-cta__button">Log in</button>
-                            <button class="btn nav-cta__button nav-cta__sign-up">Sign up</button>
+                            <button class="btn nav-cta__button nav-cta__log-in">Log in</button>
+                            <button class="btn nav-cta__button">Sign up</button>
                         </div>
                     </nav>
                 </div>
             </div>
-            <section class="hero row">
-                <div class="col-xl-6 ">
-                    <p class="title">Digital Smart Wallet</p>
-                    <h1 class="heading lv1 hero__heading">Digital <strong
-                                class="hero__highlight">Payment</strong> For
-                        Everyone.</h1>
-                    <p class="desc hero__desc">We bring together eveything that’s required to build
-                        websites and apps that accept payments and send
-                        payouts globally. We are the best platform.</p>
-                    <form action="#!"
-                          class="hero__form">
-                        <div class="hero-form__inner">
-                            <input type="email"
-                                   class="hero-form__input"
-                                   pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/"
-                                   placeholder="Your email address">
-                            <button class="btn hero-form__submit"
-                                    type="submit">Get Started</button>
-                        </div>
-                        <span class="hero-form__note">*We’ll respect the inbox and never share your
-                            email.</span>
-                    </form>
-                </div>
-                <div class="col-xl-5 offset-xl-1">
-                    <div class="hero__media">
-                        <div class="hero__img-wrapper">
-                            <img src="./assets/imgs/mobileScreen.png"
-                                 alt="CeloBank"
-                                 class="hero__img">
-                        </div>
-                        <div class="hero__decor hero__decor-interest">
-                            <p>0%</p>
-                            <p>Interest</p>
-                        </div>
-                        <div class="hero__decor hero__decor-secured">
-                            <img src="./assets/imgs/securityMoney.svg"
-                                 alt="CeloBank"
-                                 class="secured__icon">
-                            <div class="secured__text">
-                                <p>$1.310</p>
-                                <p>SECURED FUNDS</p>
+
+            <!-- Hero -->
+            <section class="hero">
+                <div class="row">
+                    <div class="col-xl-6 ">
+                        <p class="title">Digital Smart Wallet</p>
+                        <h1 class="heading lv1 hero__heading">Digital <strong
+                                    class="hero__highlight">Payment</strong> For
+                            Everyone.</h1>
+                        <p class="desc hero__desc">We bring together eveything that’s required to
+                            build
+                            websites and apps that accept payments and send
+                            payouts globally. We are the best platform.</p>
+                        <form action="#!"
+                              class="hero__form">
+                            <div class="hero-form__inner">
+                                <input type="email"
+                                       class="hero-form__input"
+                                       pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/"
+                                       placeholder="Your email address">
+                                <button class="btn hero-form__submit"
+                                        type="submit">Get Started</button>
                             </div>
-                        </div>
-                        <div class="hero__decor hero__decor-deposit">
-                            <img class="deposit__icon"
-                                 src="./assets/imgs/deposit.svg"
-                                 alt="">
-                            <div class="deposit__text">
-                                <p>Deposite</p>
-                                <p>$32000</p>
+                            <span class="hero-form__note">*We’ll respect the inbox and never share
+                                your
+                                email.</span>
+                        </form>
+                    </div>
+                    <div class="col-xl-5 offset-xl-1">
+                        <div class="hero__media">
+                            <div class="hero__img-wrapper">
+                                <img src="./assets/imgs/mobileScreen.png"
+                                     alt="CeloBank"
+                                     class="hero__img">
+                            </div>
+                            <div class="hero__decor hero__decor-interest">
+                                <p>0%</p>
+                                <p>Interest</p>
+                            </div>
+                            <div class="hero__decor hero__decor-secured">
+                                <img src="./assets/imgs/securityMoney.svg"
+                                     alt="CeloBank"
+                                     class="secured__icon">
+                                <div class="secured__text">
+                                    <p>$1.310</p>
+                                    <p>SECURED FUNDS</p>
+                                </div>
+                            </div>
+                            <div class="hero__decor hero__decor-deposit">
+                                <img class="deposit__icon"
+                                     src="./assets/imgs/deposit.svg"
+                                     alt="">
+                                <div class="deposit__text">
+                                    <p>Deposite</p>
+                                    <p>$32000</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <section class="work">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-10">
+                                <div class="work__media">
+                                    <div class="work__img-wrapper">
+                                        <img src="./assets/imgs/work.png"
+                                             alt="CeloBank"
+                                             class="work__img">
+                                    </div>
+                                    <img src="./assets/imgs/word__decor.png"
+                                         alt="CeloBank"
+                                         class="work-media__background">
+                                    <div class="work-media__icon">
+                                        <img src="./assets/imgs/work__icon-1.svg"
+                                             alt="CeloBank">
+                                    </div>
+
+                                    <div class="work__congratulate">
+                                        <div class="congratulate__icon-outer">
+                                            <div class="congratulate__icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                        </div>
+                                        <div class="congratulate__text">
+                                            <p>Congratulations</p>
+                                            <p>Your account activated</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 offset-xl-1">
+                        <div class="work__content">
+                            <div class="title">Digital Smart Wallet</div>
+                            <h2 class="heading lv2 work__heading">How It Works</h2>
+                            <ul class="work__list">
+                                <li class="work__item">1. Open a High Interest Checking account
+                                    <p class="work-item__desc">Fund your bank account with a minimum
+                                        balance of $100. Enroll in 3 minutes or less!</p>
+                                </li>
+                                <li class="work__item">2. 10 point-of-sale transactions each Month
+                                    that
+                                    are
+                                    at least $10 each.
+                                    <p class="work-item__desc">Be sure to use your rewards checking
+                                        account as often as possible in order to accue APYI</p>
+                                </li>
+                                <li class="work__item">3. Receive up to 5.50% APY
+                                    <p class="work-item__desc">The APY you earn will be based on
+                                        your
+                                        account balance and satisfying the transaction requirement.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
         </header>
     </div>
     <!-- Footer -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+    </footer>
 </body>
 
 </html>
