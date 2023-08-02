@@ -1,0 +1,60 @@
+:root {
+  --primary-color: #7264d6;
+  --primary-low-color: #8578df;
+  --text-primary-color: #212832;
+  --text-secondary-color: #696d76;
+  --title-color: #696d77;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: var(--border-radius);
+}
+.btn:hover {
+  cursor: pointer;
+}
+.heading {
+  font-style: normal;
+}
+.heading.lv1 {
+  color: var(--text-primary-color);
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.16667;
+}
+.desc {
+  color: var(--text-secondary-color);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.16667;
+}
+.title {
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.title::before {
+  content: "";
+  width: 18px;
+  height: 2px;
+  background-color: currentColor;
+  margin-right: 12px;
+}
