@@ -19,6 +19,9 @@
           crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
           rel="stylesheet">
+    <!-- animation.css -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Favicon -->
     <link rel="apple-touch-icon"
           sizes="180x180"
@@ -104,7 +107,8 @@
                                 <input type="email"
                                        class="hero-form__input"
                                        pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/"
-                                       placeholder="Your email address">
+                                       placeholder="Your email address"
+                                       required>
                                 <button class="btn hero-form__submit"
                                         type="submit">Get Started</button>
                             </div>
@@ -516,11 +520,150 @@
                     </div>
                 </div>
             </section>
+
+            <section class="download">
+                <div class="download__content">
+                    <div class="title download__title">Our App</div>
+                    <h2 class="heading lv2 download__heading">Download the Apps</h2>
+                    <p class="desc download__desc">Download our mobile apps and get started today
+                        with a special online bank and move faster</p>
+                    <div class="download__list">
+                        <article class="download__item download__item--google-play">
+                            <a href="#!">
+                                <figure class="download-item__thumb">
+                                    <img src="./assets/imgs/google-play-badge.svg"
+                                         alt="google-play-badge">
+                                </figure>
+                            </a>
+                        </article>
+                        <article class="download__item download__item--app-store">
+                            <a href="#!">
+                                <figure class="download-item__thumb">
+                                    <img src="./assets/imgs/app-store-badge.svg"
+                                         alt="app-store-badge">
+                                </figure>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="download__decor download__decor-top-left">
+                        <img src="./assets/imgs/star.svg"
+                             alt="">
+                    </div>
+                    <div class="download__decor download__decor-top-right">
+                        <img src="./assets/imgs/star.svg"
+                             alt="">
+                    </div>
+                    <div class="download__decor download__decor-bot-left">
+                        <img src="./assets/imgs/star.svg"
+                             alt="">
+                    </div>
+                    <div class="download__decor download__decor-bot-right">
+                        <img src="./assets/imgs/star.svg"
+                             alt="">
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
     <!-- Footer -->
     <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer__top">
+                    <div class="logo">
+                        <img src="./assets/imgs/logo.svg"
+                             alt="CeloBank"
+                             class="logo__img">
+                    </div>
+                    <div>
+                        <p class="footer__heading">Sitemap</p>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!"
+                                   class="footer__link">Home</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!"
+                                   class="footer__link">About</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!"
+                                   class="footer__link">Growers</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!"
+                                   class="footer__link">Merchants</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!"
+                                   class="footer__link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="footer__heading">Socials</p>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!"
+                                   class="footer__link">Facebook</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!"
+                                   class="footer__link">Linkedin</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!"
+                                   class="footer__link">Instagram</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!"
+                                   class="footer__link">Twitter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <p class="footer__heading">Head Office</p>
+                        <p class="footer__address">Xilliams Corner Wine © 2017. 1112 A Market St #
+                            Ste B22, Charlottesville, CA 45565</p>
+
+                        <form class="footer__form"
+                              action="#!">
+                            <label for="email__input"
+                                   class="footer__label">News letter</label>
+                            <div class="footer-form__inner">
+                                <input type="email"
+                                       name="email"
+                                       class="footer-form__input"
+                                       id="email__input"
+                                       placeholder="Email address..."
+                                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                       required>
+                                <button type="submit"
+                                        class="footer-form__submit btn">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="mailto:ducvui2003@gmail.com"
+                               class="footer__link">ducvui2003@gmail.com</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="tel:+8465809127"
+                               class="footer__link">(123) 456-7890</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2020 Ligft Media All rights reserved.</p>
+        </div>
     </footer>
+
+
 </body>
 
 </html>
