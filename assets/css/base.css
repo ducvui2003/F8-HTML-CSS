@@ -5,9 +5,7 @@
   --text-secondary-color: #696d76;
   --title-color: #696d77;
 }
-.align-item__center {
-  align-items: center;
-}
+
 html {
   font-size: 62.5%;
 }

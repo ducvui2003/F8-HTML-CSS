@@ -13,7 +13,12 @@
   margin-inline: auto;
   padding-inline: calc(var(--spacer) / 2);
 }
-
+.flex-direction__col {
+  flex-direction: column;
+}
+.align-item__center {
+  align-items: center;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
