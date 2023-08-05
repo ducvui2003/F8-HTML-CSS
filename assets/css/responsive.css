@@ -101,6 +101,37 @@
     /* top: 0; */
     left: 0;
   }
+  /* Work */
+  .work {
+    margin-top: 100px;
+  }
+  .work__list {
+    margin-top: 25px;
+  }
+  .work__item {
+    font-size: 2rem;
+  }
+  .work-item__desc {
+    font-size: 1.5rem;
+  }
+  .work__media {
+    margin-top: 20px;
+  }
+  .features__media {
+    margin-top: 40px;
+  }
+  .feature__income,
+  .work__congratulate {
+    font-size: 8px;
+  }
+  .work__congratulate {
+    right: unset;
+  }
+  /* Features */
+  .features__img-wrapper {
+    width: auto;
+    margin: 0 20px;
+  }
   /* Footer */
   .footer__top,
   .footer__bottom {
