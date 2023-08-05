@@ -74,6 +74,10 @@
     margin-left: 0;
   }
   /* Hero */
+  .hero-form__input,
+  .hero-form__submit {
+    font-size: 1.2rem;
+  }
   .hero__media {
     display: flex;
     justify-content: center;
