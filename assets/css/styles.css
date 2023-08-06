@@ -483,19 +483,22 @@
   background-color: #7264d6;
 }
 .features__payment {
+  width: fit-content;
+  font-size: 10px;
   bottom: 57px;
   right: -70px;
   display: inline-block;
-  padding: 28px;
+  padding: 2.8em;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 1em;
   filter: drop-shadow(0px 44px 48px rgba(0, 0, 0, 0.1));
 }
+
 .features__payment p {
-  margin-bottom: 20px;
+  margin-bottom: 2em;
   display: inline-block;
   color: var(--text-primary-color);
-  font-size: 1.8rem;
+  font-size: 1.8em;
   font-weight: 600;
   line-height: 1.66667;
 }
@@ -503,22 +506,28 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 18px;
+  gap: 1.8em;
 }
 .payment__item {
-  width: 63px;
-  height: 48px;
+  width: 6.3em;
+  height: 4.8em;
+  font-size: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f2f2fa;
-  border-radius: 4px;
+  border-radius: 0.4em;
 }
 .payment__item:has(i) {
   background-color: #f9ea63;
 }
 .payment__item:has(i) i {
-  font-size: 15px;
+  font-size: 1.5em;
+}
+.features__item img {
+  height: 2.4em;
+  max-width: 100%;
+  object-fit: contain;
 }
 /* Feedback */
 .feedback {
@@ -650,7 +659,6 @@
 .blog__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 30px;
 }
 .blog__item {

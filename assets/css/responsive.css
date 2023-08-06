@@ -142,6 +142,28 @@
   .features__btn {
     margin-inline: auto;
   }
+  .features__payment {
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* Feedback */
+  .feedback__item {
+    flex-basis: 100%;
+  }
+  .feedback__list {
+    margin-top: 30px;
+  }
+  .feedback__content {
+    font-size: 1.8rem;
+  }
+  /* Blog */
+  .blog__list {
+  }
+  .blog__item {
+    flex: unset;
+    flex-basis: 100%;
+  }
   /* Footer */
   .footer__top,
   .footer__bottom {
