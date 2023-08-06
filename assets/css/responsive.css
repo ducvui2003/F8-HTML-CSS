@@ -117,10 +117,7 @@
   .work__media {
     margin-top: 20px;
   }
-  .features__media {
-    margin-top: 40px;
-  }
-  .feature__income,
+
   .work__congratulate {
     font-size: 8px;
   }
@@ -128,9 +125,22 @@
     right: unset;
   }
   /* Features */
+  .features__media {
+    margin-top: 40px;
+  }
   .features__img-wrapper {
     width: auto;
     margin: 0 20px;
+  }
+  .feature__send-money,
+  .feature__income {
+    font-size: 8px;
+  }
+  .feature__income {
+    right: 0;
+  }
+  .features__btn {
+    margin-inline: auto;
   }
   /* Footer */
   .footer__top,

@@ -91,9 +91,10 @@ a {
   line-height: 1.66667;
 }
 .item::before {
+  font-size: 10px;
   content: "";
-  width: 12px;
-  height: 12px;
+  width: 1.2em;
+  height: 1.2em;
   border-radius: 50%;
   background-color: var(--primary-color);
   margin-right: 12px;
@@ -109,7 +110,7 @@ a {
 }
 @media screen and (max-width: 575.8px) {
   .title {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .title::before {
     margin-right: 8px;
@@ -126,5 +127,12 @@ a {
   }
   .btn {
     padding: 10px 20px;
+  }
+  .item {
+    font-size: 1.6rem;
+  }
+  .item::before {
+    font-size: 8px;
+    margin-right: 10px;
   }
 }
