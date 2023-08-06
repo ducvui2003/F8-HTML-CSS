@@ -20,8 +20,7 @@
     font-size: 15px;
     padding: 15px;
   }
-  .header__mobile {
-  }
+
   .nav__menu {
     flex-direction: column;
     position: absolute;
@@ -184,13 +183,22 @@
     margin-top: 10px;
   }
 
-  .blog
   /* Download */
+  .download {
+    padding: 10px 20px;
+  }
   .download__decor {
     display: none;
   }
   .download__content {
     padding-inline: 0;
+  }
+  .download__list {
+    width: 100%;
+    flex-direction: column;
+  }
+  .download__item {
+    width: 100%;
   }
   /* Footer */
   .footer__top,
@@ -235,10 +243,80 @@
     display: none;
   }
 }
-/* medium */
+
+/* medium (tablet) */
 @media screen and (max-width: 991.8px) {
   .hide-md {
     display: none;
+  }
+  .separate {
+    display: block;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    border-radius: 20px;
+  }
+  .position-nav-mobile {
+    position: relative;
+    overflow: hidden;
+  }
+  .nav {
+    justify-content: space-between;
+  }
+  .nav-menu__icon {
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .nav__menu {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    transform: translateX(100%);
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    width: 60vw;
+    background-color: #fff;
+    padding: 30px 30px;
+    background-color: var(--primary-color);
+    transition: transform 0.2s ease-in;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 998;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    pointer-events: none;
+  }
+  .nav-checkbox:checked ~ .nav__menu {
+    transform: translateX(0);
+  }
+  .nav-checkbox:checked ~ .overlay {
+    pointer-events: all;
+    opacity: 1;
+  }
+  .nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 0;
+  }
+  .nav__link {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+  }
+  .nav__cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-cta__button ~ .nav-cta__button {
+    margin-left: 0;
   }
 }
 /* large */
