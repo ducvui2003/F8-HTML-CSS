@@ -172,8 +172,25 @@
   }
 
   .blog__item {
+    flex-direction: column;
     flex: unset;
     flex-basis: 100%;
+  }
+  .blog__thumb {
+    width: 100%;
+    max-height: 100%;
+    order: 1;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .blog
+  /* Download */
+  .download__decor {
+    display: none;
+  }
+  .download__content {
+    padding-inline: 0;
   }
   /* Footer */
   .footer__top,
