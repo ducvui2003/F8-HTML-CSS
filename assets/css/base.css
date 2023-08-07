@@ -12,6 +12,9 @@ html {
 }
 body {
   font-family: "Open Sans", sans-serif;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscale;
 }
 a {
   text-decoration: none;
