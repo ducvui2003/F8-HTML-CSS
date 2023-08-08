@@ -58,10 +58,11 @@
 </head>
 
 <body>
-    <div class="container position-nav-mobile">
-        <header class="header">
+    <header class="header">
+        <div class="container">
+            <!-- NAV PC -->
             <nav class="nav">
-                <a href="#home"
+                <a href="#"
                    class="logo">
                     <img src="./assets/imgs/logo.svg"
                          alt="CeloBank"
@@ -74,20 +75,20 @@
                 <div class="nav__menu hide-xs">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home"
-                               class="nav__link">Home</a>
+                            <a href="#"
+                               class="nav__link nav__link--active">Home</a>
                         </li>
                         <li class="nav__item">
                             <a href="#product"
-                               class="nav__link">Products</a>
+                               class="nav__link nav__link--hover">Products</a>
                         </li>
                         <li class="nav__item">
                             <a href="#features"
-                               class="nav__link">Features</a>
+                               class="nav__link nav__link--hover">Features</a>
                         </li>
                         <li class="nav__item">
                             <a href="#blog"
-                               class="nav__link">Blog</a>
+                               class="nav__link nav__link--hover">Blog</a>
                         </li>
                     </ul>
                     <div class="nav__cta">
@@ -96,7 +97,49 @@
                     </div>
                 </div>
             </nav>
+        </div>
+    </header>
 
+    <!-- Nav + Overlay Mobile -->
+    <header class="header__mobile hide-xl">
+        <input type="checkbox"
+               name="checkbox"
+               id="nav-checkbox"
+               class="nav-checkbox"
+               hidden>
+        <label for="nav-checkbox"
+               class="overlay">
+        </label>
+
+        <nav class="nav__menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home"
+                       class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#product"
+                       class="nav__link">Products</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#features"
+                       class="nav__link">Features</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#blog"
+                       class="nav__link">Blog</a>
+                </li>
+            </ul>
+            <div class="separate"></div>
+            <div class="nav__cta">
+                <button class="btn nav-cta__button nav-cta__log-in">Log in</button>
+                <button class="btn nav-cta__button">Sign up</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container">
             <!-- Hero -->
             <section class="hero">
                 <div class="row">
@@ -163,48 +206,8 @@
                     </div>
                 </div>
             </section>
-        </header>
 
-        <!-- Nav + Overlay Mobile -->
-        <header class="header__mobile hide-xl">
-            <input type="checkbox"
-                   name="checkbox"
-                   id="nav-checkbox"
-                   class="nav-checkbox"
-                   hidden>
-            <label for="nav-checkbox"
-                   class="overlay">
-            </label>
-
-            <nav class="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home"
-                           class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#product"
-                           class="nav__link">Products</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#features"
-                           class="nav__link">Features</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#blog"
-                           class="nav__link">Blog</a>
-                    </li>
-                </ul>
-                <div class="separate"></div>
-                <div class="nav__cta">
-                    <button class="btn nav-cta__button nav-cta__log-in">Log in</button>
-                    <button class="btn nav-cta__button">Sign up</button>
-                </div>
-            </nav>
-
-        </header>
-
-        <main class="main">
+            <!-- Product -->
             <section id="product"
                      class="work">
                 <div class="row">
@@ -341,29 +344,54 @@
                             <div class="feature__decor features__payment">
                                 <p>Choose payment method:</p>
                                 <div class="payment__list">
-                                    <div class="payment__item">
-                                        <img src="./assets/imgs/master_card.svg"
-                                             alt="master_card">
-                                    </div>
-                                    <div class="payment__item">
-                                        <img src="./assets/imgs/maestro_card.svg"
-                                             alt="maestro_card">
-                                    </div>
-                                    <div class="payment__item">
-                                        <img src="./assets/imgs/webmoney_card.svg"
-                                             alt="webmoney_card">
-                                    </div>
-                                    <div class="payment__item">
-                                        <img src="./assets/imgs/visa_card.svg"
-                                             alt="visa_card">
-                                    </div>
-                                    <div class="payment__item">
-                                        <img src="./assets/imgs/paypal_card.svg"
-                                             alt="paypal_card">
-                                    </div>
-                                    <div class="payment__item">
-                                        <i class="fa-solid fa-plus"></i>
-                                    </div>
+                                    <a class="payment__link"
+                                       href="#!">
+                                        <div class="payment__item">
+                                            <img src="./assets/imgs/master_card.svg"
+                                                 alt="master_card">
+                                        </div>
+                                    </a>
+
+
+                                    <a class="payment__link"
+                                       href="#!">
+                                        <div class="payment__item">
+                                            <img src="./assets/imgs/maestro_card.svg"
+                                                 alt="maestro_card">
+                                        </div>
+                                    </a>
+
+                                    <a class="payment__link"
+                                       href="#!">
+                                        <div class="payment__item">
+                                            <img src="./assets/imgs/webmoney_card.svg"
+                                                 alt="webmoney_card">
+                                        </div>
+                                    </a>
+
+                                    <a class="payment__link"
+                                       href="#!">
+                                        <div class="payment__item">
+                                            <img src="./assets/imgs/visa_card.svg"
+                                                 alt="visa_card">
+                                        </div>
+                                    </a>
+
+                                    <a class="payment__link"
+                                       href="#!">
+                                        <div class="payment__item">
+                                            <img src="./assets/imgs/paypal_card.svg"
+                                                 alt="paypal_card">
+                                        </div>
+                                    </a>
+
+                                    <a class="payment__link"
+                                       href="#!">
+                                        <div class="payment__item">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </a>
+
                                 </div>
                                 <div class="feature__decor features__cash wow animate__heartBeat"
                                      data-wow-delay="1s">
@@ -412,6 +440,8 @@
                                     loans, and money transfers have never been so much easier
                                     before. I am very much happy about this
                                     great online bank.</p>
+                                <div class="feedback__arrow">
+                                </div>
                             </div>
                             <article class="feedback__user">
                                 <figure class="user__avatar-wrapper">
@@ -432,6 +462,7 @@
                                     loans, and money transfers have never been so much easier
                                     before. I am very much happy about this
                                     great online bank.</p>
+                                <div class="feedback__arrow"></div>
                             </div>
                             <article class="feedback__user">
                                 <figure class="user__avatar-wrapper">
@@ -511,69 +542,77 @@
                 <div class="row">
                     <div class="blog__list">
                         <!-- Blog item 1 -->
-                        <article class="blog__item">
-                            <figure class="blog__thumb">
-                                <img src="./assets/imgs/blog_item-1.png"
-                                     alt="CeloBank"
-                                     class="blog-item__img">
-                            </figure>
-                            <div class="blog-item__info">
-                                <p class="blog-item__time">July 03, 2022</p>
-                                <h3 class="blog-item__heading line-clamp line-2">Online bank is the
-                                    best and secure
-                                    way to save in the future...</h3>
-                                <a href="#!"
-                                   class="blog-item__link">Read Blog</a>
-                            </div>
-                        </article>
+                        <a href="#!">
+                            <article class="blog__item">
+                                <figure class="blog__thumb">
+                                    <img src="./assets/imgs/blog_item-1.png"
+                                         alt="CeloBank"
+                                         class="blog-item__img">
+                                </figure>
+                                <div class="blog-item__info">
+                                    <p class="blog-item__time">July 03, 2022</p>
+                                    <h3 class="blog-item__heading line-clamp line-2">Online bank is
+                                        the
+                                        best and secure
+                                        way to save in the future...</h3>
+                                    <p class="blog-item__link">Read Blog</p>
+                                </div>
+                            </article>
+                        </a>
 
                         <!-- Blog item 2 -->
-                        <article class="blog__item">
-                            <figure class="blog__thumb">
-                                <img src="./assets/imgs/blog_item-2.png"
-                                     alt="CeloBank"
-                                     class="blog-item__img">
-                            </figure>
-                            <div class="blog-item__info">
-                                <p class="blog-item__time">July 03, 2022</p>
-                                <h3 class="blog-item__heading line line-2">Why do you need to open a
-                                    bank account in online..</h3>
-                                <a href="#!"
-                                   class="blog-item__link">Read Blog</a>
-                            </div>
-                        </article>
+                        <a href="#!">
+                            <article class="blog__item">
+                                <figure class="blog__thumb">
+                                    <img src="./assets/imgs/blog_item-2.png"
+                                         alt="CeloBank"
+                                         class="blog-item__img">
+                                </figure>
+                                <div class="blog-item__info">
+                                    <p class="blog-item__time">July 03, 2022</p>
+                                    <h3 class="blog-item__heading line line-2">Why do you need to
+                                        open a
+                                        bank account in online..</h3>
+                                    <p class="blog-item__link">Read Blog</p>
+                                </div>
+                            </article>
+                        </a>
 
                         <!-- Blog item 3 -->
-                        <article class="blog__item">
-                            <figure class="blog__thumb">
-                                <img src="./assets/imgs/blog_item-3.png"
-                                     alt="CeloBank"
-                                     class="blog-item__img">
-                            </figure>
-                            <div class="blog-item__info">
-                                <p class="blog-item__time">July 03, 2022</p>
-                                <h3 class="blog-item__heading line-clamp line-2">The benefits that
-                                    we get from credit card at anytime...</h3>
-                                <a href="#!"
-                                   class="blog-item__link">Read Blog</a>
-                            </div>
-                        </article>
+                        <a href="#!">
+                            <article class="blog__item">
+                                <figure class="blog__thumb">
+                                    <img src="./assets/imgs/blog_item-3.png"
+                                         alt="CeloBank"
+                                         class="blog-item__img">
+                                </figure>
+                                <div class="blog-item__info">
+                                    <p class="blog-item__time">July 03, 2022</p>
+                                    <h3 class="blog-item__heading line-clamp line-2">The benefits
+                                        that
+                                        we get from credit card at anytime...</h3>
+                                    <p class="blog-item__link">Read Blog</p>
+                                </div>
+                            </article>
+                        </a>
 
                         <!-- Blog item 4 -->
-                        <article class="blog__item hide-xs">
-                            <figure class="blog__thumb">
-                                <img src="./assets/imgs/blog_item-4.png"
-                                     alt="CeloBank"
-                                     class="blog-item__img">
-                            </figure>
-                            <div class="blog-item__info">
-                                <p class="blog-item__time">July 03, 2022</p>
-                                <h3 class="blog-item__heading line-clamp line-2">How to manage your
-                                    money in online in this busy days...</h3>
-                                <a href="#!"
-                                   class="blog-item__link">Read Blog</a>
-                            </div>
-                        </article>
+                        <a href="#!">
+                            <article class="blog__item hide-xs">
+                                <figure class="blog__thumb">
+                                    <img src="./assets/imgs/blog_item-4.png"
+                                         alt="CeloBank"
+                                         class="blog-item__img">
+                                </figure>
+                                <div class="blog-item__info">
+                                    <p class="blog-item__time">July 03, 2022</p>
+                                    <h3 class="blog-item__heading line-clamp line-2">How to manage
+                                        your
+                                        money in online in this busy days...</h3>
+                                    <p class="blog-item__link">Read Blog</p>
+                                </div>
+                            </article>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -620,8 +659,9 @@
                     </div>
                 </div>
             </section>
-        </main>
-    </div>
+        </div>
+    </main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -717,6 +757,7 @@
         <div class="copyright">
             <p>© 2020 Ligft Media All rights reserved.</p>
         </div>
+
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
             integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
