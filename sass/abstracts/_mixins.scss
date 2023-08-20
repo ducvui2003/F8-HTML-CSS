@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as utils;
+@use "sass:math";
+@mixin box($width, $height, $border-radius: null) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+}
+@mixin text-font($font-size, $font-weight, $line-height: null) {
+  font-family: utils.$font-primary;
+  font-size: $font-size + "px";
+  font-weight: $font-weight;
+  @if $line-height != null {
+    line-height: $line-height / $font-size;
+  }
+}

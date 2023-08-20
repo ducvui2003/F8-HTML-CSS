@@ -1,0 +1,15 @@
+@use "../abstracts/mixins";
+.heading__img {
+  @include mixins.box(174px, 56px, 50px);
+  background: url("/assets/imgs/heading__img.png") center top / cover no-repeat;
+}
+.hero {
+  margin-top: 100px;
+  &__media {
+  }
+  &__img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+}

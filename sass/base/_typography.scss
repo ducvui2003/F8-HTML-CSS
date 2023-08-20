@@ -1,0 +1,18 @@
+@use "sass:math";
+html {
+  font-family: "Roobert", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+@debug 15px % 15px;
+@mixin heading($size, $height, $weight) {
+  font-style: normal;
+  font-size: #{$size}px;
+  line-height: math.div($height, $size);
+  font-weight: $weight;
+}
+.heading--lv1 {
+  @include heading(78, 88, 600);
+  letter-spacing: 0.78px;
+}

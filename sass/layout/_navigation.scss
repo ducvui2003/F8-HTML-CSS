@@ -1,0 +1,41 @@
+@use "../abstracts/variables";
+@use "../base/typography";
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    margin-left: 70px;
+  }
+  &__item {
+  }
+  &__link {
+    color: variables.$black;
+  }
+  .nav__cta {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-cta {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125;
+    &__login {
+      color: variables.$black;
+      background-color: transparent;
+    }
+    &__booking {
+      margin-left: 28px;
+      color: variables.$white-100;
+      background-color: variables.$black;
+      padding: 0 30px;
+    }
+  }
+}

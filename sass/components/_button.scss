@@ -1,0 +1,9 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+.btn {
+  @include mixins.box(null, 54px, 40px);
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
