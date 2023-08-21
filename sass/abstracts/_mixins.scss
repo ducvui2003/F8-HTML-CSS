@@ -6,11 +6,12 @@
   height: $height;
   border-radius: $border-radius;
 }
-@mixin text-font($font-size, $font-weight, $line-height: null) {
-  font-family: utils.$font-primary;
-  font-size: $font-size + "px";
-  font-weight: $font-weight;
-  @if $line-height != null {
-    line-height: $line-height / $font-size;
+@mixin flex-list($x, $y, $flex, $gap: 0px) {
+  display: flex;
+  justify-content: $x;
+  align-items: $y;
+  gap: $gap;
+  > [class*="item"] {
+    flex: $flex;
   }
 }

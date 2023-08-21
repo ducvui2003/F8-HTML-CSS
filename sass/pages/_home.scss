@@ -1,0 +1,82 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+@use "../base/typography";
+@use "../components/button";
+$primary-background-color: #005461;
+/* Hero*/
+.heading__img {
+  @include mixins.box(174px, 56px, 50px);
+  background: url("/assets/imgs/heading__img.png") center top / cover no-repeat;
+}
+.hero {
+  padding-block: 100px 90px;
+
+  &__media {
+    margin-right: -70px;
+  }
+  &__img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+}
+.hero__desc {
+  margin-top: 20px;
+  @include typography.text-font(20, 400, 34);
+}
+.hero__cta {
+  display: flex;
+  gap: 30px;
+  margin-top: 44px;
+  .hero-cta__btn {
+    @include button.button(auto, auto, false, 40px);
+    @include typography.text-font(19, 500);
+    padding: 20px 30px;
+  }
+  .hero-cta__btn:first-child {
+    background-color: variables.$yellow;
+  }
+  .hero-cta__btn:last-child {
+    border: 1px solid variables.$black-100;
+  }
+}
+/* Services */
+.services {
+  background-color: $primary-background-color;
+  text-align: center;
+}
+.services__heading {
+  padding-top: 140px;
+  color: variables.$white;
+}
+.services {
+  &__list {
+    @include mixins.flex-list(space-evenly, flex-start, 1, 80px);
+    margin-top: 71px;
+  }
+  &__item {
+    flex: 1;
+  }
+}
+.services-item {
+  &__thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img {
+    pointer-events: none;
+  }
+  &__heading {
+    margin-top: 45px;
+    color: variables.$white;
+    max-width: 220px;
+    margin-inline: auto;
+  }
+  &__desc {
+    margin-top: 18px;
+    @include typography.text-font(16, 400, 26);
+    color: variables.$white;
+  }
+}

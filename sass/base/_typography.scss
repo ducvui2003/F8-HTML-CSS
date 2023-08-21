@@ -1,18 +1,38 @@
 @use "sass:math";
+@use "../abstracts/variables";
+$unit-rem-html: 10;
 html {
   font-family: "Roobert", sans-serif;
+  font-size: $unit-rem-html + "px";
 }
 a {
   text-decoration: none;
 }
-@debug 15px % 15px;
-@mixin heading($size, $height, $weight) {
-  font-style: normal;
-  font-size: #{$size}px;
-  line-height: math.div($height, $size);
+@debug math.div(10, 3);
+@mixin text-font($size, $weight, $height: null, $unit: rem) {
+  font-family: variables.$font-primary;
   font-weight: $weight;
+  @if $height != null {
+    line-height: math.div($height, $size);
+  } @else {
+    line-height: 1;
+  }
+  @if $unit == rem {
+    font-size: math.div($size, $unit-rem-html) + $unit;
+    // @debug math.div($size, $unit-rem-html) + $unit;
+  } @else {
+    font-size: $size + $unit;
+  }
 }
+
+// Heading
 .heading--lv1 {
-  @include heading(78, 88, 600);
+  @include text-font(78, 600, 88);
   letter-spacing: 0.78px;
+}
+.heading--lv2 {
+  @include text-font(50, 600);
+}
+.heading__lv4 {
+  @include text-font(22, 500, 34);
 }

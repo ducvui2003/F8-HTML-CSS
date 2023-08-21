@@ -15,6 +15,7 @@
   }
   &__link {
     color: variables.$black;
+    @include typography.text-font(16, 400, 18);
   }
   .nav__cta {
     margin-left: auto;

@@ -7,3 +7,26 @@
     cursor: pointer;
   }
 }
+@mixin button(
+  $width: 100px,
+  $height: 30px,
+  $center: false,
+  $border-radius: null
+) {
+  width: $width;
+  height: $height;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  @if $border-radius != null {
+    border-radius: $border-radius;
+  }
+  @if $center == true {
+    margin: 0 auto;
+  }
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
