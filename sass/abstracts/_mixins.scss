@@ -15,3 +15,6 @@
     flex: $flex;
   }
 }
+@mixin grid-list($col, $row) {
+  display: grid;
+}
