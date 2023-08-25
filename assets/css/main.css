@@ -2023,6 +2023,7 @@ a {
   margin-bottom: -8em;
 }
 .work-low__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -2061,6 +2062,11 @@ a {
   color: #2c2c2c;
   font-size: 1.2em;
   font-weight: 600;
+}
+.work-low__decor {
+  position: absolute;
+  top: -1em;
+  right: -1em;
 }
 
 /*# sourceMappingURL=main.css.map */

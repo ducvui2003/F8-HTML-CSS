@@ -715,6 +715,7 @@ $primary-background-color: #005461;
     margin-bottom: -8em;
   }
   &__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -753,5 +754,12 @@ $primary-background-color: #005461;
     color: #2c2c2c;
     font-size: 1.2em;
     font-weight: 600;
+  }
+  &__decor {
+    position: absolute;
+    top: -1em;
+    right: -1em;
+  }
+  &__decor img {
   }
 }
