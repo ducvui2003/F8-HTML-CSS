@@ -4,7 +4,7 @@ $black-100: #676562;
 $yellow: #f7d047;
 $shape: #018294;
 $white: #fff;
-%white-80 {
+@mixin white-80() {
   color: $white;
   opacity: 0.8;
 }

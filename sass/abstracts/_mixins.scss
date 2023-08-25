@@ -18,3 +18,15 @@
 @mixin grid-list($col, $row) {
   display: grid;
 }
+@mixin circle($size) {
+  display: block;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+}
+@mixin center-flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @content;
+}
