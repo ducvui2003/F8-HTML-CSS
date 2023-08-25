@@ -763,3 +763,61 @@ $primary-background-color: #005461;
   &__decor img {
   }
 }
+// Benefits
+.benefit {
+  padding-top: 140px;
+  color: variables.$white;
+  &__heading {
+    text-align: center;
+  }
+  background-color: $primary-background-color;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin: 100px 0 0 -60px;
+  }
+  &__item {
+    padding-inline: 60px 40px;
+    border-right: 1px solid rgba($color: white, $alpha: 0.1);
+    border-bottom: 1px solid rgba($color: white, $alpha: 0.1);
+  }
+  &__item:nth-child(3n) {
+    border-right: unset;
+  }
+  @mixin spacing {
+    $list: 1 2 3 4 5 6;
+    @each $i in $list {
+      &__item:nth-child(#{$i}) {
+        @if $i <4 {
+          padding-bottom: 60px;
+        } @else {
+          padding-top: 60px;
+        }
+      }
+    }
+  }
+  @include spacing();
+}
+.benefit-item {
+  &__thumb {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: variables.$shape;
+    @include mixins.center-flex();
+  }
+  &__thumb img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+  &__title {
+    margin-top: 30px;
+    @include typography.text-font(20, 500, 24);
+  }
+  &__desc {
+    margin-top: 14px;
+    @include typography.text-font(16, 400, 26);
+  }
+}
