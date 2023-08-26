@@ -23,10 +23,9 @@
     border-radius: $border-radius;
   }
   @if $center == true {
-    margin: 0 auto;
+    margin-inline: autof;
   }
   &:hover {
     cursor: pointer;
-    opacity: 0.8;
   }
 }

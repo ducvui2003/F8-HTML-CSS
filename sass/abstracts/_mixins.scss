@@ -15,9 +15,6 @@
     flex: $flex;
   }
 }
-@mixin grid-list($col, $row) {
-  display: grid;
-}
 @mixin circle($size) {
   display: block;
   width: $size;
@@ -28,17 +25,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @content;
-}
-@mixin grid-flexbox($col, $spacing) {
-  --column: #{$col};
-  --spacing: #{$spacing};
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--spacing));
-  > * {
-    width: calc(100% / var(--column) - var(--spacing));
-    margin-left: var(--spacing);
-  }
   @content;
 }

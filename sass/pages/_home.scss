@@ -92,7 +92,7 @@ $primary-background-color: #005461;
   &__desc {
     margin-top: 18px;
     @include typography.text-font(20, 400, 24);
-    @include variables.white-80();
+    color: variables.$white-80;
     padding-bottom: 90px;
   }
 }
@@ -245,7 +245,7 @@ $primary-background-color: #005461;
   }
   &__desc,
   &__list {
-    @include variables.white-80();
+    color: variables.$white-80;
     margin-top: 30px;
   }
   &__desc {
@@ -268,7 +268,7 @@ $primary-background-color: #005461;
     @include typography.text-font(16, 400, 18);
     display: flex;
     align-items: center;
-    @include variables.white-80();
+    color: variables.$white-80;
   }
   &__item ~ &__item {
     margin-top: 16px;
@@ -775,7 +775,7 @@ $primary-background-color: #005461;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    margin: 100px 0 0 -60px;
+    margin-top: 100px;
   }
   &__item {
     padding-inline: 60px 40px;
@@ -784,6 +784,10 @@ $primary-background-color: #005461;
   }
   &__item:nth-child(3n) {
     border-right: unset;
+  }
+  &__item:nth-child(1),
+  &__item:nth-child(4) {
+    padding-left: 0;
   }
   @mixin spacing {
     $list: 1 2 3 4 5 6;
@@ -819,5 +823,12 @@ $primary-background-color: #005461;
   &__desc {
     margin-top: 14px;
     @include typography.text-font(16, 400, 26);
+  }
+}
+// Pricing
+.pricing {
+  background-color: $primary-background-color;
+  &__list {
+    transform: translateY(170px);
   }
 }

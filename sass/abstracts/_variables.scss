@@ -4,8 +4,5 @@ $black-100: #676562;
 $yellow: #f7d047;
 $shape: #018294;
 $white: #fff;
-@mixin white-80() {
-  color: $white;
-  opacity: 0.8;
-}
+$white-80: rgba(255, 255, 255, 0.8);
 $font-primary: "Roobert", sans-serif;

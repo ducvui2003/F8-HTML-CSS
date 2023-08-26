@@ -30,8 +30,18 @@ a {
   letter-spacing: 0.78px;
 }
 .heading--lv2 {
-  @include text-font(50, 600);
+  @include text-font(50, 600, 54);
+}
+.heading--lv3 {
+  @include text-font(38, 600, 34);
 }
 .heading__lv4 {
   @include text-font(22, 500, 34);
+}
+@mixin clip-text($line-clamp) {
+  --line-clamp: #{$line-clamp};
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, line default);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
