@@ -23,7 +23,7 @@
     border-radius: $border-radius;
   }
   @if $center == true {
-    margin-inline: autof;
+    margin-inline: auto;
   }
   &:hover {
     cursor: pointer;

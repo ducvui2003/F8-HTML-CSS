@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 @use "../base/typography";
 .nav {
   display: flex;
@@ -16,6 +17,9 @@
   &__link {
     color: variables.$black;
     @include typography.text-font(16, 400, 18);
+  }
+  &__link:hover {
+    color: variables.$shape;
   }
   .nav__cta {
     margin-left: auto;

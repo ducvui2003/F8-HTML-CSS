@@ -102,6 +102,7 @@ $grid-gutter-width: 30px !default;
     }
   }
 }
+
 @each $breakpoint, $dimension in $grid-breakpoints {
   $max-width: map-get($container-max-widths, $breakpoint);
   $is-xs: $breakpoint == "xs";
@@ -110,6 +111,7 @@ $grid-gutter-width: 30px !default;
     .container {
       max-width: $max-width;
     }
+
     @include make-row-cols($infix);
 
     @include make-cols($infix);
