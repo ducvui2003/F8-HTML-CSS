@@ -1407,6 +1407,110 @@ a {
   padding-top: 30px;
 }
 
+.footer {
+  background-color: #f2ede6;
+}
+.footer__booking {
+  margin-top: 150px;
+  background-color: #018294;
+}
+
+.footer__platform {
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.platform__heading {
+  max-width: 80%;
+  text-align: center;
+}
+.platform__desc {
+  margin-top: 20px;
+  font-family: "Roobert", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 2rem;
+}
+.platform__list {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__booking {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  padding: 20px 0;
+  border-radius: 20px;
+}
+
+.footer-booking__btn {
+  width: 175px;
+  height: 58px;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  border-radius: 50px;
+  margin-inline: autof;
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-top: 30px;
+  border-radius: 50px;
+  background-color: #f7d047;
+}
+.footer-booking__btn:hover {
+  cursor: pointer;
+}
+.footer-booking__list {
+  margin-top: 46px;
+}
+.footer-booking__item {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  font-family: "Roobert", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 1.8rem;
+}
+.footer-booking__icon {
+  margin-right: 16px;
+}
+
+.footer__nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 50px 86px;
+}
+
+.footer__nav .nav__link {
+  font-family: "Roobert", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 1.7rem;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.social__icon {
+  font-size: 24px;
+}
+.social__link {
+  color: black;
+}
+
 /* Hero*/
 .heading__img {
   display: inline-block;
@@ -2139,7 +2243,7 @@ a {
   display: inline;
 }
 .work__low .work-info__item {
-  display: inline;
+  display: block;
 }
 .work__low .work-info__item::before {
   display: none;
@@ -2281,6 +2385,10 @@ a {
 }
 .pricing__list {
   transform: translateY(170px);
+}
+
+.footer {
+  padding-top: 170px;
 }
 
 /*# sourceMappingURL=main.css.map */

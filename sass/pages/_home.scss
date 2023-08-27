@@ -695,7 +695,7 @@ $primary-background-color: #005461;
     display: inline;
   }
   .work-info__item {
-    display: inline;
+    display: block;
     &::before {
       display: none;
     }
@@ -831,4 +831,8 @@ $primary-background-color: #005461;
   &__list {
     transform: translateY(170px);
   }
+}
+// Footer
+.footer {
+  padding-top: 170px;
 }
