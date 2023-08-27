@@ -1,5 +1,6 @@
 @use "sass:math";
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 $unit-rem-html: 10;
 html {
   font-family: "Roobert", sans-serif;
@@ -44,4 +45,11 @@ a {
   -webkit-line-clamp: var(--line-clamp, line default);
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+@include mixins.make-a-media-query(xs) {
+  .heading--lv1 {
+    @include text-font(45, 600, 52);
+    letter-spacing: 0.45px;
+  }
 }

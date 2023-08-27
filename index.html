@@ -33,7 +33,7 @@
 
       <header class="header">
             <div class="container">
-                  <nav class="nav d-none d-xl-flex">
+                  <nav class="nav nav__pc d-none d-xl-flex">
                         <a href="#!"
                               class="logo">
                               <img src="./assets/imgs/logo.svg"
@@ -66,48 +66,67 @@
                               <button class="btn nav-cta__login">Login</button>
                               <button class="btn nav-cta__booking">Book a Demo</button>
                         </div>
+
                   </nav>
             </div>
-            <nav class="nav nav__mobile  d-sm-block d-xl-none">
-                  <a href="#!"
-                        class="logo">
-                        <img src="./assets/imgs/logo.svg"
-                              alt="Smaller"
-                              class="logo__img">
-                  </a>
-                  <ul class="nav__menu">
-                        <li class="nav__item">
-                              <a href="#!"
-                                    class="nav__link">Product</a>
-                        </li>
-                        <li class="nav__item">
-                              <a href="#!"
-                                    class="nav__link">Pricing</a>
-                        </li>
-                        <li class="nav__item">
-                              <a href="#!"
-                                    class="nav__link">Contact us</a>
-                        </li>
-                        <li class="nav__item">
-                              <a href="#!"
-                                    class="nav__link">Blog</a>
-                        </li>
-                        <li class="nav__item">
-                              <a href="#!"
-                                    class="nav__link">About Us</a>
-                        </li>
-                  </ul>
-                  <div class="nav__cta">
-                        <button class="btn nav-cta__login">Login</button>
-                        <button class="btn nav-cta__booking">Book a Demo</button>
+            <nav class="nav nav__mobile d-sm-block d-xl-none ">
+                  <div class="nav__mobile-top">
+                        <a href="#!"
+                              class="logo">
+                              <img src="./assets/imgs/logo.svg"
+                                    alt="Smaller"
+                                    class="logo__img">
+                        </a>
+
+                        <label for="nav__checkbox"
+                              class="nav__open">
+                              <i class="fa-solid fa-bars"></i>
+                        </label>
+                        <label class="nav__close"
+                              for="nav__checkbox"><i class="fa-solid fa-xmark"></i></label>
                   </div>
+                  <input type="checkbox"
+                        class="nav__checkbox"
+                        id="nav__checkbox"
+                        hidden>
+                  <div class="nav__mobile-bottom">
+                        <ul class="nav__menu">
+                              <li class="nav__item">
+                                    <a href="#!"
+                                          class="nav__link">Product</a>
+                              </li>
+                              <li class="nav__item">
+                                    <a href="#!"
+                                          class="nav__link">Pricing</a>
+                              </li>
+                              <li class="nav__item">
+                                    <a href="#!"
+                                          class="nav__link">Contact us</a>
+                              </li>
+                              <li class="nav__item">
+                                    <a href="#!"
+                                          class="nav__link">Blog</a>
+                              </li>
+                              <li class="nav__item">
+                                    <a href="#!"
+                                          class="nav__link">About Us</a>
+                              </li>
+                        </ul>
+                        <div class="nav__cta">
+                              <button class="btn nav-cta__login">Login</button>
+                              <button class="btn nav-cta__booking">Book a Demo</button>
+                        </div>
+                  </div>
+                  <label for="nav__checkbox"
+                        class="overlay"></label>
             </nav>
+
       </header>
       <main class="main">
             <section class="hero">
                   <div class="container ">
                         <div class="row align-items-center">
-                              <div class="col-xl-6">
+                              <div class="col-xl-6 col-12">
                                     <article class="hero__content">
                                           <h1 class="heading--lv1">
                                                 Online catalog management
@@ -126,7 +145,7 @@
                                           </div>
                                     </article>
                               </div>
-                              <div class="col-xl-6">
+                              <div class="col-xl-6 col-12">
                                     <figure class="hero__media">
                                           <img src="./assets/imgs/dashboard.png"
                                                 alt="Smaller"
@@ -195,7 +214,7 @@
                         <section class="work__section">
                               <div class="container-fluid">
                                     <div class="row">
-                                          <div class="col-xl-5">
+                                          <div class="col-xl-5 col-12">
                                                 <div class="work__thumb work__category">
                                                       <p class="work-thumb__title">
                                                             Product Categories
@@ -263,7 +282,7 @@
                                                 </div>
                                           </div>
 
-                                          <div class="col-xl-5 offset-xl-2">
+                                          <div class="col-xl-5 col-12 offset-xl-2">
                                                 <section class="work__info">
                                                       <h3 class="heading--lv3 work-info__heading">
                                                             Set basic sorting rules for any
@@ -294,7 +313,7 @@
                         <section class="work__section ">
                               <div class="container-fluid">
                                     <div class="row">
-                                          <div class="col-xl-5">
+                                          <div class="col-xl-5 col-12">
                                                 <section class="work__info">
                                                       <h3 class="heading--lv3 work-info__heading">
                                                             Drag and Drop catalog management</h3>
@@ -311,7 +330,7 @@
                                                 </section>
                                           </div>
 
-                                          <div class="col-xl-5 offset-xl-2">
+                                          <div class="col-xl-5 col-12 offset-xl-2">
                                                 <div class="work__thumb work__drag">
                                                       <p class="work-thumb__title">
                                                             drag and drop
@@ -411,7 +430,7 @@
                         <section class="work__section work__cart">
                               <div class="container-fluid">
                                     <div class="row">
-                                          <div class="col-xl-5">
+                                          <div class="col-xl-5 col-12">
                                                 <div class="work__thumb ">
                                                       <p class="work-thumb__title">
                                                             Add To Cart
@@ -530,7 +549,7 @@
                                                 </div>
                                           </div>
 
-                                          <div class="col-xl-5 offset-xl-2">
+                                          <div class="col-xl-5 col-12 offset-xl-2">
                                                 <section class="work__info">
                                                       <h3 class="heading--lv3 work-info__heading">
                                                             Limit and add product groups per category pages</h3>
@@ -553,7 +572,7 @@
                         <section class="work__section work__selling">
                               <div class="container-fluid">
                                     <div class="row">
-                                          <div class="col-xl-5">
+                                          <div class="col-xl-5 col-12">
                                                 <section class="work__info">
                                                       <h3 class="heading--lv3 work-info__heading">
                                                             Control poor-selling products</h3>
@@ -569,7 +588,7 @@
 
                                           </div>
 
-                                          <div class="col-xl-5 offset-xl-2">
+                                          <div class="col-xl-5 col-12 offset-xl-2">
                                                 <div class="work__thumb work__category">
                                                       <p class="work-thumb__title">
                                                             Low Selling Product
@@ -640,7 +659,7 @@
                         <section class="work__section work__low">
                               <div class="container-fluid">
                                     <div class="row">
-                                          <div class="col-xl-5">
+                                          <div class="col-xl-5 col-12">
                                                 <div class="work__thumb work__category">
                                                       <p class="work-thumb__title">
                                                             low-stock products
@@ -719,7 +738,7 @@
                                                 </div>
                                           </div>
 
-                                          <div class="col-xl-5 offset-xl-2">
+                                          <div class="col-xl-5 col-12 offset-xl-2">
 
                                                 <section class="work__info">
                                                       <h3 class="heading--lv3 work-info__heading">

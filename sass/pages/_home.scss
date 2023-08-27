@@ -19,6 +19,7 @@ $primary-background-color: #005461;
     max-height: 100%;
     object-fit: cover;
     pointer-events: none;
+    backdrop-filter: blur(14.17055606842041px);
   }
 }
 .hero__desc {
@@ -835,4 +836,46 @@ $primary-background-color: #005461;
 // Footer
 .footer {
   padding-top: 170px;
+}
+@include mixins.make-a-media-query(xs) {
+  .heading__img {
+    @include mixins.box(102px, 32px, 30px);
+  }
+  .hero {
+    padding-block: 40px;
+    &__desc {
+      margin-top: 10px;
+      @include typography.text-font(14, 400, 19.982);
+    }
+    &__media {
+      margin-top: 40px;
+      margin-right: -12px;
+    }
+    &__cta {
+      margin-top: 20.32px;
+      gap: 17.63px;
+    }
+    &__cta &-cta__btn {
+      @include button.button(auto, auto, false, 23px);
+      @include typography.text-font(11.167, 400);
+      padding: 10px 16px;
+    }
+    &-cta__btn:first-child {
+    }
+  }
+  .services {
+    &__list {
+      flex-direction: column;
+    }
+  }
+  .benefit {
+    &__list {
+      grid-template-columns: 1fr;
+    }
+  }
+  .work {
+    &__line {
+      display: none;
+    }
+  }
 }
