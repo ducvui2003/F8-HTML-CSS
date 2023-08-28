@@ -47,7 +47,7 @@
   }
 }
 
-@include mixins.make-a-media-query(xs) {
+@include mixins.make-media-max-width(xs) {
   .nav__mobile {
     position: relative;
     display: flex;

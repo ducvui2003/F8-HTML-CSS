@@ -28,7 +28,7 @@
   align-items: center;
   @content;
 }
-$container-min-widths: (
+$min-widths: (
   xs: 0,
   sm: 576px,
   md: 768px,
@@ -36,6 +36,7 @@ $container-min-widths: (
   xl: 1200px,
   xxl: 1400px,
 );
+
 $display-properties: none, inline, inline-block, block, table, table-cell,
   table-row, flex, inline-flex;
 
@@ -43,21 +44,32 @@ $display-properties: none, inline, inline-block, block, table, table-cell,
   @if $bypass {
     @content;
   } @else {
-    @media screen and (min-width: map.get($container-min-widths, #{$breakpoint})) {
+    @media screen and (min-width: map-get($min-widths, $breakpoint)) {
       @content;
     }
   }
 }
-
-@each $breakpoint, $dimension in $container-min-widths {
-  $max-width: map-get($container-min-widths, $breakpoint);
+@each $breakpoint, $dimension in $min-widths {
+  $max-width: map-get($min-widths, $breakpoint);
   $is-xs: $breakpoint == "xs";
   $infix: if($breakpoint == xs, "", "-#{$breakpoint}");
-  @include make-a-media-query($breakpoint, $is-xs) {
-    @each $property in $display-properties {
-      .d#{$infix}-#{$property} {
-        display: $property !important;
+  @each $display in $display-properties {
+    @include make-a-media-query($breakpoint, $is-xs) {
+      .d#{$infix}-#{$display} {
+        display: #{$display} !important;
       }
     }
+  }
+}
+$max-widths: (
+  xs: 575.98px,
+  sm: 767.98px,
+  md: 991.98px,
+  lg: 1199.98px,
+  xl: 1399.98px,
+);
+@mixin make-media-max-width($breakpoint) {
+  @media screen and (max-width: map-get($max-widths, $breakpoint)) {
+    @content;
   }
 }

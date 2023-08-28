@@ -86,7 +86,7 @@
     color: black;
   }
 }
-@include mixins.make-a-media-query(xs) {
+@include mixins.make-media-max-width(xs) {
   .platform {
     &__list {
       flex-direction: column;

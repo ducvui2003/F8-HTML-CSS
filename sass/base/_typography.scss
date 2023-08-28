@@ -47,9 +47,13 @@ a {
   overflow: hidden;
 }
 
-@include mixins.make-a-media-query(xs) {
+@include mixins.make-media-max-width(xs) {
   .heading--lv1 {
     @include text-font(45, 600, 52);
     letter-spacing: 0.45px;
+  }
+
+  .heading--lv2 {
+    @include text-font(30, 600, 38);
   }
 }

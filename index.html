@@ -32,8 +32,9 @@
 <body>
 
       <header class="header">
-            <div class="container">
-                  <nav class="nav nav__pc d-none d-xl-flex">
+            <div class="container d-none d-xl-block">
+                  <!-- Nav pc -->
+                  <nav class="nav nav__pc ">
                         <a href="#!"
                               class="logo">
                               <img src="./assets/imgs/logo.svg"
@@ -69,7 +70,8 @@
 
                   </nav>
             </div>
-            <nav class="nav nav__mobile d-sm-block d-xl-none ">
+            <!-- Nav mobile -->
+            <nav class="nav nav__mobile d-flex d-xl-none  ">
                   <div class="nav__mobile-top">
                         <a href="#!"
                               class="logo">
@@ -82,8 +84,7 @@
                               class="nav__open">
                               <i class="fa-solid fa-bars"></i>
                         </label>
-                        <label class="nav__close"
-                              for="nav__checkbox"><i class="fa-solid fa-xmark"></i></label>
+
                   </div>
                   <input type="checkbox"
                         class="nav__checkbox"
@@ -806,7 +807,7 @@
                                                 alt="">
                                     </figure>
                                     <h3 class="benefit-item__title">Backup feature</h3>
-                                    <p class="benefit-item__desc">Our visual product sorting tool has  a backup feature to undo the changes made. So you actually risk nothing.</p>
+                                    <p class="benefit-item__desc">Our visual product sorting tool has a backup feature to undo the changes made. So you actually risk nothing.</p>
                               </article>
                               <article class="benefit__item">
                                     <figure class="benefit-item__thumb">

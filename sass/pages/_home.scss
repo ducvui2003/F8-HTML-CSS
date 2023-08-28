@@ -837,7 +837,7 @@ $primary-background-color: #005461;
 .footer {
   padding-top: 170px;
 }
-@include mixins.make-a-media-query(xs) {
+@include mixins.make-media-max-width(xs) {
   .heading__img {
     @include mixins.box(102px, 32px, 30px);
   }
@@ -864,8 +864,15 @@ $primary-background-color: #005461;
     }
   }
   .services {
+    &__heading {
+      padding-top: 50px;
+    }
     &__list {
+      margin-top: 40px;
       flex-direction: column;
+      gap: 30px;
+    }
+    &__item {
     }
   }
   .benefit {
