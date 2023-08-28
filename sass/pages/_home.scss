@@ -106,8 +106,8 @@ $primary-background-color: #005461;
   background-color: currentColor;
   border: calc(var(--size) * 3.4) solid currentColor;
   border-radius: var(--border-radius);
-  user-select: none;
-  pointer-events: none;
+  // user-select: none;
+  // pointer-events: none;
 }
 .work-thumb {
   &__title {
@@ -798,6 +798,7 @@ $primary-background-color: #005461;
           padding-bottom: 60px;
         } @else {
           padding-top: 60px;
+          border-bottom: none;
         }
       }
     }
@@ -867,6 +868,7 @@ $primary-background-color: #005461;
     &__heading {
       padding-top: 50px;
     }
+
     &__list {
       margin-top: 40px;
       flex-direction: column;
@@ -875,14 +877,109 @@ $primary-background-color: #005461;
     &__item {
     }
   }
+  .services-item {
+    &__desc {
+      @include typography.text-font(16, 400, 26);
+    }
+  }
   .benefit {
     &__list {
       grid-template-columns: 1fr;
     }
   }
   .work {
+    padding-top: 70px;
+    &__desc {
+      @include typography.text-font(12, 400, 18);
+      padding-bottom: 40px;
+    }
+    &__section ~ &__section {
+      padding-bottom: 70px;
+    }
     &__line {
       display: none;
+    }
+    &__thumb {
+      --border-radius: 14.3px;
+      border-width: 24.3px;
+    }
+    &__category {
+      margin-top: 30px;
+    }
+    &__drag,
+    &__cart &__thumb,
+    &__low &__thumb {
+      margin-top: 40px;
+    }
+  }
+  .work-thumb {
+    &__title {
+      @include typography.text-font(9.979, 500, 9.979);
+    }
+  }
+  .work-info {
+    &__heading {
+      @include typography.text-font(30, 500, 38);
+    }
+    &__item,
+    &__desc {
+      @include typography.text-font(12, 400, 18);
+    }
+
+    &__desc {
+      margin-top: 15px;
+    }
+    &__item {
+      margin-top: 10px;
+    }
+    &__list {
+      margin-top: 20px;
+    }
+    &__list::before {
+      margin-bottom: 15.26px;
+    }
+    &__item {
+      margin-top: 6.23px;
+    }
+  }
+  // Work section 1
+  .work__section:has(.work__category) .work-info__desc {
+    margin-top: 10px;
+  }
+  // Work section 3
+  .work__cart .work-info__list {
+    margin-top: 15px;
+  }
+  .work__cart .work-info__list::before {
+    margin-bottom: 15px;
+  }
+  // Work section 4
+  .work__selling .work__category {
+    margin-top: 50px;
+  }
+  // Work section 5
+  .work__low .work-info__item strong {
+    @include typography.text-font(12, 500, 18);
+  }
+  .work__low .work-info__item ~ .work-info__item {
+    margin-top: 12px;
+  }
+  .benefit {
+    &__list {
+      margin-top: 40px;
+    }
+    &__list &__item {
+      border: none;
+      padding: 0;
+      padding-bottom: 30px;
+    }
+  }
+  .benefit-item {
+    &__title {
+      @include typography.text-font(20, 500, 24);
+    }
+    &__desc {
+      @include typography.text-font(16, 400, 26);
     }
   }
 }

@@ -56,4 +56,11 @@ a {
   .heading--lv2 {
     @include text-font(30, 600, 38);
   }
+
+  .heading--lv3 {
+    @include text-font(30, 600, 38);
+  }
+  .heading__lv4 {
+    @include text-font(28, 500, 38);
+  }
 }
