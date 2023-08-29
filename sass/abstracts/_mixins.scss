@@ -49,13 +49,7 @@ $display-properties: none, inline, inline-block, block, table, table-cell,
     }
   }
 }
-@mixin order($infix) {
-  @for $i from 0 through 12 {
-    .order#{$infix}-#{$i} {
-      order: $i;
-    }
-  }
-}
+
 @mixin display($infix) {
   @each $display in $display-properties {
     .d#{$infix}-#{$display} {
@@ -70,8 +64,6 @@ $display-properties: none, inline, inline-block, block, table, table-cell,
 
   @include make-a-media-query($breakpoint, $is-xs) {
     @include display($infix);
-
-    @include order($infix);
   }
 }
 $max-widths: (

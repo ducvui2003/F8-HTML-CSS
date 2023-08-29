@@ -102,6 +102,21 @@ $grid-gutter-width: 30px !default;
     }
   }
 }
+@mixin order($infix) {
+  @for $i from 0 through 12 {
+    .order#{$infix}-#{$i} {
+      order: $i;
+    }
+  }
+}
+@mixin disable-padding-margin($infix) {
+  .p#{$infix}-0 {
+    padding: 0;
+  }
+  .m#{$infix}-0 {
+    margin: 0;
+  }
+}
 
 @each $breakpoint, $dimension in $grid-breakpoints {
   $max-width: map-get($container-max-widths, $breakpoint);
@@ -111,7 +126,10 @@ $grid-gutter-width: 30px !default;
     .container {
       max-width: $max-width;
     }
-
+    .container#{$infix}-non-grid {
+      max-width: $max-width;
+      margin-inline: auto;
+    }
     @include make-row-cols($infix);
 
     @include make-cols($infix);
@@ -119,6 +137,8 @@ $grid-gutter-width: 30px !default;
     @include make-offsets($infix);
 
     @include make-gutters($infix);
+
+    @include order($infix);
   }
 }
 @mixin make-property-flex($property) {

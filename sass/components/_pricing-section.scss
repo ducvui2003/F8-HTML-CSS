@@ -4,7 +4,6 @@
 @use "../components/button";
 // Pricing
 .pricing {
-  padding-top: 140px;
   text-align: center;
 
   &__heading {
@@ -18,8 +17,11 @@
   &__list {
     background-color: #fff;
     border-radius: 20px;
+    display: flex;
+    gap: 30px;
   }
   &__card {
+    flex: 1;
     --primary-color: #{variables.$black};
     --secondary-color: #{variables.$black-100};
     --icon-color: #028193;
@@ -73,7 +75,7 @@
     margin-top: 30px;
   }
   &__price strong {
-    @include typography.text-font(34, 400);
+    @include typography.text-font(34, 500);
     color: var(--primary-color);
   }
   &__button {
@@ -107,5 +109,42 @@
 
   &__icon {
     color: var(--icon-color);
+  }
+}
+@include mixins.make-media-max-width(xs) {
+  // Pricing
+  .pricing {
+    &__desc {
+      margin-top: 14px;
+      @include typography.text-font(14, 400, 22);
+    }
+    &__list {
+      transform: none;
+      margin-top: 40px;
+      flex-direction: column;
+      border-radius: 20px 20px 0 0;
+    }
+
+    h3 {
+      @include typography.text-font(38, 500, 44);
+    }
+    .col:last-child &__card {
+      margin-bottom: 0;
+    }
+  }
+  .pricing__card {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      inset: 0 0 0 0;
+      z-index: -1;
+      background-color: #fff;
+    }
+    &:hover {
+      transform: none;
+    }
   }
 }

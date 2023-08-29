@@ -829,6 +829,7 @@ $primary-background-color: #005461;
 }
 // Pricing
 .pricing {
+  padding-top: 140px;
   background-color: $primary-background-color;
   &__list {
     transform: translateY(170px);
@@ -893,8 +894,11 @@ $primary-background-color: #005461;
       @include typography.text-font(12, 400, 18);
       padding-bottom: 40px;
     }
+    &__section {
+      padding-bottom: 0;
+    }
     &__section ~ &__section {
-      padding-bottom: 70px;
+      padding-top: 70px;
     }
     &__line {
       display: none;
@@ -964,6 +968,7 @@ $primary-background-color: #005461;
   .work__low .work-info__item ~ .work-info__item {
     margin-top: 12px;
   }
+  // Benefit
   .benefit {
     &__list {
       margin-top: 40px;
@@ -981,5 +986,11 @@ $primary-background-color: #005461;
     &__desc {
       @include typography.text-font(16, 400, 26);
     }
+  }
+  .pricing {
+    padding-top: 70px;
+  }
+  .footer {
+    padding-top: 0;
   }
 }

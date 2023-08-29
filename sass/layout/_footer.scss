@@ -10,7 +10,7 @@
   }
 }
 .footer__platform {
-  margin-top: 130px;
+  padding-top: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,6 @@
     font-size: 1.9rem;
     font-weight: 500;
     margin-top: 30px;
-    border-radius: 50px;
     background-color: variables.$yellow;
   }
   &__list {
@@ -62,6 +61,10 @@
   &__icon {
     margin-right: 16px;
   }
+}
+.footer__thumb img {
+  width: 100%;
+  object-fit: contain;
 }
 .footer__nav {
   width: 100%;
@@ -87,21 +90,52 @@
   }
 }
 @include mixins.make-media-max-width(xs) {
+  .footer__platform {
+    padding-top: 70px;
+  }
   .platform {
+    &__heading {
+      max-width: unset;
+    }
+    &__desc {
+      margin-top: 15px;
+      text-align: center;
+      @include typography.text-font(14, 400, 22);
+    }
     &__list {
+      margin-top: 40px;
       flex-direction: column;
+      gap: 109px;
     }
   }
   .footer__booking {
+    margin-top: 69px;
+    padding: 40px 0;
     flex-direction: column;
   }
+  .footer-booking {
+    &__heading {
+      @include typography.text-font(38, 500, 44);
+    }
+    &__btn {
+      @include typography.text-font(19, 500, 19);
+    }
+  }
+  .footer__thumb {
+    padding: 40px 20px 0 20px;
+  }
   .footer__nav {
+    padding-block: 50px 35px;
     flex-direction: column;
+    gap: 40px;
     align-items: flex-start;
   }
   .footer__nav .nav {
     &__menu {
-      flex-direction: column;
+      margin-left: unset;
+      flex-wrap: wrap;
+      column-gap: 44px;
+      row-gap: 30px;
     }
   }
 }
