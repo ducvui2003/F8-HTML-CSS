@@ -1,0 +1,98 @@
+@use "../base/common";
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../base/typography";
+@use "../components/button";
+body {
+  background-color: #f2ede6;
+}
+.product {
+  padding-top: 100px;
+  &__heading {
+    color: variables.$text-color-dark;
+  }
+  &__control {
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__control > p {
+    @include typography.text-font(16, 400, 18);
+    margin-right: 22px;
+  }
+  &__control &__filter:first-child .filter__name {
+    @include typography.text-font(20, 400, 24);
+  }
+  &__control &__filter:last-child .filter__name {
+    @include typography.text-font(16, 500, 18);
+  }
+  &__filter {
+    @include mixins.box(auto, 46px, null);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-inline: 19px;
+    border: 1px solid variables.$gray-5;
+    background-color: #fff;
+  }
+  &__filter:first-child {
+    margin-right: auto;
+  }
+  &__filter:last-child {
+    position: relative;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 30px 40px;
+    padding-top: 70px;
+  }
+  &__button {
+    margin: 55px auto 0;
+    @include button.button(162px, 60px, true);
+    display: block;
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: variables.$shape;
+  }
+}
+
+.filter__icon-bars {
+  @include common.icon-bars(18px, 2px, 3, left);
+  color: variables.$black-100;
+  gap: 2px;
+}
+.product-filter {
+  &__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in;
+  }
+  &__item {
+    @extend .product__filter;
+    @include typography.text-font(16, 500, 18);
+  }
+  &__item:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}
+.product__filter:last-child:hover .product-filter__list {
+  opacity: 1;
+  visibility: visible;
+}
+// Footer
+.product__body .footer {
+  padding-top: 150px;
+  &__platform {
+    padding-top: 100px;
+  }
+}
