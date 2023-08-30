@@ -991,6 +991,8 @@ $primary-background-color: #005461;
     padding-top: 70px;
   }
   .footer {
-    padding-top: 0;
+    &__platform {
+      padding-top: 70px;
+    }
   }
 }

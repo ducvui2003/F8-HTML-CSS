@@ -79,3 +79,35 @@
     color: variables.$text-color-dark;
   }
 }
+@include mixins.make-media-max-width(xs) {
+  .product-item {
+    &__thumb {
+      height: 278px;
+    }
+    &__category {
+      font-size: 1.4rem;
+    }
+    &__info > div:first-child {
+      padding-top: 18.25px;
+    }
+    &__info > div:last-child {
+      padding-top: 11.79px;
+    }
+    &__like-icon {
+      font-size: 1.5rem;
+    }
+    &__name {
+      @include typography.text-font(18, 500, 26);
+    }
+    &__icon-star {
+      @include typography.text-font(16, 400, 1);
+    }
+    &__price {
+      @include typography.text-font(17, 500, 17.049);
+    }
+    &__button {
+      padding: 18px 0;
+      font-size: 1.7rem;
+    }
+  }
+}

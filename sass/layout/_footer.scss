@@ -90,8 +90,11 @@
   }
 }
 @include mixins.make-media-max-width(xs) {
-  .footer__platform {
+  .footer {
     padding-top: 70px;
+  }
+  .footer__platform {
+    padding-top: 40px;
   }
   .platform {
     &__heading {

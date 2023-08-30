@@ -17,15 +17,22 @@ body {
     justify-content: space-between;
     align-items: center;
   }
-  &__control > p {
-    @include typography.text-font(16, 400, 18);
-    margin-right: 22px;
+  &__control p {
+    @include typography.text-font(16, 500, 18);
+    color: variables.$black-100;
+  }
+  &__control > div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 22px;
   }
   &__control &__filter:first-child .filter__name {
-    @include typography.text-font(20, 400, 24);
+    @include typography.text-font(16, 500, 18);
+    color: variables.$black-100;
   }
   &__control &__filter:last-child .filter__name {
-    @include typography.text-font(16, 500, 18);
+    @include typography.text-font(20, 500, 24);
+    color: variables.$black;
   }
   &__filter {
     @include mixins.box(auto, 46px, null);
@@ -90,9 +97,26 @@ body {
   visibility: visible;
 }
 // Footer
-.product__body .footer {
+.footer {
   padding-top: 150px;
   &__platform {
     padding-top: 100px;
+  }
+}
+@include mixins.make-media-max-width(xs) {
+  .product__control {
+    align-items: flex-end;
+    > div:last-child {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+  .product__list {
+    grid-template-columns: 100%;
+    row-gap: 40px;
+  }
+  .product__button {
+    margin-top: 50px;
   }
 }
