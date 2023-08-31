@@ -1,0 +1,220 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+@use "../base/typography";
+@use "../base/grid";
+@use "../components/button";
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+  visibility: hidden;
+  opacity: 0;
+  width: map-get($map: grid.$grid-breakpoints, $key: xl);
+  &__container {
+    position: relative;
+    background-color: #fff;
+    padding: 55px;
+  }
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include mixins.box(48px);
+    @include mixins.center-flex();
+    background-color: variables.$yellow;
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__close:hover {
+    cursor: pointer;
+    background-color: variables.$black;
+  }
+  &__close:hover > svg {
+    color: #fff;
+  }
+  &__close > svg {
+    font-size: 1.6rem;
+    color: variables.$black;
+  }
+  &-close:checked + & {
+    opacity: 1;
+    visibility: visible;
+  }
+  &-close:checked + & &__container {
+    transform: translateY(0);
+  }
+  &-close:checked ~ .overlay {
+    visibility: visible;
+    opacity: 0.8;
+  }
+  &__product ~ &__product {
+    margin-top: 18px;
+  }
+}
+.modal__separate {
+  --margin: 32px;
+  margin-top: var(--margin);
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(-1 * var(--margin) / 2);
+    left: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: variables.$gray-5;
+  }
+}
+.modal-product {
+  &__control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include typography.text-font(14, 400, 14);
+  }
+
+  &__order {
+    color: variables.$black;
+  }
+  &__btn {
+    color: variables.$black-100;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+  &__btn::after {
+    content: "";
+    display: block;
+    height: 1px;
+    margin-top: 5px;
+    background-color: currentColor;
+  }
+  &__edit {
+    margin-inline: auto 31px;
+  }
+  &__thumb {
+    @include mixins.box(100px);
+    padding-right: 18px;
+  }
+  &__thumb > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__info {
+    display: flex;
+  }
+  &__info > div {
+    flex: 1;
+  }
+
+  &__name,
+  &__price {
+    @include typography.text-font(19, 500, 19);
+    color: variables.$black;
+  }
+  &__id {
+    @include typography.text-font(16, 400, 18);
+    color: variables.$text-color-light;
+    padding-top: 15px;
+  }
+  &__price {
+    padding-top: 18px;
+  }
+}
+.modal-payment {
+  &__calculate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include typography.text-font(19, 500, 19);
+  }
+  &__total {
+    font-weight: 500;
+  }
+  &__freeship {
+    @include typography.text-font(16, 400, 26);
+    color: variables.$black-100;
+  }
+  &__freeship strong {
+    display: block;
+    @include typography.text-font(18, 400, 18);
+  }
+  &__btn {
+    @include button.button(100%, 60px, true);
+    @include typography.text-font(19, 400, 19);
+  }
+  &__btn-view {
+    margin-top: 22px;
+    color: #fff;
+    background-color: variables.$shape;
+  }
+  &__btn-check {
+    margin-top: 20px;
+    color: variables.$grey-3;
+    background-color: variables.$black;
+  }
+}
+@include mixins.make-media-max-width(xs) {
+  .modal {
+    width: 100%;
+    &__container {
+      padding: 78px 10px 54px;
+    }
+    &__product ~ &__product {
+      margin-top: 20px;
+    }
+    &__payment {
+      margin-top: 50px;
+    }
+  }
+  .modal-product {
+    &__control {
+      @include typography.text-font(12, 400, 12px);
+    }
+    &__thumb {
+      @include mixins.box(85.1px);
+      padding-right: 15.32px;
+    }
+    &__name,
+    &__price {
+      @include typography.text-font(16, 500, 16);
+    }
+    &__id {
+      padding-top: 12.95px;
+      @include typography.text-font(14, 400, 20);
+    }
+    &__price {
+      padding-top: 10.65px;
+    }
+  }
+  .modal__separate {
+    --margin: 31.5px;
+  }
+  .modal-payment {
+    &__calculate {
+      @include typography.text-font(15, 500, 15);
+    }
+    &__freeship strong {
+      @include typography.text-font(14.745, 400, 14.745);
+    }
+    &__freeship {
+      @include typography.text-font(13.106, 400, 21.298);
+    }
+    &__btn-view {
+      margin-top: 39px;
+    }
+    &__btn-check {
+      margin-top: 16px;
+    }
+  }
+}

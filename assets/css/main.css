@@ -118,6 +118,19 @@ html {
   font-size: 62.5%;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2d2d2d;
+  opacity: 0;
+  z-index: 5;
+  transition: opacity 0.2s ease;
+  visibility: hidden;
+}
+
 [class*=row] > *, .container-fluid, .container {
   padding-inline: calc(var(--grid-gutter-x) * 0.5);
 }
@@ -2761,7 +2774,7 @@ a {
     padding-top: 70px;
   }
 }
-body {
+.product__body {
   background-color: #f2ede6;
 }
 
@@ -3025,18 +3038,6 @@ body {
   .nav__checkbox:checked ~ .overlay {
     opacity: 0.4;
     visibility: visible;
-  }
-  .overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: #000;
-    opacity: 0;
-    z-index: 5;
-    transition: opacity 0.2s ease;
-    visibility: hidden;
   }
   .nav__mobile .nav__menu {
     margin-left: unset;
@@ -3404,7 +3405,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 0.15s ease-in-out;
   padding: 21px 0;
   text-align: center;
@@ -3509,6 +3510,267 @@ body {
   .product-item__button {
     padding: 18px 0;
     font-size: 1.7rem;
+  }
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+  visibility: hidden;
+  opacity: 0;
+  width: 1200px;
+}
+.modal__container {
+  position: relative;
+  background-color: #fff;
+  padding: 55px;
+}
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7d047;
+}
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.modal__close:hover {
+  cursor: pointer;
+  background-color: #2d2d2d;
+}
+.modal__close:hover > svg {
+  color: #fff;
+}
+.modal__close > svg {
+  font-size: 1.6rem;
+  color: #2d2d2d;
+}
+.modal-close:checked + .modal {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-close:checked + .modal .modal__container {
+  transform: translateY(0);
+}
+.modal-close:checked ~ .overlay {
+  visibility: visible;
+  opacity: 0.8;
+}
+.modal__product ~ .modal__product {
+  margin-top: 18px;
+}
+
+.modal__separate {
+  --margin: 32px;
+  margin-top: var(--margin);
+  position: relative;
+}
+.modal__separate::before {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--margin) / 2);
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+.modal-product__control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roobert", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 1.4rem;
+}
+.modal-product__order {
+  color: #2d2d2d;
+}
+.modal-product__btn {
+  color: #676562;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.modal-product__btn::after {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 5px;
+  background-color: currentColor;
+}
+.modal-product__edit {
+  margin-inline: auto 31px;
+}
+.modal-product__thumb {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding-right: 18px;
+}
+.modal-product__thumb > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modal-product__info {
+  display: flex;
+}
+.modal-product__info > div {
+  flex: 1;
+}
+.modal-product__name, .modal-product__price {
+  font-family: "Roobert", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1.9rem;
+  color: #2d2d2d;
+}
+.modal-product__id {
+  font-family: "Roobert", sans-serif;
+  font-weight: 400;
+  line-height: 1.125;
+  font-size: 1.6rem;
+  color: #566363;
+  padding-top: 15px;
+}
+.modal-product__price {
+  padding-top: 18px;
+}
+
+.modal-payment__calculate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roobert", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1.9rem;
+}
+.modal-payment__total {
+  font-weight: 500;
+}
+.modal-payment__freeship {
+  font-family: "Roobert", sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+  font-size: 1.6rem;
+  color: #676562;
+}
+.modal-payment__freeship strong {
+  display: block;
+  font-family: "Roobert", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 1.8rem;
+}
+.modal-payment__btn {
+  width: 100%;
+  height: 60px;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin-inline: auto;
+  font-family: "Roobert", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 1.9rem;
+}
+.modal-payment__btn:hover {
+  cursor: pointer;
+}
+.modal-payment__btn-view {
+  margin-top: 22px;
+  color: #fff;
+  background-color: #018294;
+}
+.modal-payment__btn-check {
+  margin-top: 20px;
+  color: #828282;
+  background-color: #2d2d2d;
+}
+
+@media screen and (max-width: 575.98px) {
+  .modal {
+    width: 100%;
+  }
+  .modal__container {
+    padding: 78px 10px 54px;
+  }
+  .modal__product ~ .modal__product {
+    margin-top: 20px;
+  }
+  .modal__payment {
+    margin-top: 50px;
+  }
+  .modal-product__control {
+    font-family: "Roobert", sans-serif;
+    font-weight: 400;
+    line-height: 1px;
+    font-size: 1.2rem;
+  }
+  .modal-product__thumb {
+    display: inline-block;
+    width: 85.1px;
+    height: 85.1px;
+    padding-right: 15.32px;
+  }
+  .modal-product__name, .modal-product__price {
+    font-family: "Roobert", sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 1.6rem;
+  }
+  .modal-product__id {
+    padding-top: 12.95px;
+    font-family: "Roobert", sans-serif;
+    font-weight: 400;
+    line-height: 1.4285714286;
+    font-size: 1.4rem;
+  }
+  .modal-product__price {
+    padding-top: 10.65px;
+  }
+  .modal__separate {
+    --margin: 31.5px;
+  }
+  .modal-payment__calculate {
+    font-family: "Roobert", sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 1.5rem;
+  }
+  .modal-payment__freeship strong {
+    font-family: "Roobert", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 1.4745rem;
+  }
+  .modal-payment__freeship {
+    font-family: "Roobert", sans-serif;
+    font-weight: 400;
+    line-height: 1.6250572257;
+    font-size: 1.3106rem;
+  }
+  .modal-payment__btn-view {
+    margin-top: 39px;
+  }
+  .modal-payment__btn-check {
+    margin-top: 16px;
   }
 }
 

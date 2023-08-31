@@ -101,18 +101,7 @@
     opacity: 0.4;
     visibility: visible;
   }
-  .overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: #000;
-    opacity: 0;
-    z-index: 5;
-    transition: opacity 0.2s ease;
-    visibility: hidden;
-  }
+
   .nav__mobile .nav__menu {
     margin-left: unset;
     flex-direction: column;

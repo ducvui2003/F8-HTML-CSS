@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as utils;
 @use "sass:map";
 @use "sass:math";
-@mixin box($width, $height, $border-radius: null) {
+@mixin box($width, $height: $width, $border-radius: null) {
   display: inline-block;
   width: $width;
   height: $height;
