@@ -63,7 +63,7 @@
     width: 100%;
     padding: 20px;
     background-color: #fff;
-    z-index: 21;
+    z-index: 5;
     border-bottom: 1px solid #ddd;
   }
   .nav__open,
@@ -83,7 +83,7 @@
     top: 100%;
     right: 0;
     left: 0;
-    z-index: 20;
+    z-index: 4;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;

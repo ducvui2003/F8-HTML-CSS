@@ -126,7 +126,7 @@ html {
   width: 100vw;
   background-color: #2d2d2d;
   opacity: 0;
-  z-index: 5;
+  z-index: 3;
   transition: opacity 0.2s ease;
   visibility: hidden;
 }
@@ -3003,7 +3003,7 @@ a {
     width: 100%;
     padding: 20px;
     background-color: #fff;
-    z-index: 21;
+    z-index: 5;
     border-bottom: 1px solid #ddd;
   }
   .nav__open,
@@ -3022,7 +3022,7 @@ a {
     top: 100%;
     right: 0;
     left: 0;
-    z-index: 20;
+    z-index: 4;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -3709,7 +3709,7 @@ a {
     width: 100%;
   }
   .modal__container {
-    padding: 78px 10px 54px;
+    padding: 60px 10px 54px;
   }
   .modal__product ~ .modal__product {
     margin-top: 20px;
