@@ -17,7 +17,6 @@
   height: $height;
   display: inline-block;
   border: none;
-  background-color: transparent;
   outline: none;
   @if $border-radius != null {
     border-radius: $border-radius;

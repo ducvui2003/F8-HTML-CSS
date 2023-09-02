@@ -3,15 +3,21 @@
 @use "../base/typography";
 @use "../components/button";
 // Pricing
+.pricing__body .pricing {
+  padding-top: 100px;
+  background-color: variables.$white-100;
+}
 .pricing {
   text-align: center;
-
+  &__list {
+    transform: translateY(170px);
+  }
   &__heading {
-    color: variables.$white;
+    color: variables.$black;
   }
   &__desc {
     margin-block: 8px 0;
-    color: variables.$white-80;
+    color: variables.$black-100;
     @include typography.text-font(20, 400, 34);
   }
   &__list {

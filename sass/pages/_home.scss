@@ -10,6 +10,7 @@ $primary-background-color: #005461;
 }
 .hero {
   padding-block: 100px 90px;
+  background-color: variables.$white-100;
 
   &__media {
     margin-right: -70px;
@@ -828,11 +829,14 @@ $primary-background-color: #005461;
   }
 }
 // Pricing
-.pricing {
+.home__body .pricing {
   padding-top: 140px;
   background-color: $primary-background-color;
-  &__list {
-    transform: translateY(170px);
+  &__heading {
+    color: variables.$white;
+  }
+  &__desc {
+    color: variables.$white-80;
   }
 }
 // Footer

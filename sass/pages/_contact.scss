@@ -1,0 +1,82 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../base/typography";
+@use "../components/button";
+.contact {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__body {
+    background-color: variables.$white-100;
+  }
+
+  &__desc {
+    text-align: center;
+    max-width: 430px;
+    margin-top: 20px;
+    @include typography.text-font(16, 400, 26);
+    color: variables.$black-100;
+  }
+}
+.form {
+  width: 890px;
+  margin-top: 50px;
+  > div:not(.form__textarea) {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 24px;
+  }
+  &__input,
+  &__textarea {
+    @include typography.text-font(14, 500, 14);
+    color: variables.$black-100;
+  }
+  &__textarea,
+  &__input {
+    background-color: #fff;
+    padding-left: 31px;
+    outline: none;
+    border: none;
+  }
+  &__input {
+    flex: 1;
+    height: 60px;
+    display: block;
+  }
+  &__textarea {
+    width: 100%;
+    height: 150px;
+    padding-top: 21px;
+    resize: none;
+  }
+  &__submit {
+    margin: 40px auto 0;
+    @include button.button(158px, 62px, true);
+    display: block;
+    background-color: variables.$shape;
+    @include typography.text-font(19, 500, 19);
+    color: #fff;
+  }
+}
+@include mixins.make-media-max-width(xs) {
+  .contact {
+    &__desc {
+      margin-top: 15px;
+      @include typography.text-font(14, 400, 20);
+    }
+  }
+  .form {
+    width: 100%;
+    margin-top: 40px;
+    > div:not(.form__textarea) {
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    &__input {
+      flex: unset;
+    }
+  }
+}
