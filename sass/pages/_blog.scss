@@ -1,0 +1,54 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../base/typography";
+@use "../components/button";
+.blog {
+  padding-top: 100px;
+  background-color: variables.$white-100;
+  &__heading {
+  }
+  &__desc,
+  &__heading {
+    text-align: center;
+  }
+  &__desc {
+    max-width: 650px;
+    @include typography.text-font(18, 400, normal);
+    color: variables.$black-100;
+    line-height: normal;
+    margin: 20px auto 0;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 30px 40px;
+    padding-top: 70px;
+  }
+  &__btn {
+    @include button.button(158px, 62px, true);
+    @include typography.text-font(19, 500, 1);
+    display: block;
+    margin: 55px auto 0;
+    color: #fff;
+    background-color: variables.$shape;
+  }
+}
+@include mixins.make-media-max-width(xs) {
+  .blog {
+    padding-top: 40px;
+    &__desc {
+      margin-top: 15px;
+      max-width: unset;
+      @include typography.text-font(14, 400, 20);
+    }
+    &__list {
+      padding-top: 40px;
+      grid-template-columns: 1fr;
+    }
+    &__btn {
+      margin-top: 40px;
+    }
+  }
+  @include mixins.show-item-list(blog__list, blog__item, 9, 3);
+}

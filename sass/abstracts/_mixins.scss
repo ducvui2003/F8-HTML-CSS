@@ -78,3 +78,15 @@ $max-widths: (
     @content;
   }
 }
+@mixin show-item-list(
+  $selection-list,
+  $selection-item,
+  $total-item,
+  $number-item-showed
+) {
+  @for $i from $number-item-showed to $total-item {
+    .#{$selection-list} .#{$selection-item}:nth-child(#{$i}) {
+      display: none;
+    }
+  }
+}

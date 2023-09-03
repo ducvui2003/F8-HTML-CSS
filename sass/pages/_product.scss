@@ -119,4 +119,5 @@
   .product__button {
     margin-top: 50px;
   }
+  @include mixins.show-item-list(product__list, product__item, 9, 3);
 }

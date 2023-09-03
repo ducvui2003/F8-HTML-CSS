@@ -48,6 +48,6 @@ html {
   background-color: variables.$black;
   opacity: 0;
   z-index: 3;
-  transition: opacity 0.2s ease;
   visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
 }

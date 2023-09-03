@@ -13,10 +13,15 @@ a {
 @mixin text-font($size, $weight, $height: null, $unit: rem) {
   font-family: variables.$font-primary;
   font-weight: $weight;
-  @if $height != null {
-    line-height: math.div($height, $size);
+
+  @if $height == normal {
+    list-style: normal;
   } @else {
-    line-height: 1;
+    @if $height != null {
+      line-height: math.div($height, $size);
+    } @else {
+      line-height: 1;
+    }
   }
   @if $unit == rem {
     font-size: math.div($size, $unit-rem-html) + $unit;

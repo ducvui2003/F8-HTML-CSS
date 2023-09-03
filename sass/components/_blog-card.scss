@@ -1,0 +1,46 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../base/typography";
+.blog__item {
+}
+.blog-item {
+  &__thumb {
+    width: 100%;
+    height: 265px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  &__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__heading,
+  &__desc {
+    margin-top: 20px;
+  }
+  &__heading {
+    color: variables.$black;
+    @include typography.text-font(28, 500, 34);
+  }
+  &__desc {
+    color: variables.$black-100;
+    @include typography.text-font(16, 400, 26);
+  }
+}
+@include mixins.make-media-max-width(xs) {
+  .blog-item {
+    &__thumb {
+      height: 239px;
+    }
+    &__heading {
+      margin-top: 28.75px;
+      @include typography.text-font(25, 500, 30);
+    }
+    &__desc {
+      margin-top: 15.89px;
+      @include typography.text-font(14, 500, 20);
+    }
+  }
+}
