@@ -1,0 +1,278 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../base/typography";
+@use "../components/button";
+
+.about {
+  background-color: variables.$white-100;
+  &__heading {
+    text-align: center;
+    padding-block: 100px 70px;
+  }
+}
+.about-hero {
+  &__heading {
+    margin-right: -15px;
+  }
+  &__desc {
+    margin-top: 20px;
+    @include typography.text-font(16, 400, 26);
+    color: variables.$black-100;
+  }
+  &__thumb {
+    position: relative;
+    width: 100%;
+    pointer-events: none;
+    user-select: none;
+  }
+  &__thumb-top,
+  &__thumb-bottom {
+    object-fit: cover;
+  }
+  &__thumb-top {
+    width: 100%;
+    max-height: 100%;
+  }
+  &__thumb-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50%;
+    max-width: 50%;
+    border-style: solid;
+    border-width: 12px 14px 0 0;
+    border-color: variables.$white-100;
+  }
+  &__btn {
+    @include button.button(158px, 62px, true);
+    @include typography.text-font(19, 500, 19);
+    margin-top: 40px;
+    background-color: variables.$shape;
+    color: #fff;
+  }
+}
+// Team
+.team {
+  padding-top: 150px;
+  &__heading {
+    text-align: center;
+  }
+  &__list {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 54px;
+  }
+  &__member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 13px 34px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+}
+.member {
+  &__avatar {
+    width: 100%;
+    height: 280px;
+    border-radius: inherit;
+    user-select: none;
+    pointer-events: none;
+    box-shadow: 0 4.4rem 7.4rem 0 rgba(0, 0, 0, 0.04);
+  }
+  &__avatar img {
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__name {
+    padding-top: 14px;
+    @include typography.text-font(28, 500, 34);
+    text-transform: capitalize;
+  }
+  &__role {
+    padding-top: 8px;
+    @include typography.text-font(16, 500, 18);
+  }
+  &__contact {
+    padding-top: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    align-items: center;
+  }
+  &__social {
+    @include mixins.box(36px, 36px, 50%);
+    @include mixins.center-flex();
+    border: 1px solid rgba($color: variables.$shape, $alpha: 0.2);
+  }
+  &__social-icon {
+    font-size: 2rem;
+    color: variables.$shape;
+  }
+}
+// Customer
+.customer {
+  padding-top: 150px;
+  text-align: center;
+  &__title,
+  &__desc,
+  &__feedback {
+    color: variables.$black-100;
+  }
+  &__heading {
+    margin-top: 20px;
+  }
+  &__title {
+    @include typography.text-font(19, 500, 19);
+    color: variables.$black-100;
+  }
+  &__desc {
+    margin-top: 20px;
+    @include typography.text-font(18, 400, normal);
+  }
+  &__cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    overflow: hidden;
+    margin-top: 88px;
+  }
+  &__card {
+    flex: 1 0 calc(100% / 3 - 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px 43px 46px;
+    border-radius: 30px;
+    border: 1px solid #efefef;
+  }
+  &__card:hover {
+    box-shadow: 22px 30px 65px -10px rgba(13, 17, 64, 0.1);
+  }
+  &__avatar {
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+    box-shadow: 0px 30px 35px -8px rgba(77, 70, 199, 0.11);
+  }
+  &__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.23px;
+    margin-top: 27px;
+    user-select: none;
+    pointer-events: none;
+  }
+  &__star {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url("/assets/imgs/strar.svg") center / contain no-repeat;
+  }
+  &__name {
+    margin-top: 16px;
+    @include typography.text-font(28, 500, 34);
+  }
+  &__feedback {
+    text-align: center;
+    margin-top: 25px;
+    @include typography.text-font(16, 400, 26);
+  }
+  &__controls {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 70px;
+  }
+  &__control {
+    width: 12px;
+    height: 9.75px;
+    border-radius: 50px;
+    color: variables.$shape;
+    border: 1px solid currentColor;
+  }
+  &__control--clicked {
+    background-color: currentColor;
+  }
+  &__control:not(.customer__control--clicked):hover {
+    background-color: currentColor;
+    cursor: pointer;
+  }
+}
+@include mixins.make-media-max-width(xs) {
+  .about__heading {
+    padding-block: 40px;
+  }
+  .about-hero {
+    &__heading {
+      margin-right: unset;
+    }
+    &__desc {
+      margin-top: 15px;
+      @include typography.text-font(12, 400, 18);
+    }
+    &__thumb {
+      padding-top: 40px;
+    }
+    &__thumb-bottom {
+      border-width: 7px 8px 0 0;
+    }
+    &__btn {
+      @include button.button(106px, 41.5px, true);
+      @include typography.text-font(12.73, 500, 12.73);
+      margin-top: 20px;
+    }
+  }
+  .team {
+    padding-top: 60px;
+    &__list {
+      padding-top: 40px;
+      flex-direction: column;
+    }
+    &__member {
+      padding-inline: 3px;
+    }
+  }
+  .customer {
+    padding-top: 70px;
+    &__title {
+      @include typography.text-font(12, 500, 18);
+    }
+
+    &__heading {
+      margin-top: 10px;
+    }
+    &__desc {
+      margin-top: 15px;
+      @include typography.text-font(14, 400, normal);
+    }
+    &__cards {
+      margin-top: 40px;
+      flex-direction: column;
+    }
+    &__controls {
+      margin-top: 40px;
+    }
+  }
+}

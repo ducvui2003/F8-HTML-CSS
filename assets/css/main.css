@@ -3318,6 +3318,329 @@ a {
     display: none;
   }
 }
+.about {
+  background-color: #f2ede6;
+}
+.about__heading {
+  text-align: center;
+  padding-block: 100px 70px;
+}
+
+.about-hero__heading {
+  margin-right: -15px;
+}
+.about-hero__desc {
+  margin-top: 20px;
+  font-family: "Roobert", sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+  font-size: 1.6rem;
+  color: #676562;
+}
+.about-hero__thumb {
+  position: relative;
+  width: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+.about-hero__thumb-top, .about-hero__thumb-bottom {
+  object-fit: cover;
+}
+.about-hero__thumb-top {
+  width: 100%;
+  max-height: 100%;
+}
+.about-hero__thumb-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50%;
+  max-width: 50%;
+  border-style: solid;
+  border-width: 12px 14px 0 0;
+  border-color: #f2ede6;
+}
+.about-hero__btn {
+  width: 158px;
+  height: 62px;
+  display: inline-block;
+  border: none;
+  outline: none;
+  margin-inline: auto;
+  font-family: "Roobert", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1.9rem;
+  margin-top: 40px;
+  background-color: #018294;
+  color: #fff;
+}
+.about-hero__btn:hover {
+  cursor: pointer;
+}
+
+.team {
+  padding-top: 150px;
+}
+.team__heading {
+  text-align: center;
+}
+.team__list {
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 54px;
+}
+.team__member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 13px 34px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.member__avatar {
+  width: 100%;
+  height: 280px;
+  border-radius: inherit;
+  user-select: none;
+  pointer-events: none;
+  box-shadow: 0 4.4rem 7.4rem 0 rgba(0, 0, 0, 0.04);
+}
+.member__avatar img {
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.member__name {
+  padding-top: 14px;
+  font-family: "Roobert", sans-serif;
+  font-weight: 500;
+  line-height: 1.2142857143;
+  font-size: 2.8rem;
+  text-transform: capitalize;
+}
+.member__role {
+  padding-top: 8px;
+  font-family: "Roobert", sans-serif;
+  font-weight: 500;
+  line-height: 1.125;
+  font-size: 1.6rem;
+}
+.member__contact {
+  padding-top: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  align-items: center;
+}
+.member__social {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(1, 130, 148, 0.2);
+}
+.member__social-icon {
+  font-size: 2rem;
+  color: #018294;
+}
+
+.customer {
+  padding-top: 150px;
+  text-align: center;
+}
+.customer__title, .customer__desc, .customer__feedback {
+  color: #676562;
+}
+.customer__heading {
+  margin-top: 20px;
+}
+.customer__title {
+  font-family: "Roobert", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1.9rem;
+  color: #676562;
+}
+.customer__desc {
+  margin-top: 20px;
+  font-family: "Roobert", sans-serif;
+  font-weight: 400;
+  list-style: normal;
+  font-size: 1.8rem;
+}
+.customer__cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  overflow: hidden;
+  margin-top: 88px;
+}
+.customer__card {
+  flex: 1 0 calc(33.3333333333% - 30px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 40px 43px 46px;
+  border-radius: 30px;
+  border: 1px solid #efefef;
+}
+.customer__card:hover {
+  box-shadow: 22px 30px 65px -10px rgba(13, 17, 64, 0.1);
+}
+.customer__avatar {
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
+  box-shadow: 0px 30px 35px -8px rgba(77, 70, 199, 0.11);
+}
+.customer__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.customer__rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5.23px;
+  margin-top: 27px;
+  user-select: none;
+  pointer-events: none;
+}
+.customer__star {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url("/assets/imgs/strar.svg") center/contain no-repeat;
+}
+.customer__name {
+  margin-top: 16px;
+  font-family: "Roobert", sans-serif;
+  font-weight: 500;
+  line-height: 1.2142857143;
+  font-size: 2.8rem;
+}
+.customer__feedback {
+  text-align: center;
+  margin-top: 25px;
+  font-family: "Roobert", sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+  font-size: 1.6rem;
+}
+.customer__controls {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 70px;
+}
+.customer__control {
+  width: 12px;
+  height: 9.75px;
+  border-radius: 50px;
+  color: #018294;
+  border: 1px solid currentColor;
+}
+.customer__control--clicked {
+  background-color: currentColor;
+}
+.customer__control:not(.customer__control--clicked):hover {
+  background-color: currentColor;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 575.98px) {
+  .about__heading {
+    padding-block: 40px;
+  }
+  .about-hero__heading {
+    margin-right: unset;
+  }
+  .about-hero__desc {
+    margin-top: 15px;
+    font-family: "Roobert", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.2rem;
+  }
+  .about-hero__thumb {
+    padding-top: 40px;
+  }
+  .about-hero__thumb-bottom {
+    border-width: 7px 8px 0 0;
+  }
+  .about-hero__btn {
+    width: 106px;
+    height: 41.5px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    margin-inline: auto;
+    font-family: "Roobert", sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 1.273rem;
+    margin-top: 20px;
+  }
+  .about-hero__btn:hover {
+    cursor: pointer;
+  }
+  .team {
+    padding-top: 60px;
+  }
+  .team__list {
+    padding-top: 40px;
+    flex-direction: column;
+  }
+  .team__member {
+    padding-inline: 3px;
+  }
+  .customer {
+    padding-top: 70px;
+  }
+  .customer__title {
+    font-family: "Roobert", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 1.2rem;
+  }
+  .customer__heading {
+    margin-top: 10px;
+  }
+  .customer__desc {
+    margin-top: 15px;
+    font-family: "Roobert", sans-serif;
+    font-weight: 400;
+    list-style: normal;
+    font-size: 1.4rem;
+  }
+  .customer__cards {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  .customer__controls {
+    margin-top: 40px;
+  }
+}
 .nav {
   display: flex;
   justify-content: space-between;
