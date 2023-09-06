@@ -6,7 +6,8 @@ $primary-background-color: #005461;
 /* Hero*/
 .heading__img {
   @include mixins.box(174px, 56px, 50px);
-  background: url("../../assets/imgs/heading__img.png") center / cover no-repeat;
+  background-image: url("../../assets/imgs/heading__img.png") center / cover
+    no-repeat;
 }
 .hero {
   padding-block: 100px 90px;
