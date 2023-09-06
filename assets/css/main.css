@@ -1728,7 +1728,7 @@ a {
   width: 174px;
   height: 56px;
   border-radius: 50px;
-  background: url("/assets/imgs/heading__img.png") center top/cover no-repeat;
+  background: url("/assets/imgs/heading__img.png") center/cover no-repeat;
 }
 
 .hero {
@@ -1780,6 +1780,7 @@ a {
 }
 .hero__cta .hero-cta__btn:last-child {
   border: 1px solid #676562;
+  background-color: transparent;
 }
 
 /* Services */
@@ -2829,6 +2830,9 @@ a {
   border: 1px solid #e0e0e0;
   background-color: #fff;
 }
+.product__filter:hover, .product-filter__item:hover {
+  cursor: pointer;
+}
 .product__filter:first-child, .product-filter__item:first-child {
   margin-right: auto;
 }
@@ -3663,27 +3667,40 @@ a {
 .nav__link:hover {
   color: #018294;
 }
-.nav .nav__cta {
+.nav__cta {
   margin-left: auto;
   display: flex;
   justify-content: center;
 }
-.nav .nav-cta {
+
+.nav-cta {
   text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.125;
 }
-.nav .nav-cta__login {
+.nav-cta__login {
   color: #2d2d2d;
   background-color: transparent;
+  font-family: "Roobert", sans-serif;
+  font-weight: 400;
+  line-height: 1.125;
+  font-size: 1.6rem;
 }
-.nav .nav-cta__booking {
+.nav-cta__booking {
+  font-family: "Roobert", sans-serif;
+  font-weight: 400;
+  line-height: 1.125;
+  font-size: 1.6rem;
+  width: 156px;
+  height: 54px;
+  display: inline-block;
+  border: none;
+  outline: none;
+  margin-inline: auto;
   margin-left: 28px;
   color: #f2ede6;
   background-color: #2d2d2d;
-  padding: 0 30px;
+}
+.nav-cta__booking:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 575.98px) {
@@ -3699,7 +3716,7 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px;
+    padding: 30px 20px 15px;
     background-color: #fff;
     z-index: 5;
     background-color: #f2ede6;
@@ -3750,6 +3767,16 @@ a {
   background-color: #f2ede6;
 }
 
+@media screen and (max-width: 575.98px) {
+  .header {
+    position: sticky;
+    top: -15px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+  }
+}
 .footer {
   background-color: #f2ede6;
 }

@@ -1,6 +1,7 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
 @use "../base/typography";
+@use "../components/button";
 
 .nav {
   display: flex;
@@ -23,27 +24,25 @@
   &__link:hover {
     color: variables.$shape;
   }
-  .nav__cta {
+  &__cta {
     margin-left: auto;
     display: flex;
     justify-content: center;
   }
-  .nav-cta {
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.125;
-    &__login {
-      color: variables.$black;
-      background-color: transparent;
-    }
-    &__booking {
-      margin-left: 28px;
-      color: variables.$white-100;
-      background-color: variables.$black;
-      padding: 0 30px;
-    }
+}
+.nav-cta {
+  text-align: center;
+  &__login {
+    color: variables.$black;
+    background-color: transparent;
+    @include typography.text-font(16, 400, 18);
+  }
+  &__booking {
+    @include typography.text-font(16, 400, 18);
+    @include button.button(156px, 54px, true);
+    margin-left: 28px;
+    color: variables.$white-100;
+    background-color: variables.$black;
   }
 }
 
@@ -61,7 +60,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px;
+    padding: 30px 20px 15px;
     background-color: #fff;
     z-index: 5;
 

@@ -43,6 +43,9 @@
     border: 1px solid variables.$gray-5;
     background-color: #fff;
   }
+  &__filter:hover {
+    cursor: pointer;
+  }
   &__filter:first-child {
     margin-right: auto;
   }
