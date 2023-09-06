@@ -1728,7 +1728,7 @@ a {
   width: 174px;
   height: 56px;
   border-radius: 50px;
-  background-image: url("../../assets/imgs/heading__img.png") center/cover no-repeat;
+  background: url("/assets/imgs/heading__img.png") center/cover no-repeat;
 }
 
 .hero {
