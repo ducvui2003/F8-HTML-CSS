@@ -31,6 +31,14 @@
     justify-content: space-between;
     align-items: center;
   }
+  &__thumb {
+    color: transparent;
+  }
+  &__thumb:hover img {
+    filter: drop-shadow(13px 9px 23px currentColor);
+    -webkit-filter: drop-shadow(13px 9px 23px currentColor);
+    -moz-filter: drop-shadow(13px 9px 23px currentColor);
+  }
 }
 .footer__booking {
   display: flex;

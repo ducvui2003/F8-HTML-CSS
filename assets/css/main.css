@@ -3761,9 +3761,15 @@ a {
     margin-left: unset;
     flex-direction: column;
     align-items: flex-start;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #676562;
   }
   .nav__mobile .nav__cta {
     flex-direction: column;
+  }
+  .nav-cta__booking {
+    margin-left: 0;
+    width: 100%;
   }
 }
 .header {
@@ -3812,6 +3818,14 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.platform__thumb {
+  color: transparent;
+}
+.platform__thumb:hover img {
+  filter: drop-shadow(13px 9px 23px currentColor);
+  -webkit-filter: drop-shadow(13px 9px 23px currentColor);
+  -moz-filter: drop-shadow(13px 9px 23px currentColor);
 }
 
 .footer__booking {
