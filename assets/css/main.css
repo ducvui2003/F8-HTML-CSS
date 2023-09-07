@@ -1728,7 +1728,7 @@ a {
   width: 174px;
   height: 56px;
   border-radius: 50px;
-  background: url("/assets/imgs/heading__img.png") center/cover no-repeat;
+  background: url("../../assets/imgs/heading__img.png") center/cover no-repeat;
 }
 
 .hero {
@@ -2713,6 +2713,9 @@ a {
     font-weight: 400;
     line-height: 1.5;
     font-size: 1.2rem;
+  }
+  .work-info__item {
+    font-weight: 500;
   }
   .work-info__desc {
     margin-top: 15px;
