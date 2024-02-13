@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+    <!-- Font gg -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+          rel="stylesheet">
+
+    <!-- animation.css -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon"
+          sizes="180x180"
+          href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest"
+          href="./assets/favicon/site.webmanifest">
+    <!-- Grid -->
+    <link rel="stylesheet"
+          href="./assets/css/grid.css">
+    <!-- Reset -->
+    <link rel="stylesheet"
+          href="./assets/css/reset.css">
+    <!-- Base -->
+    <link rel="stylesheet"
+          href="./assets/css/base.css">
+    <!-- Styles -->
+    <link rel="stylesheet"
+          href="./assets/css/styles.css">
+    <!-- Responsive -->
+    <link rel="stylesheet"
+          href="./assets/css/responsive.css">
+    <title>CeloBank</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- NAV PC -->
+            <nav class="nav">
+                <a href="#"
+                   class="logo">
+                    <img src="./assets/imgs/logo.svg"
+                         alt="CeloBank"
+                         class="logo__img">
+                </a>
+                <label for="nav-checkbox"
+                       class="nav__label hide-xl"><i
+                       class="nav-menu__icon fa-solid fa-bars"></i></label>
+
+                <div class="nav__menu hide-xs">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#"
+                               class="nav__link nav__link--active">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#product"
+                               class="nav__link nav__link--hover">Products</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#features"
+                               class="nav__link nav__link--hover">Features</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#blog"
+                               class="nav__link nav__link--hover">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="nav__cta">
+                        <button class="btn nav-cta__button nav-cta__log-in">Log in</button>
+                        <button class="btn nav-cta__button">Sign up</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Nav + Overlay Mobile -->
+    <header class="header__mobile hide-xl">
+        <input type="checkbox"
+               name="checkbox"
+               id="nav-checkbox"
+               class="nav-checkbox"
+               hidden>
+        <label for="nav-checkbox"
+               class="overlay">
+        </label>
+
+        <nav class="nav__menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home"
+                       class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#product"
+                       class="nav__link">Products</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#features"
+                       class="nav__link">Features</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#blog"
+                       class="nav__link">Blog</a>
+                </li>
+            </ul>
+            <div class="separate"></div>
+            <div class="nav__cta">
+                <button class="btn nav-cta__button nav-cta__log-in">Log in</button>
+                <button class="btn nav-cta__button">Sign up</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Hero -->
+            <section class="hero">
+                <div class="row">
+                    <div class="col-xl-6 col-12">
+                        <p class="title">Digital Smart Wallet</p>
+                        <h1 class="heading lv1 hero__heading ">
+                            Digital <strong
+                                    class="hero__highlight  wow animate__headShake">Payment</strong>
+                            For
+                            Everyone.</h1>
+                        <p class="desc hero__desc">We bring together everything that’s required to
+                            build
+                            websites and apps that accept payments and send
+                            payouts globally. We are the best platform.</p>
+                        <form action="#!"
+                              class="hero__form">
+                            <div class="hero-form__inner">
+                                <input type="email"
+                                       class="hero-form__input"
+                                       pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/"
+                                       placeholder="Your email address"
+                                       required>
+                                <button class="btn hero-form__submit"
+                                        type="submit">Get Started</button>
+                            </div>
+                            <span class="hero-form__note">*We’ll respect the inbox and never share
+                                your
+                                email.</span>
+                        </form>
+                    </div>
+                    <div class="col-xl-5 offset-xl-1 col-12 offset-0">
+                        <div class="hero__media">
+                            <div class="hero__img-wrapper  wow animate__shakeX">
+                                <img src="./assets/imgs/mobileScreen.png"
+                                     alt="CeloBank"
+                                     class="hero__img">
+                            </div>
+                            <div class="hero__decor hero__decor-interest wow animate__backInUp "
+                                 data-wow-delay="1s">
+                                <p>0%</p>
+                                <p>Interest</p>
+                            </div>
+                            <div class="hero__decor hero__decor-secured wow animate__backInUp"
+                                 data-wow-delay="1.5s">
+                                <img src="./assets/imgs/securityMoney.svg"
+                                     alt="CeloBank"
+                                     class="secured__icon">
+                                <div class="secured__text">
+                                    <p>$1.310</p>
+                                    <p>SECURED FUNDS</p>
+                                </div>
+                            </div>
+                            <div class="hero__decor hero__decor-deposit wow animate__backInLeft"
+                                 data-wow-delay="2s">
+                                <img class="deposit__icon"
+                                     src="./assets/imgs/deposit.svg"
+                                     alt="">
+                                <div class="deposit__text">
+                                    <p>Deposite</p>
+                                    <p>$32000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Product -->
+            <section id="product"
+                     class="work">
+                <div class="row">
+                    <div class="col-xl-6 col-12 order-1 order-xl-1">
+                        <div class="row">
+                            <div class="col-xl-10">
+                                <div class="work__media">
+                                    <div class="work__img-wrapper">
+                                        <img src="./assets/imgs/work.png"
+                                             alt="CeloBank"
+                                             class="work__img">
+                                    </div>
+                                    <img src="./assets/imgs/word__decor.png"
+                                         alt="CeloBank"
+                                         class="work-media__background">
+                                    <div class="work-media__icon wow animate__heartBeat">
+                                        <img src="./assets/imgs/work__icon-1.svg"
+                                             alt="CeloBank">
+                                    </div>
+
+                                    <div class="work__congratulate wow animate__heartBeat">
+                                        <div class="congratulate__icon-outer">
+                                            <div class="congratulate__icon">
+                                                <i class="fa-solid fa-check"></i>
+                                            </div>
+                                        </div>
+                                        <div class="congratulate__text">
+                                            <p>Congratulations</p>
+                                            <p>Your account activated</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 offset-xl-1 col-12 order-xl-1">
+                        <div class="work__content">
+                            <div class="title">Digital Smart Wallet</div>
+                            <h2 class="heading lv2 work__heading">How It Works</h2>
+                            <ul class="work__list">
+                                <li class="work__item">1. Open a High Interest Checking account
+                                    <p class="work-item__desc">Fund your bank account with a minimum
+                                        balance of $100. Enroll in 3 minutes or less!</p>
+                                </li>
+                                <li class="work__item">2. 10 point-of-sale transactions each Month
+                                    that
+                                    are
+                                    at least $10 each.
+                                    <p class="work-item__desc">Be sure to use your rewards checking
+                                        account as often as possible in order to accue APYI</p>
+                                </li>
+                                <li class="work__item">3. Receive up to 5.50% APY
+                                    <p class="work-item__desc">The APY you earn will be based on
+                                        your
+                                        account balance and satisfying the transaction requirement.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features -->
+            <!-- Feature 1 -->
+            <section id="features"
+                     class="features">
+                <div class="row align-item__center">
+                    <div class="col-xl-5 col-12 ">
+                        <p class="title">Digital Smart Wallet</p>
+                        <h2 class="features__heading heading lv2">One Card For All Your Payments
+                        </h2>
+                        <p class="desc features__desc">We bring together eveything that’s required
+                            to
+                            build websites and apps that accept payments and send
+                            payouts globally. We are the best platform.</p>
+                        <ul class="list features__list">
+                            <li class="item features__item">Global Payments</li>
+                            <li class="item features__item">One-Click Purchase</li>
+                            <li class="item features__item">Friendly Price</li>
+                        </ul>
+                        <button class="btn features__btn">Get Started</button>
+                    </div>
+                    <div class="col-xl-6 offset-xl-1 col-12">
+                        <div class="features__media">
+                            <div class="features__img-wrapper wow animate__headShake">
+                                <img src="./assets/imgs/card.png"
+                                     alt="CeloBank"
+                                     class="feature__img">
+                            </div>
+                            <div class="feature__decor feature__send-money hide-xs wow animate__wobble"
+                                 data-wow-delay="1s">
+                                <div class="send-money__icon-wrapper">
+                                    <i class="fa-solid fa-paper-plane send-money__icon "></i>
+                                </div>
+                                <div class="send-money__text">
+                                    <p>Send Money</p>
+                                    <p>Airbnb Payment</p>
+                                </div>
+                                <div class="send-money__text">
+                                    <p>- $600</p>
+                                    <p>Sep 23</p>
+                                </div>
+                            </div>
+                            <div class="feature__decor feature__income wow animate__wobble"
+                                 data-wow-delay="0.5s">
+                                <div class="feature-income__icon-wrapper">
+                                    <img src="./assets/imgs/income.svg"
+                                         alt="">
+                                </div>
+                                <p class="feature-income__text">Income</p>
+                                <p class="feature-income__text">$1250</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Feature 2 -->
+            <section class="features feature__2">
+                <div class="row align-item__center">
+                    <div class="col-xl-5 col-12 order-1 order-xl-1">
+                        <div class="features__media">
+                            <div class="features__img-wrapper">
+                                <img src="./assets/imgs/features__human.png"
+                                     alt="CeloBank"
+                                     class="feature__img">
+                            </div>
+                            <div class="features__background">
+                                <img src="./assets/imgs/features__decor.png"
+                                     alt="CeloBank">
+                            </div>
+
+                            <div class="feature__decor features__payment">
+                                <p>Choose payment method:</p>
+                                <div class="payment__list">
+                                    <a class="payment__link"
+                                       href="#!">
+                                        <div class="payment__item">
+                                            <img src="./assets/imgs/master_card.svg"
+                                                 alt="master_card">
+                                        </div>
+                                    </a>
+
+
+                                    <a class="payment__link"
+                                       href="#!">
+                                        <div class="payment__item">
+                                            <img src="./assets/imgs/maestro_card.svg"
+                                                 alt="maestro_card">
+                                        </div>
+                                    </a>
+
+                                    <a class="payment__link"
+                                       href="#!">
+                                        <div class="payment__item">
+                                            <img src="./assets/imgs/webmoney_card.svg"
+                                                 alt="webmoney_card">
+                                        </div>
+                                    </a>
+
+                                    <a class="payment__link"
+                                       href="#!">
+                                        <div class="payment__item">
+                                            <img src="./assets/imgs/visa_card.svg"
+                                                 alt="visa_card">
+                                        </div>
+                                    </a>
+
+                                    <a class="payment__link"
+                                       href="#!">
+                                        <div class="payment__item">
+                                            <img src="./assets/imgs/paypal_card.svg"
+                                                 alt="paypal_card">
+                                        </div>
+                                    </a>
+
+                                    <a class="payment__link"
+                                       href="#!">
+                                        <div class="payment__item">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="feature__decor features__cash wow animate__heartBeat"
+                                     data-wow-delay="1s">
+                                    <img src="./assets/imgs/cash.svg"
+                                         alt="CeloBank">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5 offset-xl-2 col-12 order-xl-1">
+                        <p class="title">Digital Smart Wallet</p>
+                        <h2 class="features__heading heading lv2">Transfer and Deposite Your Money
+                            Anytime
+                        </h2>
+                        <p class="desc features__desc">We bring together eveything that’s required
+                            to
+                            build websites and apps that accept payments and send
+                            payouts globally. We are the best platform.</p>
+                        <ul class="list features__list">
+                            <li class="item features__item">Powerful App</li>
+                            <li class="item features__item">Transparency And Speed</li>
+                            <li class="item features__item">Multiple Use Capabilities</li>
+                        </ul>
+                        <button class="btn features__btn">Get Started</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Feedback -->
+            <section id="feedback"
+                     class="feedback">
+                <div class="row flex-direction__col align-item__center">
+                    <span class="title feedback__title">Our Testimonial</span>
+                    <h2 class="h2 heading lv2 feedback__heading">What Clients Says</h2>
+                    <p class="desc feedback__desc">Read what clients says about us and about our
+                        online banking services that may inspire you</p>
+                </div>
+                <div class="row">
+                    <div class="feedback__list">
+                        <!-- Feedback item 1 -->
+                        <div class="feedback__item">
+                            <div class="feedback__content wow animate__bounceIn">
+                                <p>Fantastic platform for online banking. The best online banking
+                                    platform I have used. Payments,
+                                    loans, and money transfers have never been so much easier
+                                    before. I am very much happy about this
+                                    great online bank.</p>
+                                <div class="feedback__arrow">
+                                </div>
+                            </div>
+                            <article class="feedback__user">
+                                <figure class="user__avatar-wrapper">
+                                    <img src="./assets/imgs/avatar_1.png"
+                                         alt=""
+                                         class="user__avatar">
+                                </figure>
+                                <h3 class="user__name">Alastair Cook</h3>
+                                <p class="user__role">Businessmen</p>
+                            </article>
+                        </div>
+
+                        <!-- Feedback item 2 -->
+                        <div class="feedback__item">
+                            <div class="feedback__content wow animate__bounceIn">
+                                <p>Fantastic platform for online banking. The best online banking
+                                    platform I have used. Payments,
+                                    loans, and money transfers have never been so much easier
+                                    before. I am very much happy about this
+                                    great online bank.</p>
+                                <div class="feedback__arrow"></div>
+                            </div>
+                            <article class="feedback__user">
+                                <figure class="user__avatar-wrapper">
+                                    <img src="./assets/imgs/avatar_2.png"
+                                         alt=""
+                                         class="user__avatar">
+                                </figure>
+                                <h3 class="user__name">Alastair Cook</h3>
+                                <p class="user__role">Businessmen</p>
+                            </article>
+                        </div>
+
+                        <!-- Feedback item 3 -->
+                        <div class="feedback__item">
+                            <div class="feedback__content">
+                                <p>Fantastic platform for online banking. The best online banking
+                                    platform I have used. Payments,
+                                    loans, and money transfers have never been so much easier
+                                    before. I am very much happy about this
+                                    great online bank.</p>
+                            </div>
+                            <article class="feedback__user">
+                                <figure class="user__avatar-wrapper">
+                                    <img src="./assets/imgs/avatar_2.png"
+                                         alt=""
+                                         class="user__avatar">
+                                </figure>
+                                <h3 class="user__name">Alastair Cook</h3>
+                                <p class="user__role">Businessmen</p>
+                            </article>
+                        </div>
+
+                        <!-- Feedback item 4 -->
+                        <div class="feedback__item">
+                            <div class="feedback__content">
+                                <p>Fantastic platform for online banking. The best online banking
+                                    platform I have used. Payments,
+                                    loans, and money transfers have never been so much easier
+                                    before. I am very much happy about this
+                                    great online bank.</p>
+                            </div>
+                            <article class="feedback__user">
+                                <figure class="user__avatar-wrapper">
+                                    <img src="./assets/imgs/avatar_2.png"
+                                         alt=""
+                                         class="user__avatar">
+                                </figure>
+                                <h3 class="user__name">Alastair Cook</h3>
+                                <p class="user__role">Businessmen</p>
+                            </article>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row ">
+                    <div class="feedback__control">
+                        <span class="feedback-control__item feedback-control__item--chosed"></span>
+                        <span class="feedback-control__item"></span>
+                        <span class="feedback-control__item"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog -->
+            <section id="blog"
+                     class="blog">
+                <header class="blog__header">
+                    <div class="">
+                        <div class="title">Our Blog</div>
+                        <h2 class="heading lv2 blog__heading">Get The Updates</h2>
+                        <p class="desc blog__desc">Read our blog for the regular updates about
+                            us and about our online banking services that may
+                            inspire you</p>
+                    </div>
+                    <button class="btn blog__cta">Read All</button>
+                </header>
+                <div class="row">
+                    <div class="blog__list">
+                        <!-- Blog item 1 -->
+                        <a href="#!">
+                            <article class="blog__item">
+                                <figure class="blog__thumb">
+                                    <img src="./assets/imgs/blog_item-1.png"
+                                         alt="CeloBank"
+                                         class="blog-item__img">
+                                </figure>
+                                <div class="blog-item__info">
+                                    <p class="blog-item__time">July 03, 2022</p>
+                                    <h3 class="blog-item__heading line-clamp line-2">Online bank is
+                                        the
+                                        best and secure
+                                        way to save in the future...</h3>
+                                    <p class="blog-item__link">Read Blog</p>
+                                </div>
+                            </article>
+                        </a>
+
+                        <!-- Blog item 2 -->
+                        <a href="#!">
+                            <article class="blog__item">
+                                <figure class="blog__thumb">
+                                    <img src="./assets/imgs/blog_item-2.png"
+                                         alt="CeloBank"
+                                         class="blog-item__img">
+                                </figure>
+                                <div class="blog-item__info">
+                                    <p class="blog-item__time">July 03, 2022</p>
+                                    <h3 class="blog-item__heading line line-2">Why do you need to
+                                        open a
+                                        bank account in online..</h3>
+                                    <p class="blog-item__link">Read Blog</p>
+                                </div>
+                            </article>
+                        </a>
+
+                        <!-- Blog item 3 -->
+                        <a href="#!">
+                            <article class="blog__item">
+                                <figure class="blog__thumb">
+                                    <img src="./assets/imgs/blog_item-3.png"
+                                         alt="CeloBank"
+                                         class="blog-item__img">
+                                </figure>
+                                <div class="blog-item__info">
+                                    <p class="blog-item__time">July 03, 2022</p>
+                                    <h3 class="blog-item__heading line-clamp line-2">The benefits
+                                        that
+                                        we get from credit card at anytime...</h3>
+                                    <p class="blog-item__link">Read Blog</p>
+                                </div>
+                            </article>
+                        </a>
+
+                        <!-- Blog item 4 -->
+                        <a href="#!">
+                            <article class="blog__item hide-xs">
+                                <figure class="blog__thumb">
+                                    <img src="./assets/imgs/blog_item-4.png"
+                                         alt="CeloBank"
+                                         class="blog-item__img">
+                                </figure>
+                                <div class="blog-item__info">
+                                    <p class="blog-item__time">July 03, 2022</p>
+                                    <h3 class="blog-item__heading line-clamp line-2">How to manage
+                                        your
+                                        money in online in this busy days...</h3>
+                                    <p class="blog-item__link">Read Blog</p>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="download">
+                <div class="download__content">
+                    <div class="title download__title">Our App</div>
+                    <h2 class="heading lv2 download__heading">Download the Apps</h2>
+                    <p class="desc download__desc">Download our mobile apps and get started today
+                        with a special online bank and move faster</p>
+                    <div class="download__list">
+                        <div class="download__item download__item--google-play">
+                            <a href="#!">
+                                <figure class="download-item__thumb">
+                                    <img src="./assets/imgs/google-play-badge.svg"
+                                         alt="google-play-badge">
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="download__item download__item--app-store">
+                            <a href="#!">
+                                <figure class="download-item__thumb">
+                                    <img src="./assets/imgs/app-store-badge.svg"
+                                         alt="app-store-badge">
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="download__decor download__decor-top-left">
+                        <img src="./assets/imgs/star.svg"
+                             alt="">
+                    </div>
+                    <div class="download__decor download__decor-top-right">
+                        <img src="./assets/imgs/star.svg"
+                             alt="">
+                    </div>
+                    <div class="download__decor download__decor-bot-left">
+                        <img src="./assets/imgs/star.svg"
+                             alt="">
+                    </div>
+                    <div class="download__decor download__decor-bot-right">
+                        <img src="./assets/imgs/star.svg"
+                             alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <a href="#"
+                   class="logo">
+                    <img src="./assets/imgs/logo.svg"
+                         alt="CeloBank"
+                         class="logo__img">
+                </a>
+                <div>
+                    <p class="footer__heading">Sitemap</p>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#!"
+                               class="footer__link">Home</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!"
+                               class="footer__link">About</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!"
+                               class="footer__link">Growers</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!"
+                               class="footer__link">Merchants</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!"
+                               class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footer__heading">Socials</p>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#!"
+                               class="footer__link">Facebook</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!"
+                               class="footer__link">Linkedin</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!"
+                               class="footer__link">Instagram</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#!"
+                               class="footer__link">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__info">
+                    <p class="footer__heading">Head Office</p>
+                    <p class="footer__address">Xilliams Corner Wine © 2017. 1112 A Market St #
+                        Ste B22, Charlottesville, CA 45565</p>
+
+                    <form class="footer__form"
+                          action="#!">
+                        <label for="email__input"
+                               class="footer__label">News letter</label>
+                        <div class="footer-form__inner">
+                            <input type="email"
+                                   name="email"
+                                   class="footer-form__input"
+                                   id="email__input"
+                                   placeholder="Email address..."
+                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                   required>
+                            <button type="submit"
+                                    class="footer-form__submit btn">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="mailto:ducvui2003@gmail.com"
+                           class="footer__link">ducvui2003@gmail.com</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="tel:+8465809127"
+                           class="footer__link">(123) 456-7890</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2020 Ligft Media All rights reserved.</p>
+        </div>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+    <script>
+        wow = new WOW({
+            animateClass: 'animate__animated',
+        })
+        wow.init();
+    </script>
+</body>
+
+</html>

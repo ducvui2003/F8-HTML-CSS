@@ -1,0 +1,145 @@
+:root {
+  --primary-color: #7264d6;
+  --primary-low-color: #8578df;
+  --text-primary-color: #212832;
+  --text-secondary-color: #696d76;
+  --title-color: #696d77;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscale;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: var(--border-radius);
+
+  color: #fff;
+  background-color: var(--text-primary-color);
+  border-radius: 8px;
+
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75;
+
+  user-select: none;
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.heading {
+  font-style: normal;
+  color: var(--text-primary-color);
+}
+.heading.lv1 {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.16667;
+}
+.heading.lv2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.desc {
+  color: var(--text-secondary-color);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.66667;
+}
+.title {
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary-color);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.title::before {
+  content: "";
+  width: 18px;
+  height: 2px;
+  background-color: currentColor;
+  margin-right: 12px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.item {
+  display: flex;
+  align-items: center;
+
+  color: var(--text-primary-color);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.66667;
+}
+.item::before {
+  font-size: 10px;
+  content: "";
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin-right: 12px;
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, line default);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-2 {
+  --line-clamp: 2;
+}
+@media screen and (max-width: 575.8px) {
+  .title {
+    font-size: 1.4rem;
+  }
+  .title::before {
+    margin-right: 8px;
+  }
+  .heading.lv1 {
+    font-size: 5rem;
+  }
+  .heading.lv2 {
+    font-size: 3rem;
+  }
+  .desc {
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+  .btn {
+    padding: 10px 20px;
+  }
+  .item {
+    font-size: 1.6rem;
+  }
+  .item::before {
+    font-size: 8px;
+    margin-right: 10px;
+  }
+}
