@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon"
+        sizes="180x180"
+        href="./assets/favicon/apple-touch-icon.png" />
+  <link rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./assets/favicon/favicon-32x32.png" />
+  <link rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="./assets/favicon/favicon-16x16.png" />
+  <link rel="manifest"
+        href="./assets/favicon/site.webmanifest" />
+  <!-- Embed fonts -->
+  <link rel="stylesheet"
+        href="./assets/fonts/stylesheet.css" />
+  <!-- Fonts icon -->
+  <script src="https://kit.fontawesome.com/ed5ddce74d.js"
+          crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <!-- Rest -->
+  <link rel="stylesheet"
+        href="./assets/css/reset.css" />
+  <!-- Grid system -->
+  <link rel="stylesheet"
+        href="./assets/css/grid.css">
+  <link rel="stylesheet"
+        href="assets/css/base.css" />
+  <link rel="stylesheet"
+        href="./assets/css/styles.css" />
+  <link rel="stylesheet"
+        href="./assets/css/responsive.css">
+  <title>Modulars</title>
+</head>
+
+<body>
+  <div class="grid wide">
+    <!-- Header -->
+    <div class="row">
+      <div class="col c-12 m-12 l-12">
+        <header class="header ">
+          <div class="header__body">
+            <!-- Logo -->
+            <div class="logo m-header__logo">
+              <img class="logo__img"
+                   src="./assets/images/logo.svg"
+                   alt="" />
+            </div>
+
+            <!-- Open nav mobile -->
+            <label class="m-header-nav__label--open header-nav__label"
+                   for="header-nav__radio--open">
+              <i class="m-header-nav__icon fa-solid fa-bars"></i>
+            </label>
+
+            <!-- Radio -->
+            <input type="radio"
+                   name="nav-radio"
+                   id="header-nav__radio--open"
+                   class="m-header-nav__open"
+                   hidden>
+            <input type="radio"
+                   name="nav-radio"
+                   id="header-nav__radio--close"
+                   class="m-header-nav__close"
+                   hidden>
+
+            <nav class="header__nav m-header__nav">
+
+              <!-- Close nav mobile -->
+              <label for="header-nav__radio--close"
+                     class="m-header-nav__label--close">
+                <i class="m-header-nav__icon fa-solid fa-xmark"></i>
+              </label>
+              <ul class="header-nav__list m-header-nav__list">
+                <li class="header-nav__item">
+                  <a class="header-nav__link m-header-nav__link"
+                     href="#!">Home</a>
+                </li>
+                <li class="header-nav__item">
+                  <a class="header-nav__link m-header-nav__link"
+                     href="#!">About</a>
+                </li>
+                <li class="header-nav__item">
+                  <a class="header-nav__link m-header-nav__link"
+                     href="#!">Blog</a>
+                </li>
+                <li class="header-nav__item">
+                  <a class="header-nav__link m-header-nav__link"
+                     href="#!">Contact</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header__cta m-header__cta">
+              <button class="header-cta__btn m-header-cta__btn btn">Sign up</button>
+            </div>
+          </div>
+          <span class="header__decor m-header__decor m-hide "></span>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <main class="main">
+    <!-- Hero -->
+    <section class="hero grid wide">
+      <div class="row">
+        <div class="hero-body">
+          <div class="col l-4 c-12 ">
+            <div class="hero-left">
+              <h1 class="hero__heading heading lv1">
+                We’re a creative design agency.
+              </h1>
+              <p class="hero__desc desc">
+                A brilliant, modular agency template for startup’s build yours
+                toady.
+              </p>
+              <div class="hero__cta">
+                <button class="hero-cta__btn btn">Get in touch</button>
+                <a class="btn-cta__link"
+                   href="#!">
+                  <span class="btn-cta-link__icon--outer"><i
+                       class="btn-cta-link__icon fa-solid fa-play"></i></span>Watch Video
+                </a>
+              </div>
+              <div class="hero__decor-wrapper m-hide"><img class="hero__decor"
+                     src="./assets/images/hero-decor-01.svg"
+                     alt=""></div>
+            </div>
+          </div>
+
+          <div class="col l-7 c-12 l-o-1">
+            <div class="hero-right ">
+              <!-- Hero img -->
+              <div class="hero__img-wrapper">
+                <img src="./assets/images/hero-img-01.png"
+                     alt=""
+                     class="hero__img">
+              </div>
+              <div class="hero__img-wrapper">
+                <img src="./assets/images/hero-img-02.png"
+                     alt=""
+                     class="hero__img">
+              </div>
+              <div class="hero__img-wrapper">
+                <img src="./assets/images/hero-img-03.png"
+                     alt=""
+                     class="hero__img">
+              </div>
+
+              <!-- Hero decor PC-->
+              <div class="hero__decor-eclipse">
+              </div>
+              <div class="hero__decor-wrapper hero__decor-wrapper--flower m-hide">
+                <img src="./assets/images/hero-decor-01.svg"
+                     alt=""
+                     class="hero__decor">
+              </div>
+              <div class="hero__decor-wrapper hero__decor-wrapper--line m-hide">
+                <img src="./assets/images/hero-decor-02.svg"
+                     alt=""
+                     class="hero__decor">
+              </div>
+
+              <!-- Hero decor Mobile-->
+              <div
+                   class="hero__decor-wrapper hero__decor-wrapper--flower m-hero__decor-wrapper-04 pc-hide">
+                <img src="./assets/images/hero-decor-01.svg"
+                     alt=""
+                     class="hero__decor">
+              </div>
+
+              <div
+                   class="hero__decor-wrapper hero__decor-wrapper--flower m-hero__decor-wrapper-03 pc-hide">
+                <img src="./assets/images/hero-decor-01.svg"
+                     alt=""
+                     class="hero__decor">
+              </div>
+              <div class="hero__decor-wrapper hero__decor-wrapper--line m-hero__decor-wrapper-02
+                         pc-hide">
+                <img src="./assets/images/hero-decor-03.svg"
+                     alt=""
+                     class="hero__decor">
+              </div>
+              <div
+                   class="hero__decor-wrapper hero__decor-wrapper--line m-hero__decor-wrapper-01 pc-hide">
+                <img src="./assets/images/hero-decor-03.svg"
+                     alt=""
+                     class="hero__decor">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agency -->
+    <article class="agency grid wide">
+      <div class="agency-body">
+        <div class="row agency-body-inner">
+          <a href="https://www.google.com/"
+             target="_blank"
+             class="agency__brand-wrapper col l-2_4 c-6">
+            <img src="./assets/images/logo_google.svg"
+                 alt="logo_google"
+                 class="agency__brand">
+          </a>
+          <a href="https://slack.com/"
+             target="_blank"
+             class="agency__brand-wrapper col l-2_4 c-6 ">
+            <img src="./assets/images/logo_slack.svg"
+                 alt="logo_slack"
+                 class="agency__brand">
+          </a>
+          <a href="https://discord.com/"
+             target="_blank"
+             class="agency__brand-wrapper col l-2_4 c-6">
+            <img src="./assets/images/logo_discord.svg"
+                 alt="logo_discord"
+                 class="agency__brand agency__brand--discord">
+          </a>
+          <a href="https://www.riotinto.com/"
+             target="_blank"
+             class="agency__brand-wrapper col l-2_4 c-6">
+            <img src="./assets/images/logo_RioTinto.svg"
+                 alt="logo_RioTinto"
+                 class="agency__brand">
+          </a>
+          <a href="https://www.heroku.com/"
+             target="_blank"
+             class="agency__brand-wrapper col l-2_4 c-6 c-o-3 l-o-0">
+            <img src="./assets/images/logo_heroku.svg"
+                 alt="logo_heroku"
+                 class="agency__brand ">
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Services -->
+    <section class="services  grid wide">
+      <div class="services-body">
+        <div class="services__content">
+          <p class="services__title title">OUR SERVICES</p>
+          <h2 class="services__heading heading lv2 heading-decor">We offer a wide range of design
+            services</h2>
+          <div class="services__cta m-hide">
+            <button class="services__btn">
+              <svg class="services-btn__icon  services-btn__icon--left"
+                   width="22"
+                   height="13"
+                   viewBox="0 0 22 13"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 6.82353H0.999999M0.999999 6.82353L6.29412 1M0.999999 6.82353L6.29412 12"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+              </svg>
+            </button>
+
+            <button class="services__btn">
+              <svg class="services-btn__icon services-btn__icon-right"
+                   width="22"
+                   height="13"
+                   viewBox="0 0 22 13"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 6.82353H0.999999M0.999999 6.82353L6.29412 1M0.999999 6.82353L6.29412 12"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="row services__list-outer">
+          <div class="col l-0 c-1_5">
+            <button class="services__btn">
+              <i class="services-btn__icon fa-solid fa-chevron-left"></i>
+            </button>
+          </div>
+
+          <div class="services__list col l-12 c-9">
+
+            <!-- Service card 1 -->
+            <article class="services__card">
+              <a href="#!">
+                <figure class="services-card__thumbnail">
+                  <img src="./assets/images/card-thumb-01.png"
+                       alt=""
+                       class="services-card__img">
+                </figure>
+              </a>
+              <div class="services-card__content">
+                <a href="#!">
+                  <h3 class="services-card__heading line-clamp line-1">Branding</h3>
+                </a>
+                <p class="services-card__desc line-clamp line-3">Create beautiful Agency website
+                  with
+                  Boluethat converts more visitors than
+                  any website.</p>
+              </div>
+            </article>
+
+            <!-- Service card 2 -->
+            <article class="services__card ">
+              <a href="#!">
+                <figure class="services-card__thumbnail">
+                  <img src="./assets/images/card-thumb-02.png"
+                       alt=""
+                       class="services-card__img">
+                </figure>
+              </a>
+              <div class="services-card__content">
+                <a href="#!">
+                  <h3 class="services-card__heading line-clamp line-1">Web Design</h3>
+                </a>
+                <p class="services-card__desc line-clamp line-3">Create beautiful Agency website
+                  with
+                  Boluethat converts more visitors than
+                  any website.</p>
+              </div>
+            </article>
+
+            <!-- Service card 3 -->
+            <article class="services__card ">
+              <a href="#!">
+                <figure class="services-card__thumbnail">
+                  <img src="./assets/images/card-thumb-03.png"
+                       alt=""
+                       class="services-card__img">
+                </figure>
+              </a>
+              <div class="services-card__content">
+                <a href="#!">
+                  <h3 class="services-card__heading line-clamp line-1">Graphic Design</h3>
+                </a>
+                <p class="services-card__desc line-clamp line-3">Create beautiful Agency website
+                  with
+                  Boluethat converts more visitors than
+                  any website.</p>
+              </div>
+            </article>
+
+            <!-- Service card 4 -->
+            <article class="services__card">
+              <a href="#!">
+                <figure class="services-card__thumbnail">
+                  <img src="./assets/images/card-thumb-03.png"
+                       alt=""
+                       class="services-card__img">
+                </figure>
+              </a>
+              <div class="services-card__content">
+                <a href="#!">
+                  <h3 class="services-card__heading line-clamp line-1">Graphic Design</h3>
+                </a>
+                <p class="services-card__desc line-clamp line-3">Create beautiful Agency website
+                  with
+                  Boluethat converts more visitors than
+                  any website.</p>
+              </div>
+            </article>
+
+            <!-- Service card 5 -->
+            <article class="services__card ">
+              <a href="#!">
+                <figure class="services-card__thumbnail">
+                  <img src="./assets/images/card-thumb-03.png"
+                       alt=""
+                       class="services-card__img">
+                </figure>
+              </a>
+              <div class="services-card__content">
+                <a href="#!">
+                  <h3 class="services-card__heading line-clamp line-1">Graphic Design</h3>
+                </a>
+                <p class="services-card__desc line-clamp line-3">Create beautiful Agency website
+                  with
+                  Boluethat converts more visitors than
+                  any website.</p>
+              </div>
+            </article>
+
+            <!-- Service card 6 -->
+            <article class="services__card">
+              <a href="#!">
+                <figure class="services-card__thumbnail">
+                  <img src="./assets/images/card-thumb-03.png"
+                       alt=""
+                       class="services-card__img">
+                </figure>
+              </a>
+              <div class="services-card__content">
+                <a href="#!">
+                  <h3 class="services-card__heading line-clamp line-1">Graphic Design</h3>
+                </a>
+                <p class="services-card__desc line-clamp line-3">Create beautiful Agency website
+                  with
+                  Boluethat converts more visitors than
+                  any website.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col l-0 c-1_5">
+            <button class="services__btn btn">
+              <i class="services-btn__icon  services-btn__icon-right fa-solid fa-chevron-left"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about grid wide">
+      <div class="about-body row">
+        <div class=" col l-6 c-12">
+          <div class="about__media">
+            <div class="about__img-wrapper">
+              <img src="./assets/images/about-img-01.png"
+                   alt=""
+                   class="about__img">
+            </div>
+            <div class="about__img-wrapper">
+              <img src="./assets/images/about-img-02.png"
+                   alt=""
+                   class="about__img">
+            </div>
+
+            <!-- Decor -->
+            <div class="about__card">
+              <p class="about-card__heading">All Designers</p>
+              <p class="about-card__desc">Total Balance</p>
+              <p class="about-card__percent">40%</p>
+              <p class="about-percent__loading">Loading...</p>
+              <div class="about-card__dot"></div>
+              <div class="about-card__members">
+                <p>Teams:</p>
+                <ul class="about-member__list">
+                  <li class="about-member__item">
+                    <img src="./assets//images/about-card-img-01.png"
+                         alt=""
+                         class="about-member__img">
+                  </li>
+                  <li class="about-member__item">
+                    <img src="./assets//images/about-card-img-02.png"
+                         alt=""
+                         class="about-member__img">
+                  </li>
+                  <li class="about-member__item">
+                    <img src="./assets//images/about-card-img-03.png"
+                         alt=""
+                         class="about-member__img">
+                  </li>
+                  <li class="about-member__item">
+                    <img src="./assets//images/about-card-img-04.png"
+                         alt=""
+                         class="about-member__img">
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="about__decor--wrapper about__decor--wrapper--line">
+              <img src="./assets/images/about-decor-line.svg"
+                   alt=""
+                   class="about__decor">
+            </div>
+            <div class="about__decor--wrapper about__decor--wrapper--flower">
+              <img src="./assets/images/hero-decor-01.svg"
+                   alt=""
+                   class="about__decor">
+            </div>
+          </div>
+        </div>
+        <div class=" col l-5 c-12">
+          <article class="about__content">
+            <p class="title">ABOUT US</p>
+            <h2 class="about__heading heading lv2">We are an extention of your creative team</h2>
+            <p class="about__desc desc">At the start of every project, we cusomizea detailed
+              project
+              plan together with you set exectationns
+              ensure alighment and define key milestones and deiverbles.</p>
+            <div class="about__stats">
+              <span class="about-stats__drop-cat">48%</span>
+              <p class="about-stats__desc">Are you strive for two things in design simplicity and
+                clarity. Great design is born of those two
+                things
+              </p>
+            </div>
+            <div class="about__stats">
+              <span class="about-stats__drop-cat">26%</span>
+              <p class="about-stats__desc">Are you strive for two things in design simplicity and
+                clarity. Great design is born of those two
+                things
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process grid wide">
+      <div class="row">
+        <div class="col l-12 c-12">
+          <p class="title">OUR PROCESS</p>
+          <h2 class="process__heading heading-decor heading lv2">A simple ,yet effective three step
+            process</h2>
+          <div class="process__list">
+
+            <!-- Process item 1 -->
+            <article class="process__item process__item--highlight row">
+              <div class="col l-2 c-4">
+                <span class="process-item__drop-cat">01.</span>
+              </div>
+              <div class="col l-2 c-7 c-o-1">
+                <div class="process-item__heading">
+                  <h3 class="">Project idea</h3>
+                  <a href=""
+                     class="process-item__link">Learn more</a>
+                </div>
+              </div>
+              <div class="col l-6 l-o-2 c-12">
+                <p class="process-item__desc">We customse a ensure aligment and difine key
+                  mileones
+                  and defiverables experience tells us the best
+                  solutions are the ones deated with clients.</p>
+              </div>
+              <div class="process-item__img-wrapper">
+                <img src="./assets/images/process-item.png"
+                     alt=""
+                     class="process-item__img">
+              </div>
+            </article>
+
+            <!-- Process item 2 -->
+            <article class="process__item row">
+              <div class="col l-2 c-4">
+                <span class="process-item__drop-cat">02.</span>
+              </div>
+              <div class="col l-2 c-7 c-o-1">
+                <div class="process-item__heading">
+                  <h3 class="">Brainstorming</h3>
+                  <a href=""
+                     class="process-item__link">Learn more</a>
+                </div>
+              </div>
+              <div class="col l-6 l-o-2 c-12">
+                <p class="process-item__desc">We customse a ensure aligment and difine key
+                  mileones
+                  and defiverables experience tells us the best
+                  solutions are the ones deated with clients.</p>
+              </div>
+              <div class="process-item__img-wrapper">
+                <img src="./assets/images/process-item.png"
+                     alt=""
+                     class="process-item__img">
+              </div>
+            </article>
+
+            <!-- Process item 3 -->
+            <article class="process__item row">
+              <div class="col l-2 c-4">
+                <span class="process-item__drop-cat">03.</span>
+              </div>
+              <div class="col l-2 c-7 c-o-1">
+                <div class="process-item__heading">
+                  <h3 class="">Execution</h3>
+                  <a href=""
+                     class="process-item__link">Learn more</a>
+                </div>
+              </div>
+              <div class="col l-6 l-o-2 c-12">
+                <p class="process-item__desc">We customse a ensure aligment and difine key
+                  mileones
+                  and defiverables experience tells us the best
+                  solutions are the ones deated with clients.</p>
+              </div>
+              <div class="process-item__img-wrapper">
+                <img src="./assets/images/process-item.png"
+                     alt=""
+                     class="process-item__img">
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="feature__body grid wide ">
+        <div class="row">
+          <div class="col l-5 ">
+            <h2 class="features__heading heading-decor heading lv2">
+              A quick glance of our past projects
+            </h2>
+          </div>
+          <div class="col l-6 l-o-1 c-12">
+            <div class="features-header__right">
+              <p class="features__desc desc">Are you strive for the fast project simplicity
+                and clarity. Great
+                design is born of those two things.
+              </p>
+              <a href="#!"
+                 class="features__link">Browse all Projects
+                <span class="features-link__icon"><i
+                     class=" fa-solid fa-arrow-right-long"></i></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="features__video-wrapper">
+          <video poster="./assets/images/features-img.png"
+                 src="https://www.youtube.com/watch?v=CKb6KKUQ47c&t=1537s&ab_channel=%C3%94ngDev"
+                 class="features__video"></video>
+          <button class="video-controller">
+            <img src="./assets/icons/play.svg"
+                 alt=""
+                 class="video-icon-pause">
+          </button>
+        </div>
+        <div class="feature__decor-wrapper feature__decor-wrapper--flower">
+          <img src="./assets/images/hero-decor-01.svg"
+               alt=""
+               class="feature__decor">
+        </div>
+        <div class="feature__decor-wrapper feature__decor-wrapper--line">
+          <img src="./assets/images/feature-decor.svg"
+               alt=""
+               class="feature__decor">
+        </div>
+      </div>
+    </section>
+
+    <!-- Sharing -->
+    <section class="sharing">
+      <div class="grid wide">
+        <div class="sharing__header row">
+          <h2 class="sharing__heading heading lv2">Share the features that help your customers
+          </h2>
+          <p class="sharing__desc desc">You already know that the customer experience doesn't end
+            with a sale — it's an ongoing work in
+            progress that companies should be constantly seeking to improve and iterate on.</p>
+        </div>
+        <div class="sharing__list row">
+          <div class="col l-4 m-12">
+            <article class="sharing__balloon">
+              <figure class="sharing-balloon__icon">
+                <img src="./assets/icons/blog.svg"
+                     alt=""
+                     class="sharing-balloon__img">
+              </figure>
+              <h3 class="sharing-balloon__heading">Blog</h3>
+              <p class="sharing-balloon__desc line-clamp line-4">We’ve researched numerous agencies
+                and complied a
+                list of digital marketing agency blogs you should
+                read to stay ahead of your rivals and succeed online!</p>
+            </article>
+          </div>
+          <div class="col l-4 m-12">
+            <article class="sharing__balloon sharing__balloon--highlight">
+              <figure class="sharing-balloon__icon">
+                <img src="./assets/icons/document.svg"
+                     alt=""
+                     class="sharing-balloon__img">
+              </figure>
+              <h3 class="sharing-balloon__heading">Documentation</h3>
+              <p class="sharing-balloon__desc line-clamp line-4">In this article, we discuss the
+                different types of
+                documentation, what makes for great technical
+                documentation, and provide examples.</p>
+            </article>
+          </div>
+          <div class="col l-4 m-12">
+            <article class="sharing__balloon">
+              <figure class="sharing-balloon__icon">
+                <img src="./assets/icons/customer.svg"
+                     alt=""
+                     class="sharing-balloon__img">
+              </figure>
+              <h3 class="sharing-balloon__heading">Customers</h3>
+              <p class="sharing-balloon__desc line-clamp line-4">Your customers have high
+                expectations — and if your
+                business can't meet them, they're going to leave
+                you for your competitors.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blogs -->
+    <section class="blogs">
+      <div class="grid wide">
+        <p class="title">BLOG & ARTICLES</p>
+        <header class="blogs__header">
+          <h2 class="blogs__heading heading-decor heading lv2">Take a look at our latest articles
+            and resources
+          </h2>
+          <p class="blogs__desc desc">The best agency are the ones ideated with clients. we
+            corporate your ideas with memorable</p>
+        </header>
+        <div class="blogs__list">
+          <article class="blogs__item">
+            <a href="#!">
+              <div class="blogs-item__thumb">
+                <img src="./assets/images/blog-item-01.png"
+                     alt=""
+                     class="blogs-item__img">
+              </div>
+            </a>
+            <div class="blogs-item__content">
+              <span class="blogs-item__tag">Stories</span>
+              <a href="#!">
+                <h3 class="blogs-item__heading line-clamp line-2">What did we learn from nunning
+                  over
+                  100 design sprints
+                  in less the year?</h3>
+              </a>
+              <p class="blogs-item__date">January 29, 2022</p>
+            </div>
+          </article>
+          <article class="blogs__item">
+            <a href="#!">
+              <div class="blogs-item__thumb">
+                <img src="./assets/images/blog-item-02.png"
+                     alt=""
+                     class="blogs-item__img">
+              </div>
+            </a>
+            <div class="blogs-item__content">
+              <span class="blogs-item__tag">Stories</span>
+              <a href="#!">
+                <h3 class="blogs-item__heading line-clamp line-2">The difference between the UI/UX
+                  design a simple guide
+                  for beginner’s</h3>
+              </a>
+              <p class="blogs-item__date">January 29, 2022</p>
+            </div>
+          </article>
+          <article class="blogs__item">
+            <a href="#!">
+              <div class="blogs-item__thumb">
+                <img src="./assets/images/blog-item-03.png"
+                     alt=""
+                     class="blogs-item__img">
+              </div>
+            </a>
+            <div class="blogs-item__content">
+              <span class="blogs-item__tag">Stories</span>
+              <a href="#!">
+                <h3 class="blogs-item__heading line-clamp line-2">How marketing can help your
+                  business
+                  more than
+                  anything.</h3>
+              </a>
+              <p class="blogs-item__date">January 29, 2022</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="grid wide">
+      <div class="footer__body row">
+        <div class="col l-3 c-12">
+          <div class="footer__left">
+            <form action="#!"
+                  class="form">
+              <label for="form__input"
+                     class="form__label">Sign up for our newsletter</label>
+              <div class="form__body">
+                <input type="email"
+                       class="form__input"
+                       id="form__input"
+                       placeholder="Enter your email"
+                       required
+                       pattern="/^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$/
+  ">
+                <button type="submit"
+                        class="form__submit">
+                  <img src="./assets/icons/arrow-right.svg"
+                       alt=""
+                       class="form-submit__icon">
+                </button>
+              </div>
+            </form>
+            <div class="social">
+              <a target="_blank"
+                 href="https://www.facebook.com/ducZui/"
+                 class="social__link">
+                <i class="social__facebook fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#!"
+                 class="social__link">
+                <i class="social__instagram fa-brands fa-instagram"></i></a>
+              <a href="#!"
+                 class="social__link">
+                <i class="social__twitter fa-brands fa-twitter"></i>
+              </a>
+              <label for=""
+                     class="m-footer__label--open pc-hide">
+                <i class="footer__bars fa-solid fa-bars"></i>
+              </label>
+            </div>
+            <div class="footer__right"></div>
+          </div>
+        </div>
+        <div class="col l-5 l-o-4 c-0">
+          <div class="footer__right">
+            <div class="footer__list">
+              <h3 class="footer__title">Pages</h3>
+              <ul>
+                <li class="footer__item">
+                  <a href="#!"
+                     class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!"
+                     class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!"
+                     class="footer__link">Blog</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!"
+                     class="footer__link">Blog Post</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list">
+              <h3 class="footer__title">Product</h3>
+              <ul>
+                <li class="footer__item">
+                  <a href="#!"
+                     class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!"
+                     class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!"
+                     class="footer__link">Blog</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!"
+                     class="footer__link">Blog Post</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list">
+              <h3 class="footer__title">Overview</h3>
+              <ul>
+                <li class="footer__item">
+                  <a href="#!"
+                     class="footer__link">Home1</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!"
+                     class="footer__link">Home2</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!"
+                     class="footer__link">Home3</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!"
+                     class="footer__link">Pricing1</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__list">
+              <h3 class="footer__title">About us</h3>
+              <ul>
+                <li class="footer__item">
+                  <a href="#!"
+                     class="footer__link">Team</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!"
+                     class="footer__link">Investors</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!"
+                     class="footer__link">Blog</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#!"
+                     class="footer__link">Press</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

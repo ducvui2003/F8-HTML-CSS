@@ -1,0 +1,8 @@
+.logo {
+  width: 107px;
+  height: 34px;
+}
+.logo__img {
+  width: 100%;
+  max-height: 100%;
+}

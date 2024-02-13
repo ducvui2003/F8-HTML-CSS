@@ -1,0 +1,114 @@
+:root {
+  --primary-color: #efca96;
+  --primary-color-low: #ffe4c3;
+  --secondary-color: #5e442e;
+  --primary-text: #000;
+  --primary-text-low: rgba(0, 0, 0, 0.5);
+  --secondary-text: #fff;
+  --red: #ff0a0a;
+  --blue: #3244ef;
+  --blue-low: #0476fc;
+  --blue-medium: #0476fc;
+  --orange: #f27400;
+  /* Font */
+  --roboto-font: "Roboto", sans-serif;
+  --lora-font: "Lora", serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Optimize for display text */
+body {
+  text-rendering: optimizeSpeed;
+  -webkit-font-smooth: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+body::-webkit-scrollbar {
+  width: 0px;
+}
+html {
+  font-size: 62.5%;
+}
+.heading {
+  max-width: 250px;
+  min-width: 210px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 31.5%;
+  margin-block: 32px 16px;
+  border-bottom: 3px solid currentColor;
+  color: var(--primary-text);
+}
+
+.heading h1 {
+  margin-bottom: 8px;
+  padding: 16px 32px;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  text-align: center;
+  font-family: var(--roboto-font);
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--secondary-color);
+  background-color: white;
+  box-sizing: content-box;
+  padding: 12px;
+}
+.logo div {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.button__hover {
+  display: flex;
+  justify-content: center;
+}
+.button__hover a {
+  display: inline-block;
+  min-width: 200px;
+  padding: 16px 32px;
+  border-radius: 10px;
+  border: 5px solid white;
+  margin-top: 16px;
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  color: var(--secondary-text);
+  font-family: var(--roboto-font);
+  font-size: 1.6rem;
+  text-align: center;
+  outline: 5px solid var(--secondary-color);
+  transition: background-color 0.3s ease-in, outline 0.3s ease-in;
+}
+.button__hover:hover a{
+  background-color: var(--primary-color-low);
+  outline: 5px solid var(--primary-color-low);
+}
+/* icon color */
+.icon--google{
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.icon--facebook{
+   color: 	#4267B2;
+}
+.icon--twitter{
+ color: #1DA1F2;
+}
