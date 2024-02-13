@@ -1,0 +1,15 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+.header {
+  background-color: variables.$white-100;
+}
+@include mixins.make-media-max-width(xs) {
+  .header {
+    position: sticky;
+    top: -15px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+  }
+}

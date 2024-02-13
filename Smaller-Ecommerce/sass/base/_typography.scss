@@ -1,0 +1,71 @@
+@use "sass:math";
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+$unit-rem-html: 10;
+html {
+  font-family: "Roobert", sans-serif;
+  font-size: $unit-rem-html + "px";
+}
+a {
+  text-decoration: none;
+}
+
+@mixin text-font($size, $weight, $height: null, $unit: rem) {
+  font-family: variables.$font-primary;
+  font-weight: $weight;
+
+  @if $height == normal {
+    list-style: normal;
+  } @else {
+    @if $height != null {
+      line-height: math.div($height, $size);
+    } @else {
+      line-height: 1;
+    }
+  }
+  @if $unit == rem {
+    font-size: math.div($size, $unit-rem-html) + $unit;
+  } @else {
+    font-size: $size + $unit;
+  }
+}
+
+// Heading
+.heading--lv1 {
+  @include text-font(78, 600, 88);
+  letter-spacing: 0.78px;
+}
+.heading--lv2 {
+  @include text-font(50, 600, 54);
+}
+.heading--lv3 {
+  @include text-font(38, 600, 34);
+}
+.heading__lv4 {
+  @include text-font(22, 500, 34);
+}
+@mixin clip-text($line-clamp) {
+  --line-clamp: #{$line-clamp};
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, line default);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@include mixins.make-media-max-width(xs) {
+  .heading--lv1 {
+    @include text-font(45, 600, 52);
+    letter-spacing: 0.45px;
+  }
+
+  .heading--lv2 {
+    @include text-font(30, 600, 38);
+  }
+
+  .heading--lv3 {
+    @include text-font(30, 600, 38);
+  }
+  .heading__lv4 {
+    @include text-font(28, 500, 38);
+  }
+}

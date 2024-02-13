@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon"
+        sizes="180x180"
+        href="../favicon/apple-touch-icon.png">
+    <link rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="../favicon/favicon-32x32.png">
+    <link rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="../favicon/favicon-16x16.png">
+    <link rel="manifest"
+        href="../favicon/site.webmanifest">
+    <!-- Font icon -->
+    <script src="https://kit.fontawesome.com/ed5ddce74d.js"
+        crossorigin="anonymous"></script>
+    <!-- Fon embed -->
+    <link rel="stylesheet"
+        href="../fonts/stylesheet.css">
+    <link rel="stylesheet"
+        href="../css/main.css">
+
+    <title>Smaller</title>
+</head>
+
+<body class="pricing__body">
+    <!-- Header -->
+    <header class="header">
+        <div class="container d-none d-xl-block">
+            <!-- Nav pc -->
+            <nav class="nav nav__pc ">
+                <a href="/index.html"
+                    class="logo">
+                    <img src="../imgs/logo.svg"
+                        alt="Smaller"
+                        class="logo__img">
+                </a>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="../pages/product.html"
+                            class="nav__link">Product</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/shiping-pricing.html"
+                            class="nav__link">Pricing</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/contact.html"
+                            class="nav__link">Contact us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/blog.html"
+                            class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/about.html"
+                            class="nav__link">About Us</a>
+                    </li>
+                </ul>
+                <div class="nav__cta">
+                    <button class="btn nav-cta__login">Login</button>
+                    <button class="btn nav-cta__booking">Book a Demo</button>
+                </div>
+
+            </nav>
+        </div>
+        <!-- Nav mobile -->
+        <nav class="nav nav__mobile d-flex d-xl-none  ">
+            <div class="nav__mobile-top">
+                <a href="/index.html"
+                    class="logo">
+                    <img src="../imgs/logo.svg"
+                        alt="Smaller"
+                        class="logo__img">
+                </a>
+
+                <label for="nav__checkbox"
+                    class="nav__open">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+            </div>
+            <input type="checkbox"
+                class="nav__checkbox"
+                id="nav__checkbox"
+                hidden>
+            <div class="nav__mobile-bottom">
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="../pages/product.html"
+                            class="nav__link">Product</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/shiping-pricing.html"
+                            class="nav__link">Pricing</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/contact.html"
+                            class="nav__link">Contact us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/blog.html"
+                            class="nav__link">Blog</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/about.html"
+                            class="nav__link">About Us</a>
+                    </li>
+                </ul>
+                <div class="nav__cta">
+                    <button class="btn nav-cta__login">Login</button>
+                    <button class="btn nav-cta__booking">Book a Demo</button>
+                </div>
+            </div>
+            <label for="nav__checkbox"
+                class="overlay"></label>
+        </nav>
+
+    </header>
+    <!-- Main -->
+    <main class="main">
+        <!-- Shipping pricing -->
+        <section class="pricing">
+            <div class="container">
+                <h2 class="heading--lv2 pricing__heading">Simple pricing</h2>
+                <p class="pricing__desc">No credit card required. Cancel any time.</p>
+            </div>
+            <div class="container-non-grid container-xl-non-grid ">
+                <div class="pricing__list">
+
+                    <article class="pricing__card">
+                        <div class="pricing-card__heading">
+                            <figure class="pricing-card__thumb">
+                                <img src="../imgs/pricing-img-1.png"
+                                    alt="">
+                            </figure>
+                            <h3 class="heading--lv3">Free</h3>
+                        </div>
+                        <p class="pricing-card__desc">Starter plan to manage your one category and try everything Sortler has to offer</p>
+                        <p class="pricing-card__price">
+                            $ <strong>0 </strong>/ free forever
+                        </p>
+                        <button class="pricing-card__button">Book a Demo
+                        </button>
+                        <ul class="pricing-card__list">
+                            <li class="pricing-card__item">
+                                <svg class="pricing-card__icon"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 5C16.5 5.51171 16.3902 5.99776 16.1928 6.43589C17.2704 7.03251 18 8.18105 18 9.5C18 10.7111 17.3849 11.7786 16.45 12.4069C16.4829 12.5997 16.5 12.7978 16.5 13C16.5 14.933 14.933 16.5 13 16.5C12.6428 16.5 12.2981 16.4465 11.9735 16.3471C11.3557 17.3395 10.255 18 9 18C7.74499 18 6.64426 17.3395 6.0265 16.3471C5.70188 16.4465 5.35719 16.5 5 16.5C3.067 16.5 1.5 14.933 1.5 13C1.5 12.7978 1.51714 12.5997 1.55004 12.4069C0.615145 11.7786 0 10.7111 0 9.5C0 8.18105 0.729563 7.0325 1.80715 6.43589C1.60981 5.99776 1.5 5.5117 1.5 5C1.5 3.067 3.067 1.5 5 1.5C5.35719 1.5 5.70188 1.55351 6.0265 1.65294C6.64426 0.660546 7.74499 0 9 0C10.255 0 11.3557 0.660548 11.9735 1.65294C12.2981 1.55351 12.6428 1.5 13 1.5C14.933 1.5 16.5 3.067 16.5 5Z"
+                                        fill="currentColor" />
+                                    <path d="M6 10L8 12L12 6"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                Up to 1K products included
+                            </li>
+                            <li class="pricing-card__item">
+                                <svg class="pricing-card__icon"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 5C16.5 5.51171 16.3902 5.99776 16.1928 6.43589C17.2704 7.03251 18 8.18105 18 9.5C18 10.7111 17.3849 11.7786 16.45 12.4069C16.4829 12.5997 16.5 12.7978 16.5 13C16.5 14.933 14.933 16.5 13 16.5C12.6428 16.5 12.2981 16.4465 11.9735 16.3471C11.3557 17.3395 10.255 18 9 18C7.74499 18 6.64426 17.3395 6.0265 16.3471C5.70188 16.4465 5.35719 16.5 5 16.5C3.067 16.5 1.5 14.933 1.5 13C1.5 12.7978 1.51714 12.5997 1.55004 12.4069C0.615145 11.7786 0 10.7111 0 9.5C0 8.18105 0.729563 7.0325 1.80715 6.43589C1.60981 5.99776 1.5 5.5117 1.5 5C1.5 3.067 3.067 1.5 5 1.5C5.35719 1.5 5.70188 1.55351 6.0265 1.65294C6.64426 0.660546 7.74499 0 9 0C10.255 0 11.3557 0.660548 11.9735 1.65294C12.2981 1.55351 12.6428 1.5 13 1.5C14.933 1.5 16.5 3.067 16.5 5Z"
+                                        fill="currentColor" />
+                                    <path d="M6 10L8 12L12 6"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>1 category included
+                            </li>
+                            <li class="pricing-card__item">
+                                <svg class="pricing-card__icon"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 5C16.5 5.51171 16.3902 5.99776 16.1928 6.43589C17.2704 7.03251 18 8.18105 18 9.5C18 10.7111 17.3849 11.7786 16.45 12.4069C16.4829 12.5997 16.5 12.7978 16.5 13C16.5 14.933 14.933 16.5 13 16.5C12.6428 16.5 12.2981 16.4465 11.9735 16.3471C11.3557 17.3395 10.255 18 9 18C7.74499 18 6.64426 17.3395 6.0265 16.3471C5.70188 16.4465 5.35719 16.5 5 16.5C3.067 16.5 1.5 14.933 1.5 13C1.5 12.7978 1.51714 12.5997 1.55004 12.4069C0.615145 11.7786 0 10.7111 0 9.5C0 8.18105 0.729563 7.0325 1.80715 6.43589C1.60981 5.99776 1.5 5.5117 1.5 5C1.5 3.067 3.067 1.5 5 1.5C5.35719 1.5 5.70188 1.55351 6.0265 1.65294C6.64426 0.660546 7.74499 0 9 0C10.255 0 11.3557 0.660548 11.9735 1.65294C12.2981 1.55351 12.6428 1.5 13 1.5C14.933 1.5 16.5 3.067 16.5 5Z"
+                                        fill="currentColor" />
+                                    <path d="M6 10L8 12L12 6"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>1 staff account included
+                            </li>
+                            <li class="pricing-card__item">
+                                <svg class="pricing-card__icon"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 5C16.5 5.51171 16.3902 5.99776 16.1928 6.43589C17.2704 7.03251 18 8.18105 18 9.5C18 10.7111 17.3849 11.7786 16.45 12.4069C16.4829 12.5997 16.5 12.7978 16.5 13C16.5 14.933 14.933 16.5 13 16.5C12.6428 16.5 12.2981 16.4465 11.9735 16.3471C11.3557 17.3395 10.255 18 9 18C7.74499 18 6.64426 17.3395 6.0265 16.3471C5.70188 16.4465 5.35719 16.5 5 16.5C3.067 16.5 1.5 14.933 1.5 13C1.5 12.7978 1.51714 12.5997 1.55004 12.4069C0.615145 11.7786 0 10.7111 0 9.5C0 8.18105 0.729563 7.0325 1.80715 6.43589C1.60981 5.99776 1.5 5.5117 1.5 5C1.5 3.067 3.067 1.5 5 1.5C5.35719 1.5 5.70188 1.55351 6.0265 1.65294C6.64426 0.660546 7.74499 0 9 0C10.255 0 11.3557 0.660548 11.9735 1.65294C12.2981 1.55351 12.6428 1.5 13 1.5C14.933 1.5 16.5 3.067 16.5 5Z"
+                                        fill="currentColor" />
+                                    <path d="M6 10L8 12L12 6"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>Indexation: ones a day
+                            </li>
+                        </ul>
+
+                    </article>
+
+                    <article class="pricing__card">
+                        <div class="pricing-card__heading">
+                            <figure class="pricing-card__thumb">
+                                <img src="../imgs/pricing-img-2.png"
+                                    alt="">
+                            </figure>
+                            <h3 class="heading--lv3">Business</h3>
+                        </div>
+                        <p class="pricing-card__desc">More power with thouthands products and dozens of categories</p>
+                        <p class="pricing-card__price">
+                            $ <strong>39 </strong>/ month billed monthly
+                        </p>
+                        <button class="pricing-card__button">Book a Demo
+                        </button>
+                        <ul class="pricing-card__list">
+                            <li class="pricing-card__item">
+                                <svg class="pricing-card__icon"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 5C16.5 5.51171 16.3902 5.99776 16.1928 6.43589C17.2704 7.03251 18 8.18105 18 9.5C18 10.7111 17.3849 11.7786 16.45 12.4069C16.4829 12.5997 16.5 12.7978 16.5 13C16.5 14.933 14.933 16.5 13 16.5C12.6428 16.5 12.2981 16.4465 11.9735 16.3471C11.3557 17.3395 10.255 18 9 18C7.74499 18 6.64426 17.3395 6.0265 16.3471C5.70188 16.4465 5.35719 16.5 5 16.5C3.067 16.5 1.5 14.933 1.5 13C1.5 12.7978 1.51714 12.5997 1.55004 12.4069C0.615145 11.7786 0 10.7111 0 9.5C0 8.18105 0.729563 7.0325 1.80715 6.43589C1.60981 5.99776 1.5 5.5117 1.5 5C1.5 3.067 3.067 1.5 5 1.5C5.35719 1.5 5.70188 1.55351 6.0265 1.65294C6.64426 0.660546 7.74499 0 9 0C10.255 0 11.3557 0.660548 11.9735 1.65294C12.2981 1.55351 12.6428 1.5 13 1.5C14.933 1.5 16.5 3.067 16.5 5Z"
+                                        fill="currentColor" />
+                                    <path d="M6 10L8 12L12 6"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>Up to 100k products included
+                            </li>
+                            <li class="pricing-card__item">
+                                <svg class="pricing-card__icon"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 5C16.5 5.51171 16.3902 5.99776 16.1928 6.43589C17.2704 7.03251 18 8.18105 18 9.5C18 10.7111 17.3849 11.7786 16.45 12.4069C16.4829 12.5997 16.5 12.7978 16.5 13C16.5 14.933 14.933 16.5 13 16.5C12.6428 16.5 12.2981 16.4465 11.9735 16.3471C11.3557 17.3395 10.255 18 9 18C7.74499 18 6.64426 17.3395 6.0265 16.3471C5.70188 16.4465 5.35719 16.5 5 16.5C3.067 16.5 1.5 14.933 1.5 13C1.5 12.7978 1.51714 12.5997 1.55004 12.4069C0.615145 11.7786 0 10.7111 0 9.5C0 8.18105 0.729563 7.0325 1.80715 6.43589C1.60981 5.99776 1.5 5.5117 1.5 5C1.5 3.067 3.067 1.5 5 1.5C5.35719 1.5 5.70188 1.55351 6.0265 1.65294C6.64426 0.660546 7.74499 0 9 0C10.255 0 11.3557 0.660548 11.9735 1.65294C12.2981 1.55351 12.6428 1.5 13 1.5C14.933 1.5 16.5 3.067 16.5 5Z"
+                                        fill="currentColor" />
+                                    <path d="M6 10L8 12L12 6"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>Up to 50 category included
+                            </li>
+                            <li class="pricing-card__item">
+                                <svg class="pricing-card__icon"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 5C16.5 5.51171 16.3902 5.99776 16.1928 6.43589C17.2704 7.03251 18 8.18105 18 9.5C18 10.7111 17.3849 11.7786 16.45 12.4069C16.4829 12.5997 16.5 12.7978 16.5 13C16.5 14.933 14.933 16.5 13 16.5C12.6428 16.5 12.2981 16.4465 11.9735 16.3471C11.3557 17.3395 10.255 18 9 18C7.74499 18 6.64426 17.3395 6.0265 16.3471C5.70188 16.4465 5.35719 16.5 5 16.5C3.067 16.5 1.5 14.933 1.5 13C1.5 12.7978 1.51714 12.5997 1.55004 12.4069C0.615145 11.7786 0 10.7111 0 9.5C0 8.18105 0.729563 7.0325 1.80715 6.43589C1.60981 5.99776 1.5 5.5117 1.5 5C1.5 3.067 3.067 1.5 5 1.5C5.35719 1.5 5.70188 1.55351 6.0265 1.65294C6.64426 0.660546 7.74499 0 9 0C10.255 0 11.3557 0.660548 11.9735 1.65294C12.2981 1.55351 12.6428 1.5 13 1.5C14.933 1.5 16.5 3.067 16.5 5Z"
+                                        fill="currentColor" />
+                                    <path d="M6 10L8 12L12 6"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>3 staff account included
+                            </li>
+                            <li class="pricing-card__item">
+                                <svg class="pricing-card__icon"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 5C16.5 5.51171 16.3902 5.99776 16.1928 6.43589C17.2704 7.03251 18 8.18105 18 9.5C18 10.7111 17.3849 11.7786 16.45 12.4069C16.4829 12.5997 16.5 12.7978 16.5 13C16.5 14.933 14.933 16.5 13 16.5C12.6428 16.5 12.2981 16.4465 11.9735 16.3471C11.3557 17.3395 10.255 18 9 18C7.74499 18 6.64426 17.3395 6.0265 16.3471C5.70188 16.4465 5.35719 16.5 5 16.5C3.067 16.5 1.5 14.933 1.5 13C1.5 12.7978 1.51714 12.5997 1.55004 12.4069C0.615145 11.7786 0 10.7111 0 9.5C0 8.18105 0.729563 7.0325 1.80715 6.43589C1.60981 5.99776 1.5 5.5117 1.5 5C1.5 3.067 3.067 1.5 5 1.5C5.35719 1.5 5.70188 1.55351 6.0265 1.65294C6.64426 0.660546 7.74499 0 9 0C10.255 0 11.3557 0.660548 11.9735 1.65294C12.2981 1.55351 12.6428 1.5 13 1.5C14.933 1.5 16.5 3.067 16.5 5Z"
+                                        fill="currentColor" />
+                                    <path d="M6 10L8 12L12 6"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>Indexation: twice a day
+                            </li>
+                        </ul>
+
+                    </article>
+
+                    <article class="pricing__card">
+                        <div class="pricing-card__heading">
+                            <figure class="pricing-card__thumb">
+                                <img src="../imgs/pricing-img-3.png"
+                                    alt="">
+                            </figure>
+                            <h3 class="heading--lv3">Advanced</h3>
+                        </div>
+                        <p class="pricing-card__desc">A lot of categories and products, premium support and more...</p>
+                        <p class="pricing-card__price">
+                            $ <strong>99</strong>/ month billed monthly
+                        </p>
+                        <button class="pricing-card__button">Book a Demo
+                        </button>
+                        <ul class="pricing-card__list">
+                            <li class="pricing-card__item">
+                                <svg class="pricing-card__icon"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 5C16.5 5.51171 16.3902 5.99776 16.1928 6.43589C17.2704 7.03251 18 8.18105 18 9.5C18 10.7111 17.3849 11.7786 16.45 12.4069C16.4829 12.5997 16.5 12.7978 16.5 13C16.5 14.933 14.933 16.5 13 16.5C12.6428 16.5 12.2981 16.4465 11.9735 16.3471C11.3557 17.3395 10.255 18 9 18C7.74499 18 6.64426 17.3395 6.0265 16.3471C5.70188 16.4465 5.35719 16.5 5 16.5C3.067 16.5 1.5 14.933 1.5 13C1.5 12.7978 1.51714 12.5997 1.55004 12.4069C0.615145 11.7786 0 10.7111 0 9.5C0 8.18105 0.729563 7.0325 1.80715 6.43589C1.60981 5.99776 1.5 5.5117 1.5 5C1.5 3.067 3.067 1.5 5 1.5C5.35719 1.5 5.70188 1.55351 6.0265 1.65294C6.64426 0.660546 7.74499 0 9 0C10.255 0 11.3557 0.660548 11.9735 1.65294C12.2981 1.55351 12.6428 1.5 13 1.5C14.933 1.5 16.5 3.067 16.5 5Z"
+                                        fill="currentColor" />
+                                    <path d="M6 10L8 12L12 6"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>Up to 200k products included
+                            </li>
+                            <li class="pricing-card__item">
+                                <svg class="pricing-card__icon"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 5C16.5 5.51171 16.3902 5.99776 16.1928 6.43589C17.2704 7.03251 18 8.18105 18 9.5C18 10.7111 17.3849 11.7786 16.45 12.4069C16.4829 12.5997 16.5 12.7978 16.5 13C16.5 14.933 14.933 16.5 13 16.5C12.6428 16.5 12.2981 16.4465 11.9735 16.3471C11.3557 17.3395 10.255 18 9 18C7.74499 18 6.64426 17.3395 6.0265 16.3471C5.70188 16.4465 5.35719 16.5 5 16.5C3.067 16.5 1.5 14.933 1.5 13C1.5 12.7978 1.51714 12.5997 1.55004 12.4069C0.615145 11.7786 0 10.7111 0 9.5C0 8.18105 0.729563 7.0325 1.80715 6.43589C1.60981 5.99776 1.5 5.5117 1.5 5C1.5 3.067 3.067 1.5 5 1.5C5.35719 1.5 5.70188 1.55351 6.0265 1.65294C6.64426 0.660546 7.74499 0 9 0C10.255 0 11.3557 0.660548 11.9735 1.65294C12.2981 1.55351 12.6428 1.5 13 1.5C14.933 1.5 16.5 3.067 16.5 5Z"
+                                        fill="currentColor" />
+                                    <path d="M6 10L8 12L12 6"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>Up to 100 category included
+                            </li>
+                            <li class="pricing-card__item">
+                                <svg class="pricing-card__icon"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 5C16.5 5.51171 16.3902 5.99776 16.1928 6.43589C17.2704 7.03251 18 8.18105 18 9.5C18 10.7111 17.3849 11.7786 16.45 12.4069C16.4829 12.5997 16.5 12.7978 16.5 13C16.5 14.933 14.933 16.5 13 16.5C12.6428 16.5 12.2981 16.4465 11.9735 16.3471C11.3557 17.3395 10.255 18 9 18C7.74499 18 6.64426 17.3395 6.0265 16.3471C5.70188 16.4465 5.35719 16.5 5 16.5C3.067 16.5 1.5 14.933 1.5 13C1.5 12.7978 1.51714 12.5997 1.55004 12.4069C0.615145 11.7786 0 10.7111 0 9.5C0 8.18105 0.729563 7.0325 1.80715 6.43589C1.60981 5.99776 1.5 5.5117 1.5 5C1.5 3.067 3.067 1.5 5 1.5C5.35719 1.5 5.70188 1.55351 6.0265 1.65294C6.64426 0.660546 7.74499 0 9 0C10.255 0 11.3557 0.660548 11.9735 1.65294C12.2981 1.55351 12.6428 1.5 13 1.5C14.933 1.5 16.5 3.067 16.5 5Z"
+                                        fill="currentColor" />
+                                    <path d="M6 10L8 12L12 6"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>5 staff account included
+                            </li>
+                            <li class="pricing-card__item">
+                                <svg class="pricing-card__icon"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 5C16.5 5.51171 16.3902 5.99776 16.1928 6.43589C17.2704 7.03251 18 8.18105 18 9.5C18 10.7111 17.3849 11.7786 16.45 12.4069C16.4829 12.5997 16.5 12.7978 16.5 13C16.5 14.933 14.933 16.5 13 16.5C12.6428 16.5 12.2981 16.4465 11.9735 16.3471C11.3557 17.3395 10.255 18 9 18C7.74499 18 6.64426 17.3395 6.0265 16.3471C5.70188 16.4465 5.35719 16.5 5 16.5C3.067 16.5 1.5 14.933 1.5 13C1.5 12.7978 1.51714 12.5997 1.55004 12.4069C0.615145 11.7786 0 10.7111 0 9.5C0 8.18105 0.729563 7.0325 1.80715 6.43589C1.60981 5.99776 1.5 5.5117 1.5 5C1.5 3.067 3.067 1.5 5 1.5C5.35719 1.5 5.70188 1.55351 6.0265 1.65294C6.64426 0.660546 7.74499 0 9 0C10.255 0 11.3557 0.660548 11.9735 1.65294C12.2981 1.55351 12.6428 1.5 13 1.5C14.933 1.5 16.5 3.067 16.5 5Z"
+                                        fill="currentColor" />
+                                    <path d="M6 10L8 12L12 6"
+                                        stroke="white"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>Indexation: each hour
+                            </li>
+                        </ul>
+
+                    </article>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <section class="footer__platform">
+                <h2 class="heading--lv2 platform__heading">All eCommerce CMS platforms supported</h2>
+                <p class="platform__desc">Magento 2, Shopify, WooCommerce, BigCommerce, Opencart and more.</p>
+                <div class="platform__list">
+                    <div class="platform__thumb">
+                        <img loading="lazy"
+                            src="../imgs/platform__magento.svg"
+                            alt="">
+                    </div>
+                    <div class="platform__thumb">
+                        <img loading="lazy"
+                            src="../imgs/platform__shopify.svg"
+                            alt="">
+                    </div>
+                    <div class="platform__thumb">
+                        <img loading="lazy"
+                            src="../imgs/platform__woocommerce.svg"
+                            alt="">
+                    </div>
+                    <div class="platform__thumb">
+                        <img loading="lazy"
+                            src="../imgs/platform__bigcommerce.svg"
+                            alt="">
+                    </div>
+                    <div class="platform__thumb">
+                        <img loading="lazy"
+                            src="../imgs/platform__opencart.svg"
+                            alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container-sm-non-grid container-xl-non-grid ">
+            <section class="footer__booking">
+                <div class="footer-booking__text">
+                    <h3 class="heading--lv3 footer-booking__heading">Try Sortler For Free!</h3>
+                    <button class="footer-booking__btn">Book a Demo</button>
+                    <ul class="footer-booking__list">
+                        <li class="footer-booking__item">
+                            <svg class="footer-booking__icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M18.3333 5.55556C18.3333 6.12412 18.2113 6.66418 17.9921 7.15099C19.1894 7.8139 20 9.09006 20 10.5556C20 11.9012 19.3165 13.0873 18.2777 13.7855C18.3143 13.9997 18.3333 14.2198 18.3333 14.4444C18.3333 16.5922 16.5922 18.3333 14.4444 18.3333C14.0476 18.3333 13.6646 18.2739 13.3039 18.1634C12.6175 19.2661 11.3945 20 10 20C8.60554 20 7.38251 19.2661 6.69612 18.1634C6.33543 18.2739 5.95244 18.3333 5.55556 18.3333C3.40778 18.3333 1.66667 16.5922 1.66667 14.4444C1.66667 14.2198 1.68571 13.9997 1.72227 13.7855C0.683495 13.0873 0 11.9012 0 10.5556C0 9.09006 0.810626 7.81389 2.00795 7.15099C1.78868 6.66418 1.66667 6.12412 1.66667 5.55556C1.66667 3.40778 3.40778 1.66667 5.55556 1.66667C5.95243 1.66667 6.33542 1.72612 6.69611 1.8366C7.38251 0.73394 8.60554 0 10 0C11.3945 0 12.6175 0.733942 13.3039 1.83661C13.6646 1.72612 14.0476 1.66667 14.4444 1.66667C16.5922 1.66667 18.3333 3.40778 18.3333 5.55556Z"
+                                    fill="white" />
+                                <path d="M6.66602 11.1114L8.88824 13.3337L13.3327 6.66699"
+                                    stroke="#018294"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            NO Coding needed, Plug-&-Play.
+                        </li>
+                        <li class="footer-booking__item">
+                            <svg class="footer-booking__icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M18.3333 5.55556C18.3333 6.12412 18.2113 6.66418 17.9921 7.15099C19.1894 7.8139 20 9.09006 20 10.5556C20 11.9012 19.3165 13.0873 18.2777 13.7855C18.3143 13.9997 18.3333 14.2198 18.3333 14.4444C18.3333 16.5922 16.5922 18.3333 14.4444 18.3333C14.0476 18.3333 13.6646 18.2739 13.3039 18.1634C12.6175 19.2661 11.3945 20 10 20C8.60554 20 7.38251 19.2661 6.69612 18.1634C6.33543 18.2739 5.95244 18.3333 5.55556 18.3333C3.40778 18.3333 1.66667 16.5922 1.66667 14.4444C1.66667 14.2198 1.68571 13.9997 1.72227 13.7855C0.683495 13.0873 0 11.9012 0 10.5556C0 9.09006 0.810626 7.81389 2.00795 7.15099C1.78868 6.66418 1.66667 6.12412 1.66667 5.55556C1.66667 3.40778 3.40778 1.66667 5.55556 1.66667C5.95243 1.66667 6.33542 1.72612 6.69611 1.8366C7.38251 0.73394 8.60554 0 10 0C11.3945 0 12.6175 0.733942 13.3039 1.83661C13.6646 1.72612 14.0476 1.66667 14.4444 1.66667C16.5922 1.66667 18.3333 3.40778 18.3333 5.55556Z"
+                                    fill="white" />
+                                <path d="M6.66602 11.1114L8.88824 13.3337L13.3327 6.66699"
+                                    stroke="#018294"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>All eCommerce platforms supported
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__thumb">
+                    <img src="../imgs/footer.svg"
+                        alt="">
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <nav class="footer__nav">
+                <a href="#!"
+                    class="logo">
+                    <img src="../imgs/logo.svg"
+                        alt="Smaller"
+                        class="logo__img">
+                </a>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="../pages/product.html"
+                            class="nav__link">Product</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/shiping-pricing.html"
+                            class="nav__link">Pricing</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/contact.html"
+                            class="nav__link">Contact us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../pages/blog.html"
+                            class="nav__link">Blog</a>
+                    </li>
+                </ul>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="#!"
+                            class="social__link"> <i class="social__icon fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#!"
+                            class="social__link"> <i class="social__icon fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li class="social__item ">
+                        <a href="#!"
+                            class="social__link"> <i class="social__icon social__instagram fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

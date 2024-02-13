@@ -1,0 +1,113 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../base/typography";
+
+.product__item {
+  &:hover .product-item__button {
+    transform: translateY(0);
+  }
+}
+.product-item {
+  &__thumb {
+    width: 100%;
+    height: 310px;
+    position: relative;
+    overflow: hidden;
+  }
+  &__thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(101%);
+    transition: transform 0.15s ease-in-out;
+    padding: 21px 0;
+    text-align: center;
+    background-color: variables.$shape;
+    color: #fff;
+    @include typography.text-font(19, 500, 19);
+  }
+  &__button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  &__info > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__info > div:first-child {
+    padding-top: 20px;
+  }
+  &__info > div:last-child {
+    padding-top: 18px;
+  }
+  &__category,
+  &__icon-star {
+    color: variables.$black-100;
+  }
+  &__category {
+    @include typography.text-font(16, 400, 1);
+  }
+  &__name {
+    padding-top: 10px;
+    @include typography.text-font(20, 500, 24);
+    color: variables.$black;
+  }
+  &__icon-star {
+    @include typography.text-font(18, 400, 1);
+  }
+  &__icon-star svg {
+    margin-right: 6px;
+    font-size: 2.2rem;
+    color: variables.$yellow;
+  }
+  &__like-icon {
+    font-size: 1.7rem;
+  }
+  &__like-icon:hover svg {
+    color: red;
+  }
+  &__price {
+    @include typography.text-font(19, 500, 19);
+    color: variables.$text-color-dark;
+  }
+}
+@include mixins.make-media-max-width(xs) {
+  .product-item {
+    &__thumb {
+      height: 278px;
+    }
+    &__category {
+      font-size: 1.4rem;
+    }
+    &__info > div:first-child {
+      padding-top: 18.25px;
+    }
+    &__info > div:last-child {
+      padding-top: 11.79px;
+    }
+    &__like-icon {
+      font-size: 1.5rem;
+    }
+    &__name {
+      @include typography.text-font(18, 500, 26);
+    }
+    &__icon-star {
+      @include typography.text-font(16, 400, 1);
+    }
+    &__price {
+      @include typography.text-font(17, 500, 17.049);
+    }
+    &__button {
+      padding: 18px 0;
+      font-size: 1.7rem;
+    }
+  }
+}

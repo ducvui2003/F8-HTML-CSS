@@ -1,0 +1,53 @@
+@use "sass:math";
+@use "../abstracts/variables";
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+@mixin icon-bars($width, $height, $number-bar, $align: justify) {
+  $offset: math.div($width, $number-bar);
+  width: #{$width};
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  @for $i from 1 through $number-bar {
+    > *:nth-child(#{$i}) {
+      background-color: currentColor;
+      height: #{$height};
+    }
+    @if $align == left or $align == right {
+      > *:nth-child(#{$i}) {
+        width: #{$width};
+        $width: $width - $offset;
+      }
+      @if $align == left {
+        align-items: flex-start;
+      }
+      @if $align == right {
+        align-items: flex-end;
+      }
+    }
+    @if $align == justify {
+      width: #{$width};
+    }
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: variables.$black;
+  opacity: 0;
+  z-index: 3;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}

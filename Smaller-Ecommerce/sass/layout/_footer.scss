@@ -1,0 +1,152 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../base/typography";
+@use "../components/button";
+.footer {
+  background-color: variables.$white-100;
+  &__booking {
+    margin-top: 150px;
+    background-color: variables.$shape;
+  }
+}
+.footer__platform {
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.platform {
+  &__heading {
+    max-width: 80%;
+    text-align: center;
+  }
+  &__desc {
+    margin-top: 20px;
+    @include typography.text-font(20, 400, 34);
+  }
+  &__list {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__thumb {
+    color: transparent;
+  }
+  &__thumb:hover img {
+    filter: drop-shadow(13px 9px 23px currentColor);
+    -webkit-filter: drop-shadow(13px 9px 23px currentColor);
+    -moz-filter: drop-shadow(13px 9px 23px currentColor);
+  }
+}
+.footer__booking {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  padding: 20px 0;
+  border-radius: 20px;
+}
+.footer-booking {
+  &__btn {
+    @include button.button(175px, 58px, true, 50px);
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-top: 30px;
+    background-color: variables.$yellow;
+  }
+  &__list {
+    margin-top: 46px;
+  }
+  &__item {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+
+    @include typography.text-font(18, 400, 18);
+  }
+  &__icon {
+    margin-right: 16px;
+  }
+}
+.footer__thumb img {
+  width: 100%;
+  object-fit: contain;
+}
+.footer__nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 50px 86px;
+}
+.footer__nav .nav__link {
+  @include typography.text-font(17, 400, 17);
+}
+.social {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  &__icon {
+    font-size: 24px;
+  }
+  &__link {
+    color: black;
+  }
+}
+@include mixins.make-media-max-width(xs) {
+  .footer {
+    padding-top: 70px;
+  }
+  .footer__platform {
+    padding-top: 40px;
+  }
+  .platform {
+    &__heading {
+      max-width: unset;
+    }
+    &__desc {
+      margin-top: 15px;
+      text-align: center;
+      @include typography.text-font(14, 400, 22);
+    }
+    &__list {
+      margin-top: 40px;
+      flex-direction: column;
+      gap: 109px;
+    }
+  }
+  .footer__booking {
+    margin-top: 69px;
+    padding: 40px 0;
+    flex-direction: column;
+  }
+  .footer-booking {
+    &__heading {
+      @include typography.text-font(38, 500, 44);
+    }
+    &__btn {
+      @include typography.text-font(19, 500, 19);
+    }
+  }
+  .footer__thumb {
+    padding: 40px 20px 0 20px;
+  }
+  .footer__nav {
+    padding-block: 50px 35px;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  .footer__nav .nav {
+    &__menu {
+      margin-left: unset;
+      flex-wrap: wrap;
+      column-gap: 44px;
+      row-gap: 30px;
+    }
+  }
+}

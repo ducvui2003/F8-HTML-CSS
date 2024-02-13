@@ -1,0 +1,119 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+@use "../base/typography";
+@use "../components/button";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    margin-left: 70px;
+  }
+  &__item {
+  }
+  &__link {
+    color: variables.$black;
+    @include typography.text-font(16, 400, 18);
+  }
+  &__link:hover {
+    color: variables.$shape;
+  }
+  &__cta {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+.nav-cta {
+  text-align: center;
+  &__login {
+    color: variables.$black;
+    background-color: transparent;
+    @include typography.text-font(16, 400, 18);
+  }
+  &__booking {
+    @include typography.text-font(16, 400, 18);
+    @include button.button(156px, 54px, true);
+    margin-left: 28px;
+    color: variables.$white-100;
+    background-color: variables.$black;
+  }
+}
+
+@include mixins.make-media-max-width(xs) {
+  .nav__mobile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: variables.$white-100;
+  }
+
+  .nav__mobile-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 20px 15px;
+    background-color: #fff;
+    z-index: 5;
+
+    background-color: variables.$white-100;
+  }
+  .nav__open,
+  .nav__close {
+    font-size: 2rem;
+    padding: 10px;
+  }
+  .nav__open {
+    transition: transform 0.5s linear;
+  }
+  .nav__close {
+    display: none;
+  }
+
+  .nav__mobile-bottom {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 4;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transform: translateY(-150%);
+    padding: 20px 30px;
+    transition: transform 0.2s ease;
+    background-color: variables.$white-100;
+    box-shadow: 0 34px 40px 0px rgba(0, 38, 44, 0.14);
+  }
+
+  .nav__checkbox:checked ~ .nav__mobile-bottom {
+    transform: translateY(0);
+  }
+  .nav__checkbox:checked ~ .overlay {
+    opacity: 0.4;
+    visibility: visible;
+  }
+
+  .nav__mobile .nav__menu {
+    margin-left: unset;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    border-bottom: 1px solid variables.$black-100;
+  }
+  .nav__mobile .nav__cta {
+    flex-direction: column;
+  }
+  .nav-cta__booking {
+    margin-left: 0;
+    width: 100%;
+  }
+}

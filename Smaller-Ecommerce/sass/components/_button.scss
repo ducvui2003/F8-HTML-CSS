@@ -1,0 +1,30 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+.btn {
+  @include mixins.box(null, 54px, 40px);
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+@mixin button(
+  $width: 100px,
+  $height: 30px,
+  $center: false,
+  $border-radius: null
+) {
+  width: $width;
+  height: $height;
+  display: inline-block;
+  border: none;
+  outline: none;
+  @if $border-radius != null {
+    border-radius: $border-radius;
+  }
+  @if $center == true {
+    margin-inline: auto;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

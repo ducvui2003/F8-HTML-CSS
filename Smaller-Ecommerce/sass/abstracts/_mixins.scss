@@ -1,0 +1,92 @@
+@use "../abstracts/variables" as utils;
+@use "sass:map";
+@use "sass:math";
+@mixin box($width, $height: $width, $border-radius: null) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+}
+@mixin flex-list($x, $y, $flex, $gap: 0px) {
+  display: flex;
+  justify-content: $x;
+  align-items: $y;
+  gap: $gap;
+  > [class*="item"] {
+    flex: $flex;
+  }
+}
+@mixin circle($size) {
+  display: block;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+}
+@mixin center-flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @content;
+}
+$min-widths: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+$display-properties: none, inline, inline-block, block, table, table-cell,
+  table-row, flex, inline-flex;
+
+@mixin make-a-media-query($breakpoint, $bypass: false) {
+  @if $bypass {
+    @content;
+  } @else {
+    @media screen and (min-width: map-get($min-widths, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+@mixin display($infix) {
+  @each $display in $display-properties {
+    .d#{$infix}-#{$display} {
+      display: #{$display} !important;
+    }
+  }
+}
+@each $breakpoint, $dimension in $min-widths {
+  $max-width: map-get($min-widths, $breakpoint);
+  $is-xs: $breakpoint == "xs";
+  $infix: if($breakpoint == xs, "", "-#{$breakpoint}");
+
+  @include make-a-media-query($breakpoint, $is-xs) {
+    @include display($infix);
+  }
+}
+$max-widths: (
+  xs: 575.98px,
+  sm: 767.98px,
+  md: 991.98px,
+  lg: 1199.98px,
+  xl: 1399.98px,
+);
+@mixin make-media-max-width($breakpoint) {
+  @media screen and (max-width: map-get($max-widths, $breakpoint)) {
+    @content;
+  }
+}
+@mixin show-item-list(
+  $selection-list,
+  $selection-item,
+  $total-item,
+  $number-item-showed
+) {
+  @for $i from $number-item-showed to $total-item {
+    .#{$selection-list} .#{$selection-item}:nth-child(#{$i}) {
+      display: none;
+    }
+  }
+}
