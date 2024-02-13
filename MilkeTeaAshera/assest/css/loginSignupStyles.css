@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  height: 100vh;
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  max-width: 70%;
+  min-width: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 20px;
+  border-radius: 5px;
+  font-family: var(--roboto-font);
+}
+.login .login__title {
+  margin: 10px 0 20px 0;
+  font-size: 2rem;
+}
+.login .login__username,
+.login .login__password {
+  width: 100%;
+  font-size: 1.6rem;
+}
+.login .login__username input {
+  margin-bottom: 30px;
+}
+.login input {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid var(--secondary-color);
+  padding: 0;
+  margin-top: 5px;
+  padding: 10px;
+}
+.login .login__username i,
+.login .login__password i {
+  margin-right: 5px;
+}
+.login .login__forgetPassword {
+  display: block;
+  width: 100%;
+  text-align: right;
+  text-decoration: none;
+  color: black;
+  margin-top: 14px;
+  font-family: var(--lora-font);
+  font-size: 1.4rem;
+}
+.login .login__loginBtn {
+}
+.login .login__loginBtn a {
+  font-size: 16px;
+  width: 100px;
+}
+.login .login__other {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100px;
+  gap: 20px;
+  padding: 26px 0;
+}
+.login .login__other .login__other__icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  box-sizing: content-box;
+  background: #ffffff;
+  box-shadow: inset 4px 4px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  text-decoration: none;
+  transition:  box-shadow .2s ease-in;
+}
+.login .login__other .login__other__icon:hover{
+  box-shadow: inset -4px -4px 2px rgba(0, 0, 0, 0.5)
+}
+.login .login__other .login__other__icon i {
+  font-size: 2rem;
+}
+
+.login .login__loginBtn  {
+  font-size: 2.2rem;
+  font-family: var(--roboto-font);
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  color: var(--secondary-text);
+  margin: 20px 0;
+  text-decoration: none;
+  transition: background-color .2s ease-in;
+}
+.login .login__loginBtn:hover{
+  background-color: var(--primary-color);
+}
+.login > p {
+  font-size: 1.8rem;
+}
+.login .login__signUpBtn {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: var(--primary-text);
+}
