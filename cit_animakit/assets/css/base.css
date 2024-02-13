@@ -1,0 +1,93 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --color-background: #2b2b2b;
+  --color-title: #858584;
+  --primary-font: "Work Sans";
+  --secondary-font: "Space Mono";
+  --call-action: #a259ff;
+}
+.container {
+  width: 1150px;
+  margin-inline: auto;
+}
+.btn {
+  width: var(--width);
+  height: var(--height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--primary-font);
+  color: #fff;
+  border: 1px solid var(--call-action);
+  background-color: transparent;
+  border-radius: 20px;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+}
+.btn.btn-cta {
+  border: none;
+  background-color: var(--call-action);
+}
+.heading {
+  font-family: var(--primary-font);
+  font-style: normal;
+}
+.heading.lv1 {
+  font-size: 5.1rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.h5 {
+  font-family: var(--primary-font);
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #fff;
+}
+.body-text--primary-font {
+  font-family: var(--primary-font);
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+  color: inherit;
+}
+.body-text--secondary-font {
+  font-family: var(--secondary-font);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  color: inherit;
+}
+.base-body-primary-font {
+  font-family: var(--primary-font);
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  color: inherit;
+}
+.logo__link {
+  display: inline-block;
+}
+.caption {
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
+  color: inherit;
+}

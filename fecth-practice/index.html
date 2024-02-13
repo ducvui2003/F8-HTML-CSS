@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="./css/styles.css">
+    <title>Fetch</title>
+</head>
+
+<body>
+    <h1>List kits</h1>
+
+    <div class="list"
+        id="keyboard__list">
+        <div class="list__header list__item">
+            <div class="list__header-item list__item-inner">id</div>
+            <div class="list__header-item list__item-inner">brand</div>
+            <div class="list__header-item list__item-inner">name</div>
+            <div class="list__header-item list__item-inner">price</div>
+            <div class="list__header-item list__item-inner">Delete</div>
+        </div>
+    </div>
+    <form class="form">
+        <div class="form__group">
+            <label for=""
+                class="form_label">Brand</label>
+            <input type="text"
+                name="brand"
+                class="form__input"
+                required>
+        </div>
+        <div class="form__group">
+            <label for=""
+                class="form_label">Name</label>
+            <input type="text"
+                name="name"
+                class="form__input"
+                required>
+        </div>
+        <div class="form__group">
+            <label for=""
+                class="form_label">Price</label>
+            <input type="number"
+                name="price"
+                class="form__input"
+                required>
+        </div>
+        <button id="create">Submit</button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+
+</html>

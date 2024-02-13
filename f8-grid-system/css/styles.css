@@ -1,0 +1,13 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+/* 
+.col {
+} */
+.item {
+  width: 100%;
+  background-color: orange;
+  border: 1px solid black;
+}

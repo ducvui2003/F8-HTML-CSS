@@ -1,0 +1,147 @@
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* Vị trí
+Kích thước
+Màu sắc
+Kiểu dáng */
+        
+        #main {}
+        
+        #header {
+            width: 100%;
+            height: 54px;
+            background-color: white;
+            padding: 8px 16px;
+            box-shadow: 0px 5px 15px gray;
+            position: fixed;
+            font-family: 'Times New Roman', Times, serif;
+            z-index: 1;
+        }
+        
+        #header li a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+        
+        #nav {
+            position: relative;
+        }
+        
+        #nav>li {
+            /* height: 54px; */
+        }
+        
+        #nav li {
+            display: inline-block;
+            letter-spacing: 4px;
+            padding: 8px 16px;
+        }
+        
+        #nav #navLeft {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        
+        #nav li:hover a {
+            background: #ccc;
+            padding: 8px 8px;
+            /* width: 50px; */
+        }
+        /* Begin slide */
+        
+        #slide {
+            padding-top: 50%;
+            background: url('/asset/Image/Slide1.jpg') top center / cover no-repeat;
+            position: relative;
+        }
+        
+        #slide #text-content {
+            margin-top: 64px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            /* height: 98px; */
+            padding: 0px 24px;
+        }
+        
+        #slide #text-content h1 {
+            opacity: 0.6;
+            letter-spacing: 5px;
+            font-weight: 400;
+            font-family: 'Playfair Display', serif;
+            display: block;
+            height: 74px;
+            width: 226px;
+        }
+        /* End slide */
+        /* Begin content */
+        
+        #content {
+            /* height: 1000px; */
+        }
+        
+        .line {
+            margin: 100px 100px;
+            color: #eee;
+            height: fit-content;
+            opacity: 0.2;
+        }
+        /* About-section */
+        
+        #content .about-section {
+            position: relative;
+            margin: 64px 0;
+        }
+        
+        #content .about-section .content-img {
+            padding: 12px 24px 12px 110px;
+            height: 120%;
+            width: 50%;
+            filter: opacity(0.75);
+        }
+        
+        #content .content-box {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            padding: 12px 110px 12px 24px;
+        }
+        
+        #content .content-box .content-heading {
+            margin: 10px 0 15px 0;
+            text-align: center;
+            line-height: 54px;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 5px;
+            font-size: 36px;
+            font-weight: normal;
+        }
+        
+        #content .content-box .sub-content-heading {
+            text-align: center;
+            line-height: 27px;
+            margin: 10px 0;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 5px;
+            font-size: 18px;
+        }
+        
+        #content .content-box .paragraph {
+            text-align: justify;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 8px 0 18px 0;
+        }
+        /* Menu-section */
+        
+        #out-menu {
+            margin: 12px 24px;
+        }
+        
+        #footer {}

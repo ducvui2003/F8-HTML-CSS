@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/filepond/dist/filepond.css"
+        rel="stylesheet">
+    <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        /* CSS for the dialog */
+        .dialog {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            z-index: 1000;
+        }
+
+        /* CSS for the product display */
+        .product {
+            cursor: pointer;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .product:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+    <!-- HTML for the product dialog -->
+    <div id="productDialog"
+        class="dialog">
+        <div class="dialog-content">
+            <h2 id="productName"></h2>
+            <p id="productDescription"></p>
+            <!-- FilePond input for product image -->
+            <input type="file"
+                id="filepond"
+                name="filepond">
+            <img id="productImage"
+                src=""
+                alt="Product Image">
+            <button onclick="removeProductImage()">Remove Image</button>
+        </div>
+    </div>
+
+    <!-- HTML for the products (just an example) -->
+    <div class="product"
+        onclick="showProductDialog('Product Name', 'Product Description', 'D:/WorkSpace/project_web/f8-validation-ver2/product3.jpg')">
+        <h3>Product Name</h3>
+        <p>Description of the product</p>
+    </div>
+
+    <script>
+        // Function to show the product dialog with the given information
+        function showProductDialog(name, description, imageURL) {
+            const dialog = document.getElementById('productDialog');
+            const productName = document.getElementById('productName');
+            const productDescription = document.getElementById('productDescription');
+            const productImage = document.getElementById('productImage');
+            const filePondInput = document.getElementById('filepond');
+
+            productName.textContent = name;
+            productDescription.textContent = description;
+            productImage.src = imageURL;
+
+            // Initialize FilePond
+            const pond = FilePond.create(filePondInput);
+            if (imageURL) {
+                // Set initial image in FilePond if an image URL exists
+                pond.addFile(imageURL);
+            }
+
+            dialog.style.display = 'block';
+        }
+
+        // Function to remove product image
+        function removeProductImage() {
+            const productImage = document.getElementById('productImage');
+            const filePondInput = document.getElementById('filepond');
+
+            productImage.src = '';
+            // Remove the image from FilePond
+            const pond = FilePond.create(filePondInput);
+            pond.removeFiles();
+        }
+
+        // Function to close the product dialog
+        function closeProductDialog() {
+            const dialog = document.getElementById('productDialog');
+            dialog.style.display = 'none';
+        }
+
+    </script>
+</body>
+
+</html>

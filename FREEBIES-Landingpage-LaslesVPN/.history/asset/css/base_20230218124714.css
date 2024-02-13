@@ -1,0 +1,31 @@
+:root {
+  --primary-color: #0b132a;
+  --secondary-color: #f53838;
+  --text-color: #4f5665;
+  --green-color: #2fab73;
+  --yellow-color: #fea250;
+  --main-font: "Rubik", sans-serif;
+}
+.select-btn {
+  padding: 13px 62px;
+  color: var(--secondary-color);
+  border-radius: 50px;
+  border: 2px solid var(--secondary-color);
+  text-decoration: none;
+}
+.select-btn--solid {
+  background-color: var(--secondary-color);
+  color: white;
+  position: relative;
+}
+.select-btn--solid .box-shadow {
+  position: absolute;
+  top: 17px;
+  left: 25px;
+  right: 25px;
+
+  background: rgba(245, 56, 56, 0.35);
+  filter: blur(27px);
+  border-radius: 60px;
+  z-index: -1;
+}

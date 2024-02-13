@@ -1,0 +1,33 @@
+.button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text);
+
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+
+  border: none;
+  padding: 12px 20px;
+  background-color: var(--color-primary);
+}
+
+.button-icon-wrapper {
+  width: 20px;
+  height: 20px;
+}
+.button-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Hero */
+.hero {
+  margin-top: 50px;
+}
+.hero__heading + .button-wrapper {
+  margin-top: 30px;
+}
