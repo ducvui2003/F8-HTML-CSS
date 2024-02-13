@@ -1,0 +1,7 @@
+:root {
+  --font-primary: "Poppins";
+}
+html {
+  font-family: "Poppins";
+  font-size: 62.5%;
+}

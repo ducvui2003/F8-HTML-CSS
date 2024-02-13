@@ -1,0 +1,11 @@
+:root {
+  --font-primary: "Poppins";
+}
+html {
+  font-family: "Poppins";
+  font-size: 62.5%;
+}
+.main-content {
+  margin: 0 auto;
+  min-width: 1170px;
+}

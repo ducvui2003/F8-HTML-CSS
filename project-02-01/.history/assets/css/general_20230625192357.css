@@ -1,0 +1,53 @@
+:root {
+  --font-primary: "Poppins";
+  --primary-color: #1ebfc1;
+  --text-color: #9da6a5;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  font-family: var(--font-primary);
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+}
+.main-content {
+  margin: 0 auto;
+  width: 1170px;
+}
+.heading {
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  line-height: 1.16;
+}
+.heading.lv2 {
+  color: #0d1111;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.33;
+}
+.desc {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  font-family: var(--font-primary);
+  line-height: 1.78;
+}
+.hover--opacity:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.label {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
