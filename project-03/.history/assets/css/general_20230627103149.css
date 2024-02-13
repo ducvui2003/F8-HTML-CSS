@@ -1,0 +1,38 @@
+:root {
+  --primary-color: #2e80ce;
+  --secondary-color: #10375c;
+  --primary-font: "Sora";
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-family: var(--primary-font);
+  font-size: 62.5%;
+}
+.container {
+  margin: 0 auto;
+  min-width: 1170px;
+}
+
+.heading.lv1 {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: -1.4px;
+}
+.heading.lv2 {
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+/* Logo */
+.logo__circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+}

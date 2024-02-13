@@ -1,0 +1,155 @@
+:root {
+  --primary-color: #2e80ce;
+  --secondary-color: #10375c;
+  --primary-font: "Sora";
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-family: var(--primary-font);
+  font-size: 62.5%;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.heading.lv1 {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: -1.4px;
+}
+.heading.lv2 {
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+.desc {
+  color: #575f66;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67;
+}
+/* Logo */
+.logo {
+  display: inline-flex;
+  text-align: center;
+  font-size: 1rem;
+}
+.logo__circle {
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin-right: 0.6em;
+}
+.logo__circle::before {
+  position: absolute;
+  right: 0.3em;
+  bottom: 0.3em;
+  content: "";
+  background-color: #fff;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+}
+.logo__name {
+  display: flex;
+  flex-direction: column;
+  font-size: inherit;
+  color: #fff;
+  text-align: right;
+  line-height: 1.4em;
+}
+.logo__brand--big {
+  font-weight: 400;
+  font-size: 1.8em;
+}
+.logo__brand--small {
+  font-weight: 300;
+  font-size: 1.2em;
+}
+.btn {
+  --height: 60px;
+  min-width: 104px;
+  display: inline-block;
+  height: var(--height);
+  line-height: calc(var(--height) - 2px);
+  padding: 0 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 22px;
+  border: 1px solid var(--primary-color);
+  text-align: center;
+}
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+/* Chevron icon */
+.gg-chevron-left {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+}
+
+.gg-chevron-left::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  transform: rotate(45deg);
+  left: 6px;
+  top: 4px;
+}
+/*  */
+.btn-group {
+  display: flex;
+  gap: 18px;
+  margin-top: 38px;
+}
+
+.btn--circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+.btn--circle {
+  color: #575f66;
+  border: 1px solid currentColor;
+  background-color: transparent;
+}
+.btn-circle--right {
+  transform: rotate(180deg);
+}
+.btn--circle:hover {
+  color: var(--primary-color);
+  background-color: currentColor;
+  cursor: pointer;
+}
+.btn--circle:hover div {
+  color: #fff;
+}

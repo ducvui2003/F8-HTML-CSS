@@ -1,0 +1,14 @@
+.header {
+  min-height: 100vh;
+  background-color: var(--secondary-color);
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,8 @@
+:root {
+  --primary-color: #2e80ce;
+  --header-color: #10375c;
+}
+.container {
+  margin: 0 auto;
+  min-width: 1170px;
+}

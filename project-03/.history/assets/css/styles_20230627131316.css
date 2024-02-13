@@ -1,0 +1,69 @@
+.header {
+  padding-top: 30px;
+  min-height: 100vh;
+  background-color: var(--secondary-color);
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__list {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+.navbar__item--active {
+  display: flex;
+  align-items: center;
+}
+.navbar__item--active a {
+  font-weight: 400;
+  color: #fff;
+}
+.navbar__item--active::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: #fff;
+}
+.navbar__link,
+.action__btn {
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.action__btn--login {
+  line-height: 1.75;
+}
+.action__btn--signup {
+  --height: 44px;
+  font-weight: 400;
+  margin-left: 28px;
+}
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  margin-top: 76px;
+}
+.hero__desc {
+  color: #c9d2da;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67;
+}
+.hero__action {
+  display: flex;
+  align-items: center;
+  gap: 39px;
+}
+.hero-action__btn {
+  color: #fff;
+  font-size: 1.8rem;
+
+  width: 250px;
+  border-radius: 30px;
+}

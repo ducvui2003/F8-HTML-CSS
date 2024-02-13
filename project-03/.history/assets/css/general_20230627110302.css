@@ -1,0 +1,72 @@
+:root {
+  --primary-color: #2e80ce;
+  --secondary-color: #10375c;
+  --primary-font: "Sora";
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-family: var(--primary-font);
+  font-size: 62.5%;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.heading.lv1 {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: -1.4px;
+}
+.heading.lv2 {
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+/* Logo */
+.logo {
+  display: inline-flex;
+  text-align: center;
+  font-size: 2rem;
+}
+.logo__circle {
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin-right: 0.6em;
+}
+.logo__circle::before {
+  position: absolute;
+  right: 0.3em;
+  bottom: 0.3em;
+  content: "";
+  background-color: #fff;
+  width: 1.6em;
+  height: 1.6em;
+  border-radius: 50%;
+}
+.logo__name {
+  display: flex;
+  flex-direction: column;
+  font-size: inherit;
+  color: #fff;
+  text-align: right;
+  line-height: 1.4em;
+}
+.logo__brand:first-child {
+  font-weight: 400;
+  font-size: 1.8em;
+}
+.logo__brand:last-child {
+  font-weight: 300;
+  font-size: 1.2em;
+}

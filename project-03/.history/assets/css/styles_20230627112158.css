@@ -1,0 +1,32 @@
+.header {
+  padding-top: 30px;
+  min-height: 100vh;
+  background-color: var(--secondary-color);
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__list {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+.navbar__link,
+.action__btn {
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.header-top__action {
+  text-align: center;
+}
+.action__btn--signup {
+  padding: 8px 20px;
+  background-color: var(--primary-color);
+  border-radius: 22px;
+  min-width: 104px;
+  margin-left: 28px;
+}

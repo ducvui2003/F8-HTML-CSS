@@ -1,0 +1,30 @@
+:root {
+  --primary-color: #2e80ce;
+  --secondary-color: #10375c;
+  --primary-font: "Sora";
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-family: var(--primary-font);
+}
+.container {
+  margin: 0 auto;
+  min-width: 1170px;
+}
+
+.heading.lv1 {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: -1.4px;
+}
+.heading.lv2 {
+  color: #10375c;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -1px;
+}

@@ -1,0 +1,18 @@
+:root {
+  --primary-color: #2e80ce;
+  --secondary-color: #10375c;
+}
+.container {
+  margin: 0 auto;
+  min-width: 1170px;
+}
+.heading {
+  color: #fff;
+  font-size: 70px;
+  font-family: Sora;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: -1.4px;
+}
+.heading.lv1 {
+}

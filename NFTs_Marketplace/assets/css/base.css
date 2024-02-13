@@ -1,0 +1,34 @@
+:root {
+  --primary-font: "Clash Display";
+  --secondary-font: "Aeonik TRIAL";
+  --black: #000;
+  --black-light: #212127;
+  --green-light: #17e3a6;
+  --green-high: #6e7a44;
+  --white: #fff;
+  --skin: #eaddb8;
+  --grey-light: #a4a4a4;
+  --grey-medium: #595959;
+  --grey-high: #535357;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.btn {
+  --height: 42px;
+  line-height: var(--height);
+  height: var(--height);
+}
