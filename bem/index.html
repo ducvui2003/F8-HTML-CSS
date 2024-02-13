@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Bem</title>
+  </head>
+
+  <body>
+    <!-- Buttons -->
+    <div class="buttons">
+      <div>
+        <div class="btn btn--size-s btn--success">GO TO THE NEXT APPROVAL</div>
+        <div class="btn btn--size-s btn--warn">OK</div>
+        <div class="btn btn--size-s btn--error">TRY AGAIN</div>
+      </div>
+      <div>
+        <div class="btn btn--success btn--disable">GO TO THE NEXT APPROVAL</div>
+        <div class="btn btn--warn btn--disable">OK</div>
+        <div class="btn btn--error btn--disable">TRY AGAIN</div>
+      </div>
+      <div>
+        <div class="btn btn--size-l btn--success">GO TO THE NEXT APPROVAL</div>
+        <div class="btn btn--size-l btn--warn">OK</div>
+        <div class="btn btn--size-l btn--error">TRY AGAIN</div>
+      </div>
+    </div>
+    <!-- Toast-message -->
+
+    <div id="toast" class="center">
+      <!-- Success -->
+      <!-- <div class="toast toast--success">
+        <div class="toast__icon">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <div class="toast__body">
+          <div class="toast__heading">Success</div>
+          <div class="toast__msg">
+            Anyone with access can view your invited visitors.
+          </div>
+        </div>
+        <div class="toast__close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div> -->
+      <!-- Info -->
+      <!-- <div class="toast toast--info">
+        <div class="toast__icon">
+          <i class="fa-solid fa-circle-info"></i>
+        </div>
+        <div class="toast__body">
+          <div class="toast__heading">Info</div>
+          <div class="toast__msg">
+            Anyone with access can view your invited visitors.
+          </div>
+        </div>
+        <div class="toast__close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div> -->
+      <!-- Warning -->
+      <!-- <div class="toast toast--warning">
+        <div class="toast__icon">
+          <i class="fa-solid fa-circle-exclamation"></i>
+        </div>
+        <div class="toast__body">
+          <div class="toast__heading">Warning</div>
+          <div class="toast__msg">
+            Anyone with access can view your invited visitors.
+          </div>
+        </div>
+        <div class="toast__close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div> -->
+    </div>
+    <div class="show">
+      <div onclick="showSuccess();" class="btn btn--success">Show Success</div>
+      <div onclick="showWarning();" class="btn btn--error">Show Warning</div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
