@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #ffb900;
+  --secondary-color: #171100;
+}
+html {
+  font-family: "Poppins";
+}
+.content {
+  width: 1170px;
+  margin-inline: auto;
+}
+/* Header */
+.header .nav {
+  display: flex;
+}
+.header .nav .list-item {
+  display: flex;
+}
+.header .nav .list-item ul {
+  display: flex;
+}

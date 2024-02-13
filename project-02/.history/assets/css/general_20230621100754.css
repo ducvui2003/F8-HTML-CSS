@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #ffb900;
+  --secondary-color: #171100;
+  --Poppins-font: "Poppins";
+  --Sen-font: "Sen";
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-family: var(--Poppins-font);
+  font-size: 62.5%;
+}
+/* Common */
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-inline: auto;
+}
+.btn {
+  min-width: 118px;
+  padding: 11px 41px;
+  border-radius: 24.5px;
+
+  color: #ffffff;
+  background-color: #171100;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.heading {
+  font-family: var(--Sen-font);
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+
+  color: #171100;
+}
+.heading.lv1 {
+  font-size: 5.8rem;
+  line-height: 1.17;
+}
+.heading.lv2 {
+  font-size: 3.8rem;
+  line-height: 1.26;
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+.line-clamp.line-3 {
+  --line-clamp: 3;
+}
+.break-all {
+  word-break: break-all;
+}
+/* List */
+.list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.list .item {
+  flex: 1;
+  --border-radius: 12px;
+  border-radius: var(--border-radius);
+  border: 1px solid #ffffff;
+  box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+.list .item .thumbnail {
+  display: block;
+  width: calc(100% + 2px);
+  height: 278px;
+  margin: -1px;
+
+  object-fit: cover;
+  object-position: center center;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+.list .item .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.list .item .title {
+  font-style: normal;
+  font-weight: 600;
+}
+.list .item .desc {
+  min-width: 52px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+
+  color: #5f5b53;
+}
+.list .item .button {
+  font-style: normal;
+  font-weight: 600;
+
+  color: #ffffff;
+
+  border-radius: 25px;
+  background-color: #171100;
+  border: none;
+}
+.list .item .button:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+.dots {
+  display: flex;
+  gap: 6px;
+}
+.dot {
+}

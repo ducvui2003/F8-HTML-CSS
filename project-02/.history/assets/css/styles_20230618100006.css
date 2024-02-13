@@ -1,0 +1,28 @@
+:root {
+  --primary-color: #ffb900;
+  --secondary-color: #171100;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-family: "Poppins";
+}
+.content {
+  width: 1170px;
+  margin-inline: auto;
+}
+/* Header */
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header .nav .list-item {
+  display: flex;
+}
+.header .nav .list-item ul {
+  display: flex;
+}
